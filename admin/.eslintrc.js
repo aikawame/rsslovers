@@ -1,6 +1,7 @@
 module.exports = {
   env: {
-    es2021: true
+    es2021: true,
+    'googleappsscript/googleappsscript': true
   },
   extends: [
     'standard'
@@ -11,7 +12,8 @@ module.exports = {
     sourceType: 'module'
   },
   plugins: [
-    '@typescript-eslint'
+    '@typescript-eslint',
+    'googleappsscript'
   ],
   rules: {
   }
