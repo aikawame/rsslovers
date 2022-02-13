@@ -1,8 +1,9 @@
 // eslint-disable-next-line camelcase, no-undef
 import Menu = GoogleAppsScript.Base.Menu;
 import { Category } from './models/Category'
-import { Utils } from './models/Utils'
 import { Feed } from './models/Feed'
+import { Notification } from './models/Notification'
+import { Utils } from './models/Utils'
 
 // eslint-disable-next-line no-unused-vars
 function onOpen (): void {
@@ -19,6 +20,9 @@ const apply = (): void => {
 
     const batchFeeds: Feed[] = Feed.findAll()
     Utils.saveToS3('rss/db/batch_feeds.json', batchFeeds)
+
+    const notifications: Notification[] = Notification.findAll()
+    Utils.saveToS3('rss/db/notifications.json', notifications)
   } catch (e: Error) {
     Browser.msgBox(e.message)
   }
