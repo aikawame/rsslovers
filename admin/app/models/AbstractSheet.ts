@@ -25,7 +25,19 @@ export abstract class AbstractSheet {
 
   protected constructor (row: { [key: string]: string }) {
     Object.keys(row).forEach(key => {
-      this[key] = (key === 'isActive') ? Utils.stringToBoolean(row[key]) : row[key]
+      this[key] = this.parseColumn(key, row[key])
     })
+  }
+
+  private parseColumn (key: string, value) {
+    switch (key) {
+      case 'isActive':
+        return Utils.stringToBoolean(value)
+      case 'startAt':
+      case 'endAt':
+        return Utilities.formatDate(new Date(value), 'JST', "yyyy-MM-dd'T'HH:mm:ssX:00")
+      default:
+        return value
+    }
   }
 }
