@@ -10,14 +10,14 @@ export class Category extends AbstractSheet {
 
   public readonly isActive: boolean
 
-  public websites: Site[]
+  public sites: Site[]
 
   public static findAll (): Category[] {
     return this.sheetToObjects().map(row => new Category(row, Site.findByCategory(row.label)))
   }
 
-  public constructor (row: { [key: string]: string }, websites: Site[] = []) {
+  public constructor (row: { [key: string]: string }, sites: Site[] = []) {
     super(row)
-    this.websites = websites
+    this.sites = sites
   }
 }
