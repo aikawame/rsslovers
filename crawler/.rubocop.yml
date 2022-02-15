@@ -1,0 +1,41 @@
+require:
+  - rubocop-rails
+  - rubocop-performance
+
+AllCops:
+  TargetRubyVersion: 2.7
+  TargetRailsVersion: 7.0
+  NewCops: enable
+  Exclude:
+    - '.git/**/*'
+    - 'bin/**/*'
+    - 'config/**/*'
+    - 'log/**/*'
+    - 'public/**/*'
+    - 'tmp/**/*'
+    - 'vendor/**/*'
+    - 'config.ru'
+    - 'Rakefile'
+
+Rails:
+  Enabled: true
+
+# 1行あたりの文字数制限を緩和する
+Layout/LineLength:
+  Max: 120
+
+# ABCサイズの制限を緩和する
+Metrics/AbcSize:
+  Max: 20
+
+# メソッド行数の制限を緩和する
+Metrics/MethodLength:
+  Max: 15
+
+# ASCIIコード以外のコメントも認める
+Style/AsciiComments:
+  Enabled: false
+
+# クラスやモジュールのネスト表記を認める
+Style/ClassAndModuleChildren:
+  Enabled: false
