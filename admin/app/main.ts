@@ -18,8 +18,8 @@ const apply = (): void => {
     const frontendCategories: Category[] = Category.findAll()
     Utils.saveToS3('rss/db/frontend_categories.json', frontendCategories)
 
-    const batchFeeds: Feed[] = Feed.findAll()
-    Utils.saveToS3('rss/db/batch_feeds.json', batchFeeds)
+    const crawlerFeeds: Feed[] = Feed.findAll()
+    Utils.saveToS3('rss/db/crawler_feeds.json', crawlerFeeds)
 
     const notifications: Notification[] = Notification.findAll()
     Utils.saveToS3('rss/db/notifications.json', notifications)
