@@ -8,6 +8,8 @@ export class Site extends AbstractSheet {
 
   public readonly label: string
 
+  public readonly crawler: string
+
   public readonly name: string
 
   public readonly url: string
