@@ -1,0 +1,20 @@
+service: rss-crawler
+
+provider:
+  name: aws
+  runtime: nodejs16.x
+  lambdaHashingVersion: 20201221
+  stage: prod
+  region: ap-northeast-1
+  timeout: 900
+  ecr:
+    images:
+      latest:
+        path: ./
+
+functions:
+  main:
+    image:
+      name: latest
+    events:
+      - schedule: cron(10 * * * ? *)
