@@ -1,0 +1,8 @@
+version: '3.8'
+services:
+  admin:
+    build:
+      context: admin
+      dockerfile: Dockerfile
+    volumes:
+      - ./admin:/opt/project:cached
