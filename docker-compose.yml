@@ -1,8 +1,37 @@
 version: '3.8'
 services:
+  s3:
+    image: minio/minio
+    environment:
+      MINIO_DOMAIN: s3
+    ports:
+      - '9000:9000'
+      - '9001:9001'
+    volumes:
+      - ./s3:/data
+    networks:
+      s3:
+        aliases:
+          - assets.wor.jp.s3
+    command: minio server /data --console-address :9001
+  createbuckets:
+    image: minio/mc
+    depends_on:
+      - s3
+    networks:
+      - s3
+    entrypoint: >
+      /bin/sh -c "
+      until (/usr/bin/mc alias set minio http://s3:9000 minioadmin minioadmin) do echo 'Waiting...' && sleep 1; done;
+      /usr/bin/mc mb minio/assets.wor.jp;
+      /usr/bin/mc policy set public minio/assets.wor.jp;
+      exit 0;
+      "
   admin:
     build:
       context: admin
       dockerfile: Dockerfile
     volumes:
       - ./admin:/opt/project:cached
+networks:
+  s3:
