@@ -7,9 +7,10 @@ ruby '2.7.5'
 gem 'rails', '~> 7.0.2', '>= 7.0.2.2'
 
 gem 'aws-sdk-s3'
-gem 'aws-sdk-ses'
 gem 'capybara', require: false
 gem 'selenium-webdriver', '< 4.0.0', require: false
+gem 'sentry-rails'
+gem 'sentry-ruby'
 
 group :development do
   gem 'rubocop', require: false
