@@ -33,5 +33,28 @@ services:
       dockerfile: Dockerfile
     volumes:
       - ./admin:/opt/project:cached
+  crawler:
+    build:
+      context: crawler
+      dockerfile: Dockerfile
+    environment:
+      RAILS_ENV: development
+    ports:
+      - '8080:8080'
+    volumes:
+      - ./crawler:/var/task:cached
+      - bundler_cache:/var/task/cache
+      - bundler_extensions:/var/task/extensions
+      - bundler_gems:/var/task/gems
+      - bundler_specifications:/var/task/specifications
+    depends_on:
+      - s3
+    networks:
+      - s3
+volumes:
+  bundler_cache:
+  bundler_extensions:
+  bundler_gems:
+  bundler_specifications:
 networks:
   s3:
