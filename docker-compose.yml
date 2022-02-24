@@ -43,6 +43,7 @@ services:
       - '8080:8080'
     volumes:
       - ./crawler:/var/task:cached
+      - bin:/var/task/bin
       - bundler_cache:/var/task/cache
       - bundler_extensions:/var/task/extensions
       - bundler_gems:/var/task/gems
@@ -52,6 +53,7 @@ services:
     networks:
       - s3
 volumes:
+  bin:
   bundler_cache:
   bundler_extensions:
   bundler_gems:
