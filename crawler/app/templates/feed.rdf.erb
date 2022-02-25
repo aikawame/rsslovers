@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/rss/xsl/rdf.xsl"?>
+<rdf:RDF xmlns="http://purl.org/rss/1.0/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel rdf:about="<%= CGI.escape_html(@feed.self_url.to_s) %>"
+           encoded="<%= CGI.escape_html(@feed.encoded_url.to_s) %>">
+    <title><%= @feed.title %></title>
+    <link><%= CGI.escape_html(@feed.link_url.to_s) %></link>
+    <description><%= @feed.description %></description>
+    <dc:date><%= @feed.updated_at.iso8601 %></dc:date>
+    <dc:language>ja</dc:language>
+    <items>
+      <rdf:Seq>
+        <%- @feed.items.each do |item| -%>
+        <rdf:li rdf:resource="<%= CGI.escape_html(item.link_url.to_s) %>"/>
+        <%- end -%>
+      </rdf:Seq>
+    </items>
+  </channel>
+  <%- @feed.items.each do |item| -%>
+  <item rdf:about="<%= CGI.escape_html(item.link_url.to_s) %>">
+    <title><%= item.title %></title>
+    <link><%= CGI.escape_html(item.link_url.to_s) %></link>
+    <description><%= item.description %></description>
+    <dc:date><%= item.updated_at.iso8601 %></dc:date>
+  </item>
+  <%- end -%>
+</rdf:RDF>
