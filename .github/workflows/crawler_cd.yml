@@ -25,7 +25,7 @@ jobs:
 
       - uses: aws-actions/configure-aws-credentials@v1
         with:
-          role-to-assume: arn:aws:iam::325815975781:oidc-provider/token.actions.githubusercontent.com
+          role-to-assume: arn:aws:iam::${{ secrets.AWS_ACCOUNT_ID }}:role/RSSLoversRole
           aws-region: ap-northeast-1
 
       - uses: actions/setup-node@v2
