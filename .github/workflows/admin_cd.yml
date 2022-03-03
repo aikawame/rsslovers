@@ -24,7 +24,7 @@ jobs:
           node-version: '16.x'
 
       - name: Install Clasp
-        run: npm install clasp -g
+        run: npm install -g clasp
 
       - name: Configure Clasp
         run: |
