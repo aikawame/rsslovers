@@ -3,8 +3,8 @@ updates:
   - package-ecosystem: npm
     directory: /admin
     schedule:
-      interval: daily
+      interval: weekly
   - package-ecosystem: bundler
     directory: /crawler
     schedule:
-      interval: daily
+      interval: weekly
