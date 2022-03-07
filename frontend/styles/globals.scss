@@ -1,1 +1,67 @@
-@import '~bulma/bulma.sass';
+@import '~bulma/sass/utilities/initial-variables';
+@import '~bulma/sass/utilities/functions';
+
+$orange: #fa9d39;
+$orange-invert: findColorInvert($orange);
+
+$footer-padding: 3rem 1rem;
+$notification-radius: 0;
+$primary: $orange;
+$primary-invert: $orange-invert;
+$section-padding: 1.5rem 1rem;
+$section-padding-desktop: 2rem 0;
+$variable-columns: false;
+
+$amazon: #ff9900;
+$amazon-invert: findColorInvert($amazon);
+$facebook: #1877f2;
+$facebook-invert: findColorInvert($facebook);
+$feedly: #2db24c;
+$feedly-invert: findColorInvert($feedly);
+$hateb: #00a4de;
+$hateb-invert: findColorInvert($hateb);
+$inoreader: #03a9f4;
+$inoreader-invert: findColorInvert($inoreader);
+$twitter: #1da1f2;
+$twitter-invert: findColorInvert($twitter);
+
+@import '~bulma/sass/utilities/derived-variables';
+
+$box-shadow: 0 0 1.5px rgba($scheme-invert, 0.5);
+$card-shadow: 0 0 1.5px rgba($scheme-invert, 0.5);
+$panel-shadow: 0;
+
+$addColors: (
+  "amazon": ($amazon, $amazon-invert),
+  "facebook": ($facebook, $facebook-invert),
+  "feedly": ($feedly, $feedly-invert),
+  "hateb": ($hateb, $hateb-invert),
+  "inoreader": ($inoreader, $inoreader-invert),
+  "twitter": ($twitter, $twitter-invert)
+);
+$colors: map-merge($colors, $addColors);
+
+@import '~bulma/bulma';
+
+h2::before {
+  color: #e3702d;
+  content: "\f09e";
+  font-family: icons, sans-serif;
+  margin-right: 0.5rem;
+}
+
+img,
+svg {
+  line-height: 1;
+  vertical-align: bottom;
+}
+
+.hero {
+  background: linear-gradient(#fa9d39, #e3702d);
+}
+
+.navbar-burger {
+  height: 5rem;
+  padding: 20px 12px;
+  width: 7.5rem;
+}
