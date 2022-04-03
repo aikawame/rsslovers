@@ -1,5 +1,6 @@
 import { useForm } from 'react-hook-form'
 import { useGoogleReCaptcha } from 'react-google-recaptcha-v3'
+import Link from 'next/link'
 import Main from '../components/Main'
 import Section from '../components/Section'
 
@@ -72,6 +73,11 @@ export default function Inquiry() {
               </button>
             </div>
           </div>
+          <p className="is-size-7">
+            このサイトはreCAPTCHAによって保護されており、
+            Googleの<Link href="https://policies.google.com/privacy"><a>プライバシーポリシー</a></Link>と
+            <Link href="https://policies.google.com/terms"><a>利用規約</a></Link>が適用されます。
+          </p>
         </form>
       </Section>
     </Main>
