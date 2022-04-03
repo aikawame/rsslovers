@@ -12,11 +12,15 @@
     "bulma": "^0.9.3",
     "next": "12.1.0",
     "node-sass": "^7.0.1",
+    "nodemailer": "^6.7.3",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "react-google-recaptcha-v3": "^1.9.7",
+    "react-hook-form": "^7.28.1"
   },
   "devDependencies": {
     "@types/node": "^17.0.22",
+    "@types/nodemailer": "^6.4.4",
     "@types/react": "^17.0.42",
     "eslint": "8.11.0",
     "eslint-config-next": "12.1.0",
