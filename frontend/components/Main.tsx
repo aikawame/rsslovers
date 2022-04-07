@@ -7,7 +7,7 @@ type Props = {
 }
 
 export default function Main({title, children}: Props) {
-  return (
+  if (title) return (
     <>
       <Head>
         <title>{title} - RSS愛好会</title>
@@ -20,6 +20,20 @@ export default function Main({title, children}: Props) {
             </h1>
           </div>
         </div>
+        <section className="container content">
+          {children}
+        </section>
+      </main>
+    </>
+  )
+
+  return (
+    <>
+      <Head>
+        <title>RSS愛好会</title>
+      </Head>
+      <main>
+        <hr />
         <section className="container content">
           {children}
         </section>
