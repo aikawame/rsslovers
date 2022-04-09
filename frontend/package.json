@@ -16,7 +16,8 @@
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-google-recaptcha-v3": "^1.9.7",
-    "react-hook-form": "^7.28.1"
+    "react-hook-form": "^7.28.1",
+    "swr": "^1.2.2"
   },
   "devDependencies": {
     "@types/node": "^17.0.22",
