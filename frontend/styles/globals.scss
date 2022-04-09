@@ -5,7 +5,12 @@ $orange: #fa9d39;
 $orange-invert: findColorInvert($orange);
 
 $footer-padding: 3rem 1rem;
+$hr-background-color: $orange;
+$hr-height: 1px;
+$hr-margin: 0;
 $notification-radius: 0;
+$panel-block-hover-background-color: findLightColor($orange);
+$panel-icon-color: $orange;
 $primary: $orange;
 $primary-invert: $orange-invert;
 $section-padding: 1.5rem 1rem;
@@ -56,6 +61,10 @@ svg {
   vertical-align: bottom;
 }
 
+.content h3 {
+  margin-bottom: 0;
+}
+
 .grecaptcha-badge {
   visibility: hidden;
 }
@@ -64,8 +73,22 @@ svg {
   background: linear-gradient(#fa9d39, #e3702d);
 }
 
+.index-loading {
+  height: 100vh;
+}
+
 .navbar-burger {
   height: 5rem;
   padding: 20px 12px;
   width: 7.5rem;
+}
+
+.panel {
+  border: 1px solid $grey-lightest;
+}
+
+.panel-block {
+  &.more {
+    color: $orange;
+  }
 }
