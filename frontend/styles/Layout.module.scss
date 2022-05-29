@@ -1,0 +1,54 @@
+.address {
+  display: inline;
+  font-size: 0.8rem;
+  font-style: normal;
+}
+
+.buttons {
+  margin-bottom: 2rem;
+
+  li {
+    display: inline;
+    font-size: 1.2rem;
+    margin: 0.5rem;
+
+    a {
+      background: #c0c0c0;
+      border-radius: 50%;
+      color: #fff;
+      display: inline-block;
+      padding: 0.3rem 0.6rem;
+
+      &.support:hover {
+        background: #fa9d39;
+      }
+
+      &.twitter:hover {
+        background: #1da1f2;
+      }
+
+      i::before {
+      }
+    }
+  }
+}
+
+.menu {
+  display: inline;
+
+  li {
+    display: inline;
+    font-size: 0.8rem;
+
+    ::before {
+      content: "|";
+      padding: 0 0.5rem;
+    }
+  }
+}
+
+.notification {
+  position: absolute;
+  width: 100%;
+  z-index: 9999;
+}

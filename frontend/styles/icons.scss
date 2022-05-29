@@ -1,0 +1,87 @@
+@font-face {
+  font-family: 'icons';
+  src:
+    url('/fonts/icons.ttf?jrp3sv') format('truetype'),
+    url('/fonts/icons.woff?jrp3sv') format('woff'),
+    url('/fonts/icons.svg?jrp3sv#icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icons' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-donate:before {
+  content: "\e901";
+}
+.icon-feedly:before {
+  content: "\e903";
+}
+.icon-hateb:before {
+  content: "\e905";
+}
+.icon-hateb-square:before {
+  content: "\e907";
+}
+.icon-hateblo:before {
+  content: "\e909";
+}
+.icon-inoreader:before {
+  content: "\e90b";
+}
+.icon-stripe:before {
+  content: "\e90d";
+  color: #008cdd;
+}
+.icon-wantedly:before {
+  content: "\e90f";
+}
+.icon-twitter-square:before {
+  content: "\f081";
+}
+.icon-facebook-square:before {
+  content: "\f082";
+}
+.icon-github-square:before {
+  content: "\f092";
+}
+.icon-twitter:before {
+  content: "\f099";
+}
+.icon-facebook:before {
+  content: "\f09a";
+}
+.icon-github:before {
+  content: "\f09b";
+}
+.icon-rss:before {
+  content: "\f09e";
+}
+.icon-rss-square:before {
+  content: "\f143";
+}
+.icon-google:before {
+  content: "\f1a0";
+}
+.icon-chrome:before {
+  content: "\f268";
+}
+.icon-amazon:before {
+  content: "\f270";
+}
+.icon-facebook-f:before {
+  content: "\f39e";
+}
