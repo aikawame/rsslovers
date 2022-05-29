@@ -9,6 +9,10 @@ declare namespace NodeJS {
     readonly SMTP_PASS: string
     readonly NEXT_PUBLIC_RECAPTCHA_SITE_KEY: string
     readonly NEXT_PUBLIC_RECAPTCHA_SECRET_KEY: string
+    readonly NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY: string
+    readonly STRIPE_SECRET_KEY: string
+    readonly STRIPE_PRICE_100: string
+    readonly STRIPE_PRICE_300: string
   }
 }
 
