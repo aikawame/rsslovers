@@ -52,6 +52,14 @@ services:
       - s3
     networks:
       - s3
+  frontend:
+    build:
+      context: frontend
+      dockerfile: Dockerfile
+    volumes:
+      - ./frontend:/opt/project:cached
+    ports:
+      - '3000:3000'
 volumes:
   bin:
   bundler_cache:
