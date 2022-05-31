@@ -17,17 +17,17 @@ function onOpen (): void {
 }
 
 const apply = (env: string = ENV_PROD): void => {
-  const rssDir = env === ENV_DEV ? 'rss_dev' : 'rss'
+  const rssDir = env === ENV_DEV ? 'rss-dev' : 'rss'
 
   try {
     const frontendCategories: Category[] = Category.findAll()
-    Utils.saveToS3(`${rssDir}/db/frontend_categories.json`, frontendCategories)
+    Utils.saveToS3(`${rssDir}/db/frontend/categories.json`, frontendCategories)
 
     const crawlerFeeds: Feed[] = Feed.findAll()
-    Utils.saveToS3(`${rssDir}/db/crawler_feeds.json`, crawlerFeeds)
+    Utils.saveToS3(`${rssDir}/db/crawler/feeds.json`, crawlerFeeds)
 
     const notifications: Notification[] = Notification.findAll()
-    Utils.saveToS3(`${rssDir}/db/notifications.json`, notifications)
+    Utils.saveToS3(`${rssDir}/db/crawler/notifications.json`, notifications)
   } catch (e: Error) {
     Browser.msgBox(e.message)
   }
