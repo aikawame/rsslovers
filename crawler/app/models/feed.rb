@@ -8,7 +8,7 @@ class Feed
   attr_reader :site, :label, :name, :link_url, :crawled
 
   def self.all
-    feed_hashes = Utils.read_json_db(URI.parse("#{CREDENTIALS.s3.root_url}/rss/db/crawler_feeds.json"))
+    feed_hashes = Utils.read_json_db(URI.parse("#{CREDENTIALS.s3.root_url}/rss/db/crawler/feeds.json"))
     feed_hashes.map do |feed_hash|
       create(feed_hash)
     rescue StandardError => e

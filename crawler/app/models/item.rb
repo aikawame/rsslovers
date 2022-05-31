@@ -7,7 +7,7 @@ class Item
   attr_reader :title, :description, :link_url, :updated_at
 
   def self.all_notification_items
-    item_hashes = Utils.read_json_db(URI.parse("#{CREDENTIALS.s3.root_url}/rss/db/notifications.json"))
+    item_hashes = Utils.read_json_db(URI.parse("#{CREDENTIALS.s3.root_url}/rss/db/crawler/notifications.json"))
     item_hashes.select { |item_hash| active?(item_hash) }
                .map { |item_hash| create_notification_item(item_hash) }
   end
