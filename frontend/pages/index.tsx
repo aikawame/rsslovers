@@ -29,7 +29,7 @@ type Feed = {
 const fetcher = (url) => fetch(url).then(res => res.json())
 
 export default function Home() {
-  const { data } = useSWR<Category[]>(`${process.env.NEXT_PUBLIC_ASSETS_URL}/db/frontend_categories.json`, fetcher)
+  const { data } = useSWR<Category[]>(`${process.env.NEXT_PUBLIC_ASSETS_URL}/db/frontend/categories.json`, fetcher)
 
   if (!data) return (
     <div className="index-loading" />
