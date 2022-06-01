@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
+import Analytics from './Analytics'
 import Logo from './Logo'
 import styles from '../styles/Layout.module.scss'
 
@@ -91,6 +92,7 @@ export default function Layout({ children }) {
           </ul>
         </div>
       </footer>
+      <Analytics />
     </>
   )
 }
