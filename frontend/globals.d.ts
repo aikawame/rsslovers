@@ -7,6 +7,7 @@ declare namespace NodeJS {
     readonly SMTP_HOST: string
     readonly SMTP_USER: string
     readonly SMTP_PASS: string
+    readonly NEXT_PUBLIC_ANALYTICS_ID: string
     readonly NEXT_PUBLIC_RECAPTCHA_SITE_KEY: string
     readonly NEXT_PUBLIC_RECAPTCHA_SECRET_KEY: string
     readonly NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY: string
