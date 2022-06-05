@@ -19,6 +19,13 @@ export default function About() {
           <Link href={"/support"}><a>ご支援</a></Link>
           をいただけますと幸いです。
         </p>
+        <p>
+          <Link href={"/support"}>
+            <a className="button is-rounded is-primary">
+              <i className="icon-donate" aria-hidden="true" />&nbsp;RSS愛好会を支援する
+            </a>
+          </Link>
+        </p>
       </Section>
       <Section heading="適法性に関しまして">
         <p>
