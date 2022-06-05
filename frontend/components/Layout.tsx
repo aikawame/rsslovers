@@ -1,7 +1,7 @@
 import Head from 'next/head'
+import Image from 'next/image'
 import Link from 'next/link'
 import Analytics from './Analytics'
-import Logo from './Logo'
 import styles from '../styles/Layout.module.scss'
 
 export default function Layout({ children }) {
@@ -30,7 +30,7 @@ export default function Layout({ children }) {
         <nav className="navbar">
           <div className="navbar-brand">
             <div className="navbar-item is-size-3">
-              <Link href="/"><a><Logo /></a></Link>
+              <Link href="/"><a><Image src={"/images/logo.svg"} width="175" height="28" alt="RSS愛好会" /></a></Link>
             </div>
             <div className="navbar-burger">
               <Link href={"/support"}>
@@ -77,7 +77,7 @@ export default function Layout({ children }) {
             </li>
           </ul>
           <div>
-            <Link href="/"><a><Logo /></a></Link>
+            <Link href="/"><a><Image src={"/images/logo.svg"} width="175" height="28" alt="RSS愛好会" /></a></Link>
           </div>
           <address className={styles.address}>
             &copy; 2014 <Link href="https://worklover.wor.jp/"><a>Worklover</a></Link>
