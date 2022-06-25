@@ -61,6 +61,10 @@ svg {
   vertical-align: bottom;
 }
 
+dt {
+  font-weight: bold;
+}
+
 .content h3 {
   margin-bottom: 0;
 }
@@ -91,4 +95,8 @@ svg {
   &.more {
     color: $orange;
   }
+}
+
+.card-footer-item {
+  min-height: 64px;
 }
