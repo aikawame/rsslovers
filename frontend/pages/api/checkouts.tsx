@@ -12,7 +12,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     const session = await stripe.checkout.sessions.create({
       line_items: [
         {
-          price: Number(price) === 300 ? process.env.STRIPE_PRICE_300 : process.env.STRIPE_PRICE_100,
+          price: eval(`process.env.STRIPE_PRICE_${price}`),
           quantity: 1,
         },
       ],
