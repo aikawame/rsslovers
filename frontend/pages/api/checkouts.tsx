@@ -1,7 +1,11 @@
 import { NextApiRequest, NextApiResponse } from 'next'
 import Stripe from 'stripe'
 
-const PRICE_IDS = {
+interface PriceIdObject {
+  [key: number]: number
+}
+
+const PRICE_IDS: PriceIdObject = {
   100: process.env.STRIPE_PRICE_100,
   300: process.env.STRIPE_PRICE_300,
   1000: process.env.STRIPE_PRICE_1000,
