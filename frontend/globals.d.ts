@@ -14,6 +14,7 @@ declare namespace NodeJS {
     readonly STRIPE_SECRET_KEY: string
     readonly STRIPE_PRICE_100: string
     readonly STRIPE_PRICE_300: string
+    readonly STRIPE_PRICE_1000: string
   }
 }
 
