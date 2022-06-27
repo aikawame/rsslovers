@@ -2,6 +2,7 @@ import useSWR from 'swr'
 import FeedPanel from '../components/FeedPanel'
 import Main from '../components/Main'
 import Section from '../components/Section'
+import SupportersList from '../components/SupportersList'
 
 type Category = {
   label: string
@@ -48,6 +49,7 @@ export default function Home() {
           </div>
         </Section>
       )})}
+      <SupportersList />
     </Main>
   )
 }
