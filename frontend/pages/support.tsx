@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import Main from '../components/Main'
 import Section from '../components/Section'
+import SupportersList from '../components/SupportersList'
 
 export default function Support() {
   return (
@@ -22,7 +23,7 @@ export default function Support() {
           <dd>サイトへのお名前掲載</dd>
           <dd>新規フィード追加のご要望対応（3件まで）</dd>
           <dt>1,000円/月・スポット10,000円</dt>
-          <dd>サイトへのお名前掲載（ゴールドスポンサー）</dd>
+          <dd>サイトへのお名前掲載（ゴールドサポーター）</dd>
           <dd>新規フィード追加のご要望対応（10件まで）</dd>
         </dl>
       </Section>
@@ -128,6 +129,7 @@ export default function Support() {
           過去にご支援いただきました方も含めてお名前掲載させていただきます。
         </p>
       </Section>
+      <SupportersList />
     </Main>
   )
 }
