@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Main from '../components/Main'
 import Section from '../components/Section'
+import SupportersList from '../components/SupportersList'
 
 export default function About() {
   return (
@@ -50,6 +51,7 @@ export default function About() {
           また、本サービスおよび配信するRSSフィードは、予告なく改廃される場合があります。
         </p>
       </Section>
+      <SupportersList />
     </Main>
   )
 }
