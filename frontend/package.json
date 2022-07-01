@@ -13,7 +13,7 @@
     "bulma": "^0.9.4",
     "next": "12.1.6",
     "node-sass": "^7.0.1",
-    "nodemailer": "^6.7.5",
+    "nodemailer": "^6.7.6",
     "react": "18.2.0",
     "react-dom": "^18.2.0",
     "react-google-recaptcha-v3": "^1.9.8",
