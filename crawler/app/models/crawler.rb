@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require 'kconv'
+
 # クローラー
 class Crawler
   attr_accessor :url
@@ -11,7 +13,7 @@ class Crawler
   def fetch_html
     return Nokogiri::HTML::Document.new if @url.instance_of?(URI)
 
-    Nokogiri::HTML.parse(url.open)
+    Nokogiri::HTML.parse(url.open, nil, 'utf-8')
   end
 
   private
