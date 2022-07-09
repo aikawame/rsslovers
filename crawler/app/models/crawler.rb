@@ -13,7 +13,7 @@ class Crawler
   def fetch_html
     return Nokogiri::HTML::Document.new if @url.instance_of?(URI)
 
-    Nokogiri::HTML.parse(url.open, nil, 'utf-8')
+    Nokogiri::HTML.parse(url.open, nil, url.read.charset)
   end
 
   private
