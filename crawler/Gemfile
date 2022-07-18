@@ -12,6 +12,10 @@ gem 'selenium-webdriver', '< 4.0.0', require: false
 gem 'sentry-rails'
 gem 'sentry-ruby'
 
+group :development, :test do
+  gem 'rspec-rails'
+end
+
 group :development do
   gem 'rubocop', require: false
   gem 'rubocop-performance', require: false
