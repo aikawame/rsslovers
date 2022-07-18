@@ -29,3 +29,6 @@ jobs:
 
       - name: Run Rubocop
         run: rubocop
+
+      - name: Run RSpec
+        run: rspec
