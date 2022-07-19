@@ -2,28 +2,21 @@
 
 require 'rails_helper'
 
-RSpec.describe Crawler, type: :model do
+RSpec.describe Crawler::Nikkei, type: :model do
   describe 'fetch_items' do
-    let(:crawler) do
-      html = Nokogiri::HTML.parse(File.open('spec/fixtures/files/rss/html/nikkei/news.html'))
-      crawler = Crawler::Nikkei.new
-      allow(crawler).to receive(:fetch_html).and_return(html)
-      allow(crawler).to receive(:root_url).and_return('https://example.com')
-      allow(Crawler::Nikkei).to receive(:new).and_return(crawler)
-      crawler
-    end
-
-    subject do
-      crawler.fetch_items.first
-    end
-
-    it do
-      is_expected.to have_attributes(
+    let(:crawler) { test_crawler(described_class) }
+    let(:attributes) do
+      today = Time.zone.now
+      {
         title: '世界陸上女子マラソン、新谷仁美が欠場　コロナで',
         description: nil,
         link_url: URI.parse('https://www.nikkei.com/article/DGXZQOKC180N80Y2A710C2000000/'),
-        updated_at: Time.zone.local(2022, 0o7, 18, 10, 49)
-      )
+        updated_at: Time.zone.local(today.year, today.month, today.day, 10, 49)
+      }
     end
+
+    subject { crawler.fetch_items.first }
+
+    it { is_expected.to have_attributes(attributes) }
   end
 end
