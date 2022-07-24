@@ -33,6 +33,11 @@ Layout/LineLength:
 Metrics/AbcSize:
   Max: 20
 
+# ブロックあたりの行数の制限を緩和する
+Metrics/BlockLength:
+  Exclude:
+    - 'spec/**/*'
+
 # メソッド行数の制限を緩和する
 Metrics/MethodLength:
   Max: 15
