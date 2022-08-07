@@ -3,7 +3,7 @@
 # 読売新聞のクローラー
 class Crawler::Yomiuri < Crawler
   def fetch_items
-    fetch_html.css('.news-top-latest article').map do |block|
+    fetch_html.css(selector).map do |block|
       anchor = block.css('h3 a')
       datetime = block.css('time').attr('datetime')
       Item.new(title: anchor.text,
@@ -11,4 +11,12 @@ class Crawler::Yomiuri < Crawler
                updated_at: Time.zone.parse(datetime))
     end
   end
+end
+
+def selector
+  [
+    '.news-top-latest article',
+    '.fn-category-organization article',
+    '.fn-category-time-series article'
+  ].join(', ')
 end
