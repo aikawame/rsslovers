@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
 module CrawlerHelpers
-  def test_crawler(crawler_class)
-    sample_file = "spec/fixtures/files/rss/html/#{crawler_class.name.split('::').last&.downcase}.html"
+  def test_crawler(crawler_class, sample_file = nil)
+    sample_file ||= "spec/fixtures/files/rss/html/#{crawler_class.name.split('::').last&.downcase}.html"
     html = Nokogiri::HTML.parse(File.open(sample_file))
     crawler = crawler_class.new
     allow(crawler).to receive(:fetch_html).and_return(html)
