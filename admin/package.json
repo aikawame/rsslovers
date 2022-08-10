@@ -13,12 +13,12 @@
   "dependencies": {
     "@google/clasp": "^2.4.1",
     "@types/google-apps-script": "^1.0.53",
-    "@types/node": "^18.0.5"
+    "@types/node": "^18.6.4"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.30.6",
-    "@typescript-eslint/parser": "^5.30.6",
-    "eslint": "^8.19.0",
+    "@typescript-eslint/eslint-plugin": "^5.32.0",
+    "@typescript-eslint/parser": "^5.32.0",
+    "eslint": "^8.21.0",
     "eslint-config-standard": "^17.0.0",
     "eslint-plugin-googleappsscript": "^1.0.4",
     "eslint-plugin-import": "^2.26.0",
