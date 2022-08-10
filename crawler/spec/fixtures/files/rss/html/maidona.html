@@ -1,0 +1,1865 @@
+<!DOCTYPE html>
+<!-- saved from url=(0023)https://maidonanews.jp/ -->
+<html lang="ja-JP" class="html-top"><head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script src="./まいどなニュース_files/pubads_impl_page_level_ads_2022080401.js.ダウンロード"></script><script async="" src="./まいどなニュース_files/clarity.js.ダウンロード"></script><script async="" src="./まいどなニュース_files/3yvue534e4"></script><script async="" src="./まいどなニュース_files/comment.js.ダウンロード"></script><script type="text/javascript" async="" src="./まいどなニュース_files/analytics.js.ダウンロード"></script><script type="text/javascript" async="" src="./まいどなニュース_files/js"></script><script type="text/javascript" async="" src="./まいどなニュース_files/js(1)"></script><script async="" src="./まいどなニュース_files/gtm.js.ダウンロード"></script><script async="" src="./まいどなニュース_files/apstag.js.ダウンロード"></script><script async="" src="./まいどなニュース_files/12426.js.ダウンロード"></script>	
+
+<script async="async" src="./まいどなニュース_files/gpt.js.ダウンロード"></script>
+
+<script>
+  var gptAdSlots=[];
+  var headerBiddingSlots = [];
+  var nonHeaderBiddingSlots = [];
+
+  var pbjs = pbjs || {};
+  pbjs.que = pbjs.que || [];
+  
+  var googletag = googletag || {};
+  googletag.cmd = googletag.cmd || [];
+
+  var A9_TIMEOUT = 2000;
+  var FAILSAFE_TIMEOUT = 3000;
+</script>
+
+<!-- PC_HEAD部 改-->
+<script>
+  window.googletag = window.googletag || {cmd: []};
+  googletag.cmd.push(function() {
+    //TOP面判定
+    if('/' === location.pathname){
+      console.log('top');
+      var divHeader = document.getElementById("mnpc/header");
+      divHeader.id = "mnpc/header_top";
+      gptAdSlots[0] = googletag.defineSlot('/21662775423/mnpc/header', [ [728, 90],'fluid', [970, 250],], 'mnpc/header_top').addService(googletag.pubads());
+      gptAdSlots[1] = googletag.defineSlot('/21662775423/mnpc/right_1strec', [[300, 250], 'fluid'], 'mnpc/right_1strec_top').addService(googletag.pubads());
+      gptAdSlots[4] = googletag.defineSlot('/21662775423/mnpc/main_1strec_left', ['fluid', [300,250]], 'mnpc/main_1strec_left').addService(googletag.pubads());
+      gptAdSlots[5] = googletag.defineSlot('/21662775423/mnpc/main_1strec_right', ['fluid', [300, 250]], 'mnpc/main_1strec_right').addService(googletag.pubads());
+　　googletag.defineSlot('/21662775423/mnpc/articleAd', ['fluid'], 'mnpc/articleAd').addService(googletag.pubads());
+      headerBiddingSlots.push(gptAdSlots[0]);
+      headerBiddingSlots.push(gptAdSlots[1]);
+      headerBiddingSlots.push(gptAdSlots[4]);
+      headerBiddingSlots.push(gptAdSlots[5]);
+    }else{
+      gptAdSlots[0] = googletag.defineSlot('/21662775423/mnpc/header', [ [728, 90],'fluid', [970, 250],], 'mnpc/header').addService(googletag.pubads());
+      gptAdSlots[1] = googletag.defineSlot('/21662775423/mnpc/right_1strec', [[300, 250], 'fluid'], 'mnpc/right_1strec').addService(googletag.pubads());
+      headerBiddingSlots.push(gptAdSlots[0]);
+      headerBiddingSlots.push(gptAdSlots[1]);
+
+      //LIST面判定
+      const GetUrl = location.pathname;
+      const UrlJudge = GetUrl.indexOf('article');
+      if(UrlJudge !== -1){
+        console.log("article");
+        gptAdSlots[4] = googletag.defineSlot('/21662775423/mnpc/main_1strec_left', ['fluid', [300,250]], 'mnpc/main_1strec_left').addService(googletag.pubads());
+        gptAdSlots[5] = googletag.defineSlot('/21662775423/mnpc/main_1strec_right', ['fluid', [300, 250]], 'mnpc/main_1strec_right').addService(googletag.pubads());
+        headerBiddingSlots.push(gptAdSlots[4]);
+        headerBiddingSlots.push(gptAdSlots[5]);
+      }else{
+        console.log("LIST");
+      }
+    }
+
+    gptAdSlots[2] = googletag.defineSlot('/21662775423/mnpc/right_2ndrec', ['fluid', [300, 250]], 'mnpc/right_2ndrec').addService(googletag.pubads());
+    gptAdSlots[3] = googletag.defineSlot('/21662775423/mnpc/right_3rdrec', [[300, 600], 'fluid', [300, 250]], 'mnpc/right_3rdrec').addService(googletag.pubads());
+    gptAdSlots[6] = googletag.defineSlot('/21662775423/mnpc/main_2ndrec_left', ['fluid', [300,250]], 'mnpc/main_2ndrec_left').addService(googletag.pubads());
+    gptAdSlots[7] = googletag.defineSlot('/21662775423/mnpc/main_2ndrec_right', ['fluid', [300, 250]], 'mnpc/main_2ndrec_right').addService(googletag.pubads());
+    gptAdSlots[9] = googletag.defineOutOfPageSlot('/21662775423/mnpc/interstitial',googletag.enums.OutOfPageFormat.INTERSTITIAL).addService(googletag.pubads());
+   	googletag.defineSlot('/21662775423/mnpc/inread', [[1, 1], 'fluid'], 'mnpc-inread').addService(googletag.pubads());
+    headerBiddingSlots.push(gptAdSlots[2]);
+    headerBiddingSlots.push(gptAdSlots[3]);
+    headerBiddingSlots.push(gptAdSlots[6]);
+    headerBiddingSlots.push(gptAdSlots[7]);
+    nonHeaderBiddingSlots.push(gptAdSlots[9]);
+    googletag.pubads().enableSingleRequest();
+    //googletag.pubads().collapseEmptyDivs();
+    googletag.enableServices();
+  });
+</script>
+
+
+<script>
+!function(a9,a,p,s,t,A,g){if(a[a9])return;function q(c,r){a[a9]._Q.push([c,r])}a[a9]={init:function(){q("i",arguments)},fetchBids:function(){q("f",arguments)},setDisplayBids:function(){},targetingKeys:function(){return[]},_Q:[]};A=p.createElement(s);A.async=!0;A.src=t;g=p.getElementsByTagName(s)[0];g.parentNode.insertBefore(A,g)}("apstag",window,document,"script","//c.amazon-adsystem.com/aax2/apstag.js");
+
+apstag.init({
+	pubID:"3483",
+	adServer:"googletag",
+	bidTimeout:3000
+});
+
+var apstagSlots = [{
+	slotID:"mnpc/right_2ndrec",
+	slotName:"/21662775423/mnpc/right_2ndrec",
+	sizes:[[300,250],[300,600]]
+},{
+	slotID:"mnpc/right_3rdrec",
+	slotName:"/21662775423/mnpc/right_3rdrec",
+	sizes:[[300,250],[300,600]]
+},{
+	slotID:"mnpc/main_1strec_left",
+	slotName:"/21662775423/mnpc/main_1strec_left",
+	sizes:[300,250]
+},{
+	slotID:"mnpc/main_1strec_right",
+	slotName:"/21662775423/mnpc/main_1strec_right",
+	sizes:[300,250]
+},{
+	slotID:"mnpc/main_2ndrec_left",
+	slotName:"/21662775423/mnpc/main_2ndrec_left",
+	sizes: [300, 250]
+},{
+	slotID:"mnpc/main_2ndrec_right",
+	slotName:"/21662775423/mnpc/main_2ndrec_right",
+	sizes: [300, 250]
+}];
+
+//トップ面判定
+if('/' === location.pathname){
+	apstagSlots.push({
+		slotID:"mnpc/header_top",
+		slotName:"/21662775423/mnpc/header",
+		sizes:[[728,90]]
+	},{
+		slotID:"mnpc/right_1strec_top",
+		slotName:"/21662775423/mnpc/right_1strec",
+		sizes:[[300,250]]
+	});
+}else{
+	apstagSlots.push({
+		slotID:"mnpc/header",
+		slotName:"/21662775423/mnpc/header",
+		sizes:[[728,90]]
+	},{
+		slotID:"mnpc/right_1strec",
+		slotName:"/21662775423/mnpc/right_1strec",
+		sizes:[[300,250]]
+	});
+}
+</script>
+
+
+<script>
+function demandManagerBids() {
+	var pbLabel = 'color: #fff; background: #2564B3; padding: 1px 4px; border-radius: 3px;';
+	var a9Label = 'color: #EA9624; background: #0B2E35; padding: 1px 4px; border-radius: 3px;';
+
+	var bidders = ['a9', 'prebid'];
+
+	var requestManager = {
+		adserverRequestSent: false,
+	};
+
+	bidders.forEach(function(bidder) {
+		requestManager[bidder] = false;
+	});
+
+	function allBiddersBack() {
+		var allBiddersBack = bidders
+		.map(function(bidder) {return requestManager[bidder]; })
+		.filter(function(bool) {return bool;})
+		.length === bidders.length;
+		return allBiddersBack;
+	}
+
+	function headerBidderBack(bidder) {
+		if (requestManager.adserverRequestSent === true) {
+			return;
+		}
+		if (bidder === 'a9') {
+			requestManager.a9 = true;
+			console.info("%c TAM -Kobe",a9Label,"info : A9 recieved");
+		} else if (bidder === 'prebid') {
+			requestManager.prebid = true;
+			console.info("%cPrebid-Kobe",pbLabel,"info : PB recieved");
+		}
+
+		if (allBiddersBack()) {
+			console.info("%cPrebid-Kobe",pbLabel," info : All Bid recieved");
+			sendAdserverRequest();
+		}
+	}
+
+	function sendAdserverRequest() {
+		if (requestManager.adserverRequestSent === true) {
+			return;
+		}
+
+		if (requestManager.prebid !== true){
+			console.info("%cPrebid-Kobe",pbLabel,"warn : Timeout");
+		}
+		if (requestManager.a9 !== true){
+			console.info("%c TAM -Kobe",a9Label,"warn : Timeout");
+		}
+
+		requestManager.adserverRequestSent = true;
+		googletag.cmd.push(function() {
+			apstag.setDisplayBids();
+		//	googletag.pubads().refresh(headerBiddingSlots);
+		//	ここでrefresh関数をcallする
+			callInitialRefreshAds();
+		});
+	}
+
+	function requestBids() {
+		googletag.cmd.push(function() {
+			pbjs.que.push(function() {
+				console.info("%cPrebid-Kobe",pbLabel," info : Prebid ",pbjs.version);
+				pbjs.rp.requestBids({
+					callback: function (bidResponses) {
+						headerBidderBack('prebid');
+					},
+					gptSlotObjects: headerBiddingSlots
+				});
+			});
+		});
+		apstag.fetchBids({
+			slots: apstagSlots,
+			timeout: A9_TIMEOUT
+		}, function(bids) {
+			headerBidderBack('a9');
+		});
+	}
+
+	setTimeout(function() {
+		sendAdserverRequest();
+	}, FAILSAFE_TIMEOUT);
+	
+	
+	function callInitialRefreshAds(){
+		if(typeof retry === 'undefined') retry = 0;
+		console.log("callInitialRefreshAds: " + retry);
+		if (retry > 50) {
+			console.log("callInitialRefreshAds retry over");
+			return;
+		}
+		if (typeof initialRefreshAds === 'function') {
+			initialRefreshAds();
+		} else {
+			setTimeout(function () {
+				callInitialRefreshAds(++retry);
+			}, 50)
+		}
+	}
+
+
+　　requestBids();
+
+
+}
+//	実行タイミング変更
+//	demandManagerBids()
+
+</script>
+
+
+<script>
+let lazyLoadManager = {};
+const lazyLabel = 'color: #fff; background: #01c4cc; padding: 1px 4px; border-radius: 3px;';
+</script>
+
+<!--sovrnタグ-->
+<!-- //Connect Container: maidonanews.jp -->
+<script src="./まいどなニュース_files/tag.min.js.ダウンロード" async="" defer=""></script>
+
+<!--browsiタグ-->
+<script src="./まいどなニュース_files/bootstrap.js.ダウンロード" id="browsi-tag" data-pubkey="kobeshimbun" data-sitekey="maidonanews" async=""></script>
+
+<!-- gmo.js -->
+<script src="./まいどなニュース_files/receiver.js.ダウンロード"></script>
+
+<!--アドセンス自動広告用タグ-->
+<script data-ad-client="ca-pub-9398231758383434" async="" src="./まいどなニュース_files/f.txt"></script>
+
+<!--オプティマイズ-->
+<script src="./まいどなニュース_files/optimize.js.ダウンロード"></script><meta http-equiv="origin-trial" content="AzoawhTRDevLR66Y6MROu167EDncFPBvcKOaQispTo9ouEt5LvcBjnRFqiAByRT+2cDHG1Yj4dXwpLeIhc98/gIAAACFeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjYxMjk5MTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="A6+nc62kbJgC46ypOwRsNW6RkDn2x7tgRh0wp7jb3DtFF7oEhu1hhm4rdZHZ6zXvnKZLlYcBlQUImC4d3kKihAcAAACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjYxMjk5MTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="A/9La288e7MDEU2ifusFnMg1C2Ij6uoa/Z/ylwJIXSsWfK37oESIPbxbt4IU86OGqDEPnNVruUiMjfKo65H/CQwAAACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjYxMjk5MTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><script src="./まいどなニュース_files/pubads_impl_2022080401.js.ダウンロード" async=""></script>
+
+<!-- Selectmedia用KeyValue設定 -->
+<script>
+var Urlpath = location.pathname ;
+console.log(Urlpath);
+
+var obj2 = {"mn_UrlPath":Urlpath};
+  googletag.cmd.push(function() {
+    Object.keys(obj2).forEach(function (key) {
+      googletag.pubads().setTargeting(key, obj2[key]);
+    });
+  });
+</script>
+
+<script>
+  var obj = {"mn_preview":"false","mn_pagetype":"top","mn_env":"production"};
+  googletag.cmd.push(function() {
+    googletag.pubads().enableSingleRequest();
+    googletag.pubads().disableInitialLoad();
+
+    Object.keys(obj).forEach(function (key) {
+      googletag.pubads().setTargeting(key, obj[key]);
+    });
+    googletag.pubads().collapseEmptyDivs();
+    googletag.enableServices();
+  });
+</script>
+
+  
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>まいどなニュース</title>
+  <meta name="description" content="まいど！なるほど！まいどなニュース！！関西発やわらかニュースサイト「まいどなニュース」へようこそ。大阪・神戸・京都を中心とする関西エリアの街ネタや、ネットで話題になっていることを、タイムリーに紹介。社会を騒がすニュースや旬な情報について、関西ならではの視点で深掘りして紹介・解説することも。ユーザーのみなさんの「知りたい気持ち」に、関西ならでは「こてこて」サービス精神でこたえます。">
+  <meta property="og:url" content="https://maidonanews.jp/">
+  <meta property="og:title" content="まいどなニュース">
+  <meta property="og:type" content="website">
+  <meta property="og:description" content="まいど！なるほど！まいどなニュース！！関西発やわらかニュースサイト「まいどなニュース」へようこそ。大阪・神戸・京都を中心とする関西エリアの街ネタや、ネットで話題になっていることを、タイムリーに紹介。社会を騒がすニュースや旬な情報について、関西ならではの視点で深掘りして紹介・解説することも。ユーザーのみなさんの「知りたい気持ち」に、関西ならでは「こてこて」サービス精神でこたえます。">
+  <meta property="og:image" content="https://public.potaufeu.asahi.com/maidonanews/common/img/ogp.jpg">
+  <meta property="og:image:alt" content="まいどなニュース">
+  <meta property="og:site_name" content="まいどなニュース">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="ja_JP">
+  <meta name="article:publisher" content="https://www.facebook.com/maidonanews/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@maidonanews">
+  <meta property="fb:app_id" content="">
+<!-- <link rel="manifest" href="site.webmanifest"> -->
+<link rel="shortcut icon" href="https://public.potaufeu.asahi.com/maidonanews/favicon.ico">
+<link rel="apple-touch-icon" href="https://public.potaufeu.asahi.com/maidonanews/apple-touch-icon2.png">
+<link rel="icon" href="https://public.potaufeu.asahi.com/maidonanews/apple-touch-icon.png">
+<link type="text/css" rel="stylesheet" href="./まいどなニュース_files/reset.css">
+
+<link type="text/css" rel="stylesheet" href="./まいどなニュース_files/pc-common.css">
+
+
+<link type="text/css" rel="stylesheet" href="./まいどなニュース_files/slick.css">
+
+<link type="text/css" rel="stylesheet" href="./まいどなニュース_files/slick-theme.css">
+
+<script src="./まいどなニュース_files/new-mark.js.ダウンロード"></script>
+
+<!-- Google Tag Manager -->
+<script>
+var dataLayer = dataLayer || [];
+dataLayer.push({'device': 'PC'});
+
+</script>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl+ '&gtm_auth=TPRc3L8DjOQjPPeX7a2uAQ&gtm_preview=env-2&gtm_cookies_win=x';f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-P7N334K');</script>
+<!-- End Google Tag Manager -->
+<script src="./まいどなニュース_files/beacon.min.js.ダウンロード"></script><script type="text/javascript" src="./まいどなニュース_files/get" charset="UTF-8" async=""></script><style type="text/css">.ob-tcolor{color:rgb(35, 24, 21)} .ob-lcolor{color:rgb(0, 123, 255)} .ob-bgtcolor{background-color:rgb(35, 24, 21)} .item-link-container:hover .ob-tcolor{border-color:rgb(35, 24, 21)} </style><script charset="utf-8" src="./まいどなニュース_files/moment_timeline.0077362cedfc3f5894ac8f9171c2dfd9.js.ダウンロード"></script><script charset="utf-8" src="./まいどなニュース_files/timeline.55e8262747461cf415fb59f1ac3ec11e.js.ダウンロード"></script><link rel="preload" href="./まいどなニュース_files/f(1).txt" as="script"><script type="text/javascript" src="./まいどなニュース_files/f(1).txt"></script><link rel="preload" href="./まいどなニュース_files/f(2).txt" as="script"><script type="text/javascript" src="./まいどなニュース_files/f(2).txt"></script><script type="text/javascript" src="./まいどなニュース_files/get(1)" charset="UTF-8" async=""></script><script type="text/javascript" src="./まいどなニュース_files/streamFeed.js.ダウンロード" charset="UTF-8" async=""></script><style type="text/css"><br>      @keyframes ob-feed-refresh-fadeIn {<br>        from { opacity: 0; }<br>          to { opacity: 1; }<br>      }<br><br>      @keyframes ob-feed-refresh-fadeOut {<br>          from { opacity: 1; }<br>            to { opacity: 0; }<br>      }<br><br>      .ob-feed-refresh-hidden {<br>        opacity: 0;<br>        display: none;<br>      }<br><br>      .ob-feed-refresh-show {<br>        animation: ob-feed-refresh-fadeIn 0.75s ease-in-out forwards;<br>      }<br><br>      .ob-feed-refresh-hide {<br>        animation: ob-feed-refresh-fadeOut 0.4s ease-in-out forwards;<br>      }<br>    </style><style type="text/css">.ob-smartfeed-wrapper .OUTBRAIN:not(:first-child) .ob_what {display:none;} .ob-smartfeed-joker {margin-bottom: 20px; padding-bottom: 4px; padding-top: 0; background-color: #fff;} </style><style type="text/css">.ob_sf_loader {margin: 25px auto 20px; width: 70px; text-align: center;} .ob_sf_loader > div {width: 18px; height: 18px; background-color: #333; border-radius: 100%; display: inline-block;  -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both; animation: sk-bouncedelay 1.4s infinite ease-in-out both; }  .ob_sf_loader .bounce1 { -webkit-animation-delay: -0.32s;  animation-delay: -0.32s;  } .ob_sf_loader .bounce2 { -webkit-animation-delay: -0.16s;  animation-delay: -0.16s; }  @-webkit-keyframes sk-bouncedelay { 0%, 80%, 100% { -webkit-transform: scale(0) } 40% { -webkit-transform: scale(1.0) }  }  @keyframes sk-bouncedelay { 0%, 80%, 100% { -webkit-transform: scale(0); transform: scale(0); } 40% { -webkit-transform: scale(1.0);  transform: scale(1.0);  }  }</style></head>
+
+<body class="body-top vsc-initialized">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P7N334K&gtm_auth=TPRc3L8DjOQjPPeX7a2uAQ&gtm_preview=env-2&gtm_cookies_win=x"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+  <noscript>
+    <div class="noscript">このWebサイトの全ての機能を利用するためにはJavaScriptを有効にする必要があります。</div>
+  </noscript>
+
+  <!-- contents -->
+  <div class="layout-wrapper" id="wrapper">
+
+<header class="layout-header" id="header">
+  <div class="layout-header__inner">
+    <div class="layout-header-logo">
+      <a class="layout-header-logo__site" href="https://maidonanews.jp/"><img src="./まいどなニュース_files/logo.svg" alt="まいどなニュース" width="300" height="56">
+</a>
+      <span class="layout-header-logo__text"></span>
+      <aside class="layout-header-logo__aside">
+        <form method="get" action="https://maidonanews.jp/search" class="module-header-search-form" id="js-header-search-form">
+          <input type="text" name="word" placeholder="何をお探しですか？" class="module-header-search-form__keyword">
+          <input type="submit" value="検索" class="module-header-search-form__submit">
+        </form>
+        <ul class="module-header-sns">
+          <li class="module-header-sns__item"><a href="https://twitter.com/maidonanews" target="_blank">
+          <img src="./まいどなニュース_files/icon_twitter.svg" alt="Twitter" class="module-header-icon--twitter" width="30" height="30">
+</a></li>
+          <li class="module-header-sns__item"><a href="https://www.facebook.com/maidonanews" target="_blank">
+          <img src="./まいどなニュース_files/icon_facebook.svg" alt="Facebook" class="module-header-icon--facebook" width="30" height="30">
+</a></li>
+        </ul>
+      </aside><!-- .layout-header-logo__aside -->
+    </div><!-- .layout-header-logo -->
+
+ 
+    <div class="layout-header-menu" id="js-header-menu">
+      <div class="layout-header-menu__inner">
+        <nav class="layout-header-nav" id="js-layout-header-nav">
+          <dl class="module-header-nav">
+            <dt class="module-header-nav__title">ニュース一覧</dt>
+            <dd class="module-header-nav__list">
+              <ul class="module-header-nav-list">
+                <li class="module-header-nav-list__item"><a href="https://maidonanews.jp/">トップ</a></li>
+                            <li class="module-header-nav-list__item"><a href="https://maidonanews.jp/tag/%E3%81%8A%E3%82%82%E3%81%97%E3%82%8D">おもしろ</a></li>
+                            <li class="module-header-nav-list__item"><a href="https://maidonanews.jp/tag/%E3%82%82%E3%81%B5%E3%82%82%E3%81%B5">もふもふ</a></li>
+                            <li class="module-header-nav-list__item"><a href="https://maidonanews.jp/tag/%E6%97%A5%E7%9B%B4%E4%BA%88%E5%A0%B1%E5%A3%AB">お天気</a></li>
+                            <li class="module-header-nav-list__item"><a href="https://maidonanews.jp/tag/%E3%83%9E%E3%83%B3%E3%82%AC">マンガ</a></li>
+                            <li class="module-header-nav-list__item"><a href="https://maidonanews.jp/tag/%E3%82%AF%E3%82%A4%E3%82%BA">クイズ</a></li>
+            <!-- 連載がある程度増えたら復活させる
+                <li class="module-header-nav-list__item"><a href="/series">連載・特集</a></li>
+ -->
+              </ul>
+            </dd>
+          </dl><!-- .module-header-nav -->
+        </nav><!-- .layout-header-nav -->
+      </div><!-- .layout-header-menu__inner -->
+    </div><!-- .layout-header-menu -->
+
+
+    <div class="layout-header-search" id="js-header-search">
+      <div class="layout-header-search__inner">
+        <nav class="layout-header-tag" id="js-layout-header-tag">
+          <dl class="module-header-tag">
+            <dt class="module-header-tag__title">注目ワード</dt>
+            <dd class="module-header-tag__list cfix">
+            <ul class="module-header-tag-list">
+              
+                                                            
+                                                                                  <li class="module-header-tag-list__item"><a href="https://maidonanews.jp/tag/%E3%81%97%E3%81%94%E3%81%A8">しごと</a></li>
+                                                              
+                                                                                  <li class="module-header-tag-list__item"><a href="https://maidonanews.jp/tag/%E4%BA%8B%E4%BB%B6">事件</a></li>
+                                                              
+                                                                                  <li class="module-header-tag-list__item"><a href="https://maidonanews.jp/tag/IT">IT</a></li>
+                                                              
+                                                                                  <li class="module-header-tag-list__item"><a href="https://maidonanews.jp/tag/%E3%83%8D%E3%82%B3">ネコ</a></li>
+                                                              
+                                                                                  <li class="module-header-tag-list__item"><a href="https://maidonanews.jp/tag/%E6%B0%97%E3%81%AB%E3%81%AA%E3%82%8B">気になる</a></li>
+                                                              
+                                                                                  <li class="module-header-tag-list__item"><a href="https://maidonanews.jp/tag/%E4%BF%9D%E8%AD%B7%E7%8A%AC%E3%83%BB%E4%BF%9D%E8%AD%B7%E7%8C%AB">保護犬・保護猫</a></li>
+                                                              
+                                                                                  <li class="module-header-tag-list__item"><a href="https://maidonanews.jp/tag/%E3%82%A4%E3%83%8C">イヌ</a></li>
+                                                              
+                                                                                  <li class="module-header-tag-list__item"><a href="https://maidonanews.jp/tag/%E3%81%A8%E3%82%82%E3%81%AB%E7%94%9F%E3%81%8D%E3%82%8B">ともに生きる</a></li>
+                                                              
+                                                                                  <li class="module-header-tag-list__item"><a href="https://maidonanews.jp/tag/%E3%81%84%E3%81%8D%E3%82%82%E3%81%AE">いきもの</a></li>
+                                                              
+                                                                                  <li class="module-header-tag-list__item"><a href="https://maidonanews.jp/tag/%E3%81%8A%E3%82%82%E3%81%97%E3%82%8D%E5%8B%95%E7%94%BB">おもしろ動画</a></li>
+                                                              
+                                                                                  <li class="module-header-tag-list__item"><a href="https://maidonanews.jp/tag/%E3%82%B0%E3%83%AB%E3%83%A1">グルメ</a></li>
+                                                                                                                
+                                                                                  <li class="module-header-tag-list__item"><a href="https://maidonanews.jp/tag/%E3%81%B2%E3%81%A8">ひと</a></li>
+                                                              
+                                                                                  <li class="module-header-tag-list__item"><a href="https://maidonanews.jp/tag/%E3%81%8B%E3%82%89%E3%81%A0">からだ</a></li>
+                                                              
+                                                                                  <li class="module-header-tag-list__item"><a href="https://maidonanews.jp/tag/%E5%AE%B6%E6%97%8F">家族</a></li>
+                                                              
+                                                                                  <li class="module-header-tag-list__item"><a href="https://maidonanews.jp/tag/%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A">新型コロナ</a></li>
+                                                              
+                                                                                  <li class="module-header-tag-list__item"><a href="https://maidonanews.jp/tag/%E5%AD%90%E8%82%B2%E3%81%A6">子育て</a></li>
+                                                                                                                
+                                                                                  <li class="module-header-tag-list__item"><a href="https://maidonanews.jp/tag/%E9%89%84%E9%81%93">鉄道</a></li>
+                                                              
+                                                                                  <li class="module-header-tag-list__item"><a href="https://maidonanews.jp/tag/%E7%A7%91%E5%AD%A6">科学</a></li>
+                                                              
+                                                                                  <li class="module-header-tag-list__item"><a href="https://maidonanews.jp/tag/%E4%B8%96%E3%81%AE%E4%B8%AD%E3%81%AE%E4%BB%95%E7%B5%84%E3%81%BF">世の中の仕組み</a></li>
+                                                              
+                                                                                  <li class="module-header-tag-list__item"><a href="https://maidonanews.jp/tag/%E5%A4%AB%E5%A9%A6">夫婦</a></li>
+                                                              
+                                                                                  <li class="module-header-tag-list__item"><a href="https://maidonanews.jp/tag/%E6%B5%B7%E5%A4%96">海外</a></li>
+                                                                                                                                                                  
+                                                                                  <li class="module-header-tag-list__item"><a href="https://maidonanews.jp/tag/%E3%82%84%E3%81%A3%E3%81%A6%E3%81%BF%E3%81%9F">やってみた</a></li>
+                                                              <li class="module-header-tag-list__item--button"><a href="https://maidonanews.jp/tag">もっと見る</a></li>
+              </ul>
+            </dd>
+          </dl><!-- .module-header-tag -->
+        </nav><!-- .layout-header-tag -->
+      </div>
+    </div><!-- .layout-header-search -->
+
+  </div>
+</header><!-- .layout-header -->
+
+<div class="module-ad-header">
+  <div class="module-ad-header__item"><!-- //ヘッダー/A-1 -->
+<!-- /21662775423/mnpc/header -->
+<div id="mnpc/header_top" style="min-height:250px;">
+<script>
+googletag.cmd.push(function() {
+	//トップ面判定
+	if('/' === location.pathname){
+		var divHeader = document.getElementById("mnpc/header");
+		divHeader.id = "mnpc/header_top";
+		googletag.display('mnpc/header_top');
+	}else{
+		googletag.display('mnpc/header');
+	}
+});
+</script>
+<div id="google_ads_iframe_/21662775423/mnpc/header_0__container__" style="border: 0pt none; width: 728px; height: 0px;"></div></div><script type="text/javascript" async="" id="OutbrainScript" src="./まいどなニュース_files/outbrain.js.ダウンロード"></script><div id="ob_holder" style="display: none;"><iframe id="ob_iframe" src="./まいどなニュース_files/obUserSync.html" style="display: none; width: 1px; height: 1px;"></iframe></div><div class="OUTBRAIN" data-src="DROP_PERMALINK_HERE" data-widget-id="AR_10" id="outbrain_widget_0" data-ob-mark="true" data-browser="chrome" data-os="win32" data-dynload="" data-idx="0"><div class="ob_box_cont AR_10">
+</div></div>
+
+<!-- MNPC GENIEEインステ新Ver -->
+<script src="./まいどなニュース_files/deliveryRestrict.js.ダウンロード"></script>
+<script>
+  (function (window, document) {
+    var COOKIE_NAME = "visitCount";
+    var PAGE_TRANSITION_TIMES = 4; // 配信するページ遷移回数
+    var count = parseInt(getCookie(COOKIE_NAME), 10); // ページ遷移回数
+    if (!getCookie(COOKIE_NAME)) {
+      document.cookie = COOKIE_NAME + "=1; path=/;";
+    } else {
+      if (document.referrer.indexOf('maidonanews.jp') !== -1) {
+        count++;
+      }
+      document.cookie = COOKIE_NAME + "=" + count +"; path=/;";
+    }
+    if (!isInterstitialRestricted()) {
+      document.write('<script type="text/javascript" src="https://js.gsspcln.jp/t/509/394/a1509394.js"></sc'+'ript>');
+    }
+
+    function isRestrictPage() {
+      href = location.href;
+      RegularExpressionList = [
+        "^https?://maidonanews.jp/.*page=[0-9]+$",
+        "^https?://maidonanews.jp/.*p=[0-9]+$"
+      ];
+      return new RegExp(RegularExpressionList[0]).test(href) || new RegExp(RegularExpressionList[1]).test(href);
+    }
+    function getCookie(name) {
+      var cookies = document.cookie.split('; ');
+      for (var i = 0, l = cookies.length; i < l; i++) {
+        if (cookies[i].indexOf(name + '=') === 0) {
+          return cookies[i].substring(name.length + 1);
+        }
+      }
+      return false;
+    }
+    function isInterstitialRestricted() {
+      return window.isAdxInstJustShown() || count % PAGE_TRANSITION_TIMES !== 0 || location.pathname === "/" || isRestrictPage();
+    }
+  })(window, document);
+</script>
+
+<!-- ブラウザバック広告 -->
+<script>
+    var BrowserbackAdLabel = 'color: #000; background: #0073ff; padding: 1px 4px; border-radius: 3px;';
+    var targetDiv = document.getElementById("mnpc/header");
+    var parentTargetDiv = targetDiv.parentNode;
+    
+    function browserbackAds(){
+        let adsSelectFlg = getRandomIntInclusive(1,100);
+        if(adsSelectFlg < 97){
+            setbrowserbackOutbrainAds();
+        }else{
+            setbrowserbackLoglyAds();
+        }
+    }
+        
+    function getRandomIntInclusive(min, max) {
+      min = Math.ceil(min);
+      max = Math.floor(max);
+      return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+    
+    function setbrowserbackOutbrainAds(){
+        var OutbrainDiv = document.createElement("div");
+        OutbrainDiv.className ="OUTBRAIN";
+        OutbrainDiv.setAttribute("data-src" , "DROP_PERMALINK_HERE");
+        OutbrainDiv.setAttribute("data-widget-id" , "AR_10");
+        OutbrainDiv.id = 'OutbrainDiv';
+        var OutbrainScript = document.createElement('script');
+        OutbrainScript.type = "text/javascript";
+        OutbrainScript.async = true;
+        OutbrainScript.id = "OutbrainScript";
+        OutbrainScript.src = "//widgets.outbrain.com/outbrain.js";
+        parentTargetDiv.insertBefore(OutbrainDiv, targetDiv.nextSibling);
+        parentTargetDiv.insertBefore(OutbrainScript, targetDiv.nextSibling);
+        console.log("%c Browser ",BrowserbackAdLabel," ads : OB insert");
+    }
+    
+    function setbrowserbackLoglyAds(){
+        var loglyDiv = document.createElement("div");
+        loglyDiv.id  = "logly-lift-4301979";
+        var _lgy_lw = document.createElement("script");
+        _lgy_lw.type = "text/javascript";
+        _lgy_lw.charset = "UTF-8";
+        _lgy_lw.async = true;
+        _lgy_lw.src= "https://l.logly.co.jp/lift_widget.js?adspot_id=4301979";
+        var _lgy_lw_0 = document.getElementsByTagName("script")[0];
+        _lgy_lw_0.parentNode.insertBefore(_lgy_lw, _lgy_lw_0);
+        parentTargetDiv.insertBefore(loglyDiv, targetDiv.nextSibling);
+        parentTargetDiv.insertBefore(_lgy_lw, targetDiv.nextSibling);
+        console.log("%c Browser ",BrowserbackAdLabel," ads : LL insert");
+    }
+    
+    browserbackAds();
+</script></div>
+</div><!-- .module-ad-header -->
+  <div class="layout-contents">
+   
+    <main class="layout-main" id="main">
+
+
+
+
+<section class="module-section">
+    <ul class="module-list-articles--col2">
+    
+            
+
+        
+                <li class="module-list-articles__item">
+      <a href="https://maidonanews.jp/article/14679152">
+        <figure class="module-list-articles__item__photo">
+          <img class="ofi-cover" src="./まいどなニュース_files/d3c7b76cefd10be8b9d67ccc91611248_640px.jpg" alt=""></figure>
+        <span class="module-list-articles__item__heading ">先祖は源頼朝に使えた武士！リアル「鎌倉殿の13人」に“登場”していたかも…北条義時役「小栗旬」の名字のルーツ</span>
+      </a>
+      <div class="module-list-articles__item__credit">
+                <a href="https://maidonanews.jp/contributor/11003490">
+            <span class="module-list-articles__item__credit__thumb">
+            <img src="./まいどなニュース_files/8fc1a02644a15cbf94dfb187c682645b_120px.jpg" alt="森岡 浩" class="ofi-cover">
+
+            </span>
+          <span class="module-list-articles__item__credit__name">森岡 浩</span>
+        </a>
+                <time class="module-list-articles__item__credit__datetime">2022.08.06</time>
+      </div>
+      <script>new_mark(2022,08,06,13,30)</script><span class="icon-new">NEW</span>
+    </li>
+            
+            
+
+        
+                <li class="module-list-articles__item">
+      <a href="https://maidonanews.jp/article/14686199">
+        <figure class="module-list-articles__item__photo">
+          <img class="ofi-cover" src="./まいどなニュース_files/09b1d61962ae769923545514a3df47ef_640px.jpg" alt=""></figure>
+        <span class="module-list-articles__item__heading ">「中古車展示場に消防車が並んでいた！」「買えるの？」　〝おやじ”の車愛が町の話題に</span>
+      </a>
+      <div class="module-list-articles__item__credit">
+                <a href="https://maidonanews.jp/writer/11004816">
+            <span class="module-list-articles__item__credit__thumb">
+            <img src="./まいどなニュース_files/d02e8829c70982e6d88d1ba6ec88b98f_120px.jpg" alt="コノコト" class="ofi-cover">
+
+            </span>
+          <span class="module-list-articles__item__credit__name">コノコト</span>
+        </a>
+                <time class="module-list-articles__item__credit__datetime">2022.08.06</time>
+      </div>
+      <script>new_mark(2022,08,06,13,00)</script><span class="icon-new">NEW</span>
+    </li>
+            
+              </ul>
+  <ul class="module-list-articles--col3">
+    
+
+        
+                <li class="module-list-articles__item">
+      <a href="https://maidonanews.jp/article/14687039">
+        <figure class="module-list-articles__item__photo">
+          <img class="ofi-cover" src="./まいどなニュース_files/a6a9cea4c77c04549e91b3f37d0759da_640px.jpg" alt=""></figure>
+        <span class="module-list-articles__item__heading ">iPhone「サイズ感」がよかった機種は… SE（第1世代）が1位に　人気機種ランキング発表</span>
+      </a>
+      <div class="module-list-articles__item__credit">
+                <a href="https://maidonanews.jp/writer/11003066">
+            <span class="module-list-articles__item__credit__thumb">
+            <img src="./まいどなニュース_files/755df23dc2031c3bb7b9cf938581c80b_120px.jpg" alt="まいどなニュース" class="ofi-cover">
+
+            </span>
+          <span class="module-list-articles__item__credit__name">まいどなニュース</span>
+        </a>
+                <time class="module-list-articles__item__credit__datetime">2022.08.06</time>
+      </div>
+      <script>new_mark(2022,08,06,12,20)</script><span class="icon-new">NEW</span>
+    </li>
+            
+            
+
+        
+                <li class="module-list-articles__item">
+      <a href="https://maidonanews.jp/article/14686668">
+        <figure class="module-list-articles__item__photo">
+          <img class="ofi-cover" src="./まいどなニュース_files/67747b83cbf494375b673b06a4ba5c42_640px.jpg" alt=""></figure>
+        <span class="module-list-articles__item__heading ">出汁に使う昆布や煮干し、実は栄養分の約9割を捨てていた！？…「だしがら」もおいしく食べなきゃ損です</span>
+      </a>
+      <div class="module-list-articles__item__credit">
+                <a href="https://maidonanews.jp/writer/11009062">
+            <span class="module-list-articles__item__credit__thumb">
+            <img src="./まいどなニュース_files/b9fb9d37bdf15a699bc071ce49baea53_120px.jpg" alt="野崎 泉" class="ofi-cover">
+
+            </span>
+          <span class="module-list-articles__item__credit__name">野崎 泉</span>
+        </a>
+                <time class="module-list-articles__item__credit__datetime">2022.08.06</time>
+      </div>
+      <script>new_mark(2022,08,06,12,05)</script><span class="icon-new">NEW</span>
+    </li>
+            
+        <li class="module-list-articles__item" style="padding:0px">
+
+<!-- /21662775423/mnpc/articleAd -->
+<div id="mnpc/articleAd">
+  <script>
+    googletag.cmd.push(function() { googletag.display('mnpc/articleAd'); });
+  </script>
+<div id="google_ads_iframe_/21662775423/mnpc/articleAd_0__container__" style="border: 0pt none;"></div></div>
+
+    </li>
+        
+            
+
+        
+                <li class="module-list-articles__item">
+      <a href="https://maidonanews.jp/article/14685963">
+        <figure class="module-list-articles__item__photo">
+          <img class="ofi-cover" src="./まいどなニュース_files/13af9fe3bf10c52d4f19fc28f13ffdec_640px.jpg" alt=""></figure>
+        <span class="module-list-articles__item__heading ">Tシャツの寿命は「3年未満」が7割　1年の間に…おおよそ3枚買って→2枚捨てている</span>
+      </a>
+      <div class="module-list-articles__item__credit">
+                <a href="https://maidonanews.jp/writer/11003066">
+            <span class="module-list-articles__item__credit__thumb">
+            <img src="./まいどなニュース_files/755df23dc2031c3bb7b9cf938581c80b_120px.jpg" alt="まいどなニュース" class="ofi-cover">
+
+            </span>
+          <span class="module-list-articles__item__credit__name">まいどなニュース</span>
+        </a>
+                <time class="module-list-articles__item__credit__datetime">2022.08.06</time>
+      </div>
+      <script>new_mark(2022,08,06,11,30)</script><span class="icon-new">NEW</span>
+    </li>
+            
+            
+
+        
+                        <li class="module-list-articles__item">
+      <a href="https://maidonanews.jp/article/14689047">
+        <figure class="module-list-articles__item__photo">
+          <img class="ofi-cover" src="./まいどなニュース_files/maxresdefault.jpg" alt=""></figure>
+        <span class="module-list-articles__item__heading icon-play">【動画】怒った！</span>
+      </a>
+      <div class="module-list-articles__item__credit">
+                <a href="https://maidonanews.jp/writer/11003066">
+            <span class="module-list-articles__item__credit__thumb">
+            <img src="./まいどなニュース_files/755df23dc2031c3bb7b9cf938581c80b_120px.jpg" alt="まいどなニュース" class="ofi-cover">
+
+            </span>
+          <span class="module-list-articles__item__credit__name">まいどなニュース</span>
+        </a>
+                <time class="module-list-articles__item__credit__datetime">2022.08.06</time>
+      </div>
+      <script>new_mark(2022,08,06,11,19)</script><span class="icon-new">NEW</span>
+    </li>
+            
+            
+
+        
+                <li class="module-list-articles__item">
+      <a href="https://maidonanews.jp/article/14688177">
+        <figure class="module-list-articles__item__photo">
+          <img class="ofi-cover" src="./まいどなニュース_files/57c1f65042718ef038bf725b66b44dc7.png" alt=""></figure>
+        <span class="module-list-articles__item__heading ">軽症じゃなかった…ただごとではない倦怠感、激しい喉の痛み　第7波コロナ感染した現役医師が伝えたいこと</span>
+      </a>
+      <div class="module-list-articles__item__credit">
+                <a href="https://maidonanews.jp/writer/11002823">
+            <span class="module-list-articles__item__credit__thumb">
+            <img src="./まいどなニュース_files/3d7fe08b951f2f7616d068f18bf2d833_120px.jpg" alt="渡辺 陽" class="ofi-cover">
+
+            </span>
+          <span class="module-list-articles__item__credit__name">渡辺 陽</span>
+        </a>
+                <time class="module-list-articles__item__credit__datetime">2022.08.06</time>
+      </div>
+      <script>new_mark(2022,08,06,07,20)</script>
+    </li>
+            
+            
+
+        
+                <li class="module-list-articles__item">
+      <a href="https://maidonanews.jp/article/14666017">
+        <figure class="module-list-articles__item__photo">
+          <img class="ofi-cover" src="./まいどなニュース_files/7de60f77a623495eaeca175b95d773a2_640px.jpg" alt=""></figure>
+        <span class="module-list-articles__item__heading ">亡き娘の夢だった心理カウンセラーに　「病気と闘ってる子の気持ち、一番わかるでしょ」母親が仏前に報告</span>
+      </a>
+      <div class="module-list-articles__item__credit">
+                <a href="https://maidonanews.jp/writer/11008666">
+            <span class="module-list-articles__item__credit__thumb">
+            <img src="./まいどなニュース_files/8d7d704b470dc653c785d0f75bd1c7a5_120px.jpg" alt="伊藤 大介" class="ofi-cover">
+
+            </span>
+          <span class="module-list-articles__item__credit__name">伊藤 大介</span>
+        </a>
+                <time class="module-list-articles__item__credit__datetime">2022.08.06</time>
+      </div>
+      <script>new_mark(2022,08,06,07,07)</script>
+    </li>
+            
+            
+
+        
+                <li class="module-list-articles__item">
+      <a href="https://maidonanews.jp/article/14688087">
+        <figure class="module-list-articles__item__photo">
+          <img class="ofi-cover" src="./まいどなニュース_files/0754ea2d16d9a65ac57b9a762f62ade0_640px.jpg" alt=""></figure>
+        <span class="module-list-articles__item__heading ">「甘いものが食べたい」現役時代は減量と戦った元プロボクサーのどら焼き専門店　夏はどら焼きプリンが人気</span>
+      </a>
+      <div class="module-list-articles__item__credit">
+                <a href="https://maidonanews.jp/writer/11004334">
+            <span class="module-list-articles__item__credit__thumb">
+            <img src="./まいどなニュース_files/9f26186657da2a32f6fed006812e0567_120px.jpg" alt="山中 羊子s" class="ofi-cover">
+
+            </span>
+          <span class="module-list-articles__item__credit__name">山中 羊子s</span>
+        </a>
+                <time class="module-list-articles__item__credit__datetime">2022.08.05</time>
+      </div>
+      <script>new_mark(2022,08,05,21,21)</script>
+    </li>
+            
+            
+
+        
+                <li class="module-list-articles__item">
+      <a href="https://maidonanews.jp/article/14685308">
+        <figure class="module-list-articles__item__photo">
+          <img class="ofi-cover" src="./まいどなニュース_files/a639f94d085bc8bf6908e691d9e0061d_640px.jpg" alt=""></figure>
+        <span class="module-list-articles__item__heading ">2024年導入予定の「医師の働き方改革」…7割の医師が「労働時間がどのような影響を受けるか把握していない」</span>
+      </a>
+      <div class="module-list-articles__item__credit">
+                <a href="https://maidonanews.jp/writer/11003066">
+            <span class="module-list-articles__item__credit__thumb">
+            <img src="./まいどなニュース_files/755df23dc2031c3bb7b9cf938581c80b_120px.jpg" alt="まいどなニュース" class="ofi-cover">
+
+            </span>
+          <span class="module-list-articles__item__credit__name">まいどなニュース</span>
+        </a>
+                <time class="module-list-articles__item__credit__datetime">2022.08.05</time>
+      </div>
+      <script>new_mark(2022,08,05,20,20)</script>
+    </li>
+              </ul>
+  <div class="module-sub-links">
+    <div class="module-sub-links__button"><a href="https://maidonanews.jp/new">もっと見る</a></div>
+  </div>
+  </section>
+<div class="module-ad">
+<div class="module-ad__item">
+<!-- //メイン第1レクタングル左/B-1 -->
+<!-- /21662775423/mnpc/main_1strec_left -->
+<div id="mnpc/main_1strec_left" style="min-height:250px;">
+<script>
+googletag.cmd.push(function() {
+	googletag.display('mnpc/main_1strec_left');
+});
+</script>
+<div id="google_ads_iframe_/21662775423/mnpc/main_1strec_left_0__container__" style="border: 0pt none; width: 300px; height: 0px;"></div></div>
+</div>
+<div class="module-ad__item">
+<!-- //メイン第1レクタングル右/B-1 -->
+<!-- /21662775423/mnpc/main_1strec_right -->
+<div id="mnpc/main_1strec_right" style="min-height:250px;">
+<script>
+googletag.cmd.push(function() {
+	googletag.display('mnpc/main_1strec_right');
+
+});
+</script>
+<div id="google_ads_iframe_/21662775423/mnpc/main_1strec_right_0__container__" style="border: 0pt none; width: 300px; height: 0px;"></div></div>
+</div>
+</div>
+<section class="module-section">
+  <div class="module-section__title">
+    <h2><span>おもしろ</span></h2>
+  </div>
+  <ul class="module-list-articles" id="js-list-others">
+                        
+      
+                <li class="module-list-articles__item">
+      <a href="https://maidonanews.jp/article/14688070">
+        <figure class="module-list-articles__item__photo">
+        <img class="ofi-cover js-lazy-image" data-src="//public.potaufeu.asahi.com/9f4b-p/picture/27006684/97c16ab67d95c2a6cee46965438cd05c_200px.jpg" alt=""></figure>
+        <span class="module-list-articles__item__heading ">筆を鼻に突っ込む、元保護猫に爆笑「このあとめちゃくちゃクシャミしてた」　「ズボッてる」「カトちゃんペッ」</span>
+      </a>
+      <div class="module-list-articles__item__credit">
+                <a href="https://maidonanews.jp/writer/11004291">
+          <span class="module-list-articles__item__credit__thumb">
+          <img src="./まいどなニュース_files/3b471af9b336937c9f33811e201f0ca2_120px.jpg" alt="渡辺 晴子" class="ofi-cover">
+
+          </span>
+          <span class="module-list-articles__item__credit__name">渡辺 晴子</span>
+        </a>
+                <time class="module-list-articles__item__credit__datetime">2022.08.05</time>
+      </div>
+    </li>
+                                
+      
+                <li class="module-list-articles__item">
+      <a href="https://maidonanews.jp/article/14681539">
+        <figure class="module-list-articles__item__photo">
+        <img class="ofi-cover js-lazy-image" data-src="//public.potaufeu.asahi.com/5009-p/picture/26989457/e6c97e27229ad088c3d0b8f79a84bc10_200px.jpg" alt=""></figure>
+        <span class="module-list-articles__item__heading ">「たった７秒間」の奇跡…花火の決定的瞬間をとらえた写真の美しさに「幻想的」「万華鏡みたい」と絶賛の声</span>
+      </a>
+      <div class="module-list-articles__item__credit">
+                <a href="https://maidonanews.jp/writer/11007368">
+          <span class="module-list-articles__item__credit__thumb">
+          <img src="./まいどなニュース_files/5fca30adaef7005d5b8bca4b921b6928_120px.jpg" alt="竹中  友一（RinToris）" class="ofi-cover">
+
+          </span>
+          <span class="module-list-articles__item__credit__name">竹中  友一（RinToris）</span>
+        </a>
+                <time class="module-list-articles__item__credit__datetime">2022.08.04</time>
+      </div>
+    </li>
+                                
+      
+                <li class="module-list-articles__item">
+      <a href="https://maidonanews.jp/article/14684194">
+        <figure class="module-list-articles__item__photo">
+        <img class="ofi-cover js-lazy-image" data-src="//public.potaufeu.asahi.com/e134-p/picture/26997234/30e62fddc14c05988b44e7c02788e187_200px.jpg" alt=""></figure>
+        <span class="module-list-articles__item__heading ">老舗風俗ビルにカオスな食堂街が登場　ネオンの灯がともる昭和の路地裏を演出</span>
+      </a>
+      <div class="module-list-articles__item__credit">
+                <a href="https://maidonanews.jp/writer/11004353">
+          <span class="module-list-articles__item__credit__thumb">
+          <img src="./まいどなニュース_files/768c33a47fb715420404c223acda0fe1_120px.jpg" alt="中将 タカノリ" class="ofi-cover">
+
+          </span>
+          <span class="module-list-articles__item__credit__name">中将 タカノリ</span>
+        </a>
+                <time class="module-list-articles__item__credit__datetime">2022.08.04</time>
+      </div>
+    </li>
+                                
+      
+                <li class="module-list-articles__item">
+      <a href="https://maidonanews.jp/article/14686475">
+        <figure class="module-list-articles__item__photo">
+        <img class="ofi-cover js-lazy-image" data-src="//public.potaufeu.asahi.com/90a9-p/picture/27002808/2d63b57b9fe86db0cbac8c48a8a668b1_200px.jpg" alt=""></figure>
+        <span class="module-list-articles__item__heading ">SNSで話題のお寺のありがたい言葉の掲示が、購入できる！　刺さる言葉続々、第2弾も</span>
+      </a>
+      <div class="module-list-articles__item__credit">
+                <a href="https://maidonanews.jp/writer/11003151">
+          <span class="module-list-articles__item__credit__thumb">
+          <img src="./まいどなニュース_files/ffbf0d367e19b2ce78e004fb77b33305_120px.jpg" alt="浅井 佳穂" class="ofi-cover">
+
+          </span>
+          <span class="module-list-articles__item__credit__name">浅井 佳穂</span>
+        </a>
+                <time class="module-list-articles__item__credit__datetime">2022.08.04</time>
+      </div>
+    </li>
+                                
+      
+                <li class="module-list-articles__item">
+      <a href="https://maidonanews.jp/article/14686361">
+        <figure class="module-list-articles__item__photo">
+        <img class="ofi-cover js-lazy-image" data-src="//public.potaufeu.asahi.com/5aed-p/picture/27002470/0f9dd455eff649134bbb7b810ca0812d_200px.jpg" alt=""></figure>
+        <span class="module-list-articles__item__heading ">路上にひっくりかえっていたセミを助けたら…口吻で指先をぶすっ！　「セミ成分を注入された」「セミ人間になるかも」漫画家の実体験が話題</span>
+      </a>
+      <div class="module-list-articles__item__credit">
+                <a href="https://maidonanews.jp/writer/11004353">
+          <span class="module-list-articles__item__credit__thumb">
+          <img src="./まいどなニュース_files/768c33a47fb715420404c223acda0fe1_120px.jpg" alt="中将 タカノリ" class="ofi-cover">
+
+          </span>
+          <span class="module-list-articles__item__credit__name">中将 タカノリ</span>
+        </a>
+                <time class="module-list-articles__item__credit__datetime">2022.08.04</time>
+      </div>
+    </li>
+            </ul>
+    <div class="module-sub-links">
+    <div class="module-sub-links__button"><a href="https://maidonanews.jp/tag/%E3%81%8A%E3%82%82%E3%81%97%E3%82%8D">もっと見る</a></div>
+  </div>
+</section>
+
+<div class="module-ad">
+<div class="module-ad__item">
+<!-- //メイン第2レクタングル左/B-2 -->
+<!-- /21662775423/mnpc/main_2ndrec_left -->
+<div id="mnpc/main_2ndrec_left" style="min-height:250px;">
+<script>
+googletag.cmd.push(function() {
+	googletag.display('mnpc/main_2ndrec_left');
+});
+</script>
+<div id="google_ads_iframe_/21662775423/mnpc/main_2ndrec_left_0__container__" style="border: 0pt none; width: 300px; height: 0px;"></div></div>
+
+<div id="mnpc-p1wipe">
+<script>
+googletag.cmd.push(function() {
+    gptAdSlots[8] = googletag.defineSlot('/21662775423/mnpc/p1wipe', [1, 1], 'mnpc-p1wipe').addService(googletag.pubads());
+    googletag.display('mnpc-p1wipe'); 
+    headerBiddingSlots.push(gptAdSlots[8]);
+  });
+</script>
+<div id="google_ads_iframe_/21662775423/mnpc/p1wipe_0__container__" style="border: 0pt none;"></div></div>
+</div>
+<div class="module-ad__item">
+<!-- //メイン第2レクタングル右/B-2 -->
+<!-- /21662775423/mnpc/main_2ndrec_right -->
+<div id="mnpc/main_2ndrec_right" style="min-height:250px;">
+<script>
+googletag.cmd.push(function() {
+	googletag.display('mnpc/main_2ndrec_right');
+});
+</script>
+<div id="google_ads_iframe_/21662775423/mnpc/main_2ndrec_right_0__container__" style="border: 0pt none; width: 300px; height: 0px;"></div></div>
+
+<!-- /21662775423/mnpc/inread -->
+<div id="mnpc-inread">
+  <script>
+    googletag.cmd.push(function() { 
+    	googletag.display('mnpc-inread'); });
+  </script>
+<div id="google_ads_iframe_/21662775423/mnpc/inread_0__container__" style="border: 0pt none;"></div></div>
+</div>
+</div>
+<section class="module-section">
+  <div class="module-section__title">
+    <h2><span>もふもふ</span></h2>
+  </div>
+  <ul class="module-list-articles" id="js-list-others">
+                        
+      
+                <li class="module-list-articles__item">
+      <a href="https://maidonanews.jp/article/14680705">
+        <figure class="module-list-articles__item__photo">
+        <img class="ofi-cover js-lazy-image" data-src="//public.potaufeu.asahi.com/55e8-p/picture/26987397/28e315d8dde1db1300243f7c3ee39273_200px.jpg" alt=""></figure>
+        <span class="module-list-articles__item__heading ">ドライヤーの音にも震え上がっていた保護犬　新しい飼い主に愛情を注いでもらい、今ではヘソ天するまでに</span>
+      </a>
+      <div class="module-list-articles__item__credit">
+                <a href="https://maidonanews.jp/writer/11007376">
+          <span class="module-list-articles__item__credit__thumb">
+          <img src="./まいどなニュース_files/a4517672eb7a6448af76dffe424a6407_120px.jpg" alt="松田 義人" class="ofi-cover">
+
+          </span>
+          <span class="module-list-articles__item__credit__name">松田 義人</span>
+        </a>
+                <time class="module-list-articles__item__credit__datetime">2022.08.05</time>
+      </div>
+    </li>
+                                
+      
+                <li class="module-list-articles__item">
+      <a href="https://maidonanews.jp/article/14683438">
+        <figure class="module-list-articles__item__photo">
+        <img class="ofi-cover js-lazy-image" data-src="//public.potaufeu.asahi.com/65a0-p/picture/26994502/f2f333d2064eb896f550b011d400645e_200px.jpg" alt=""></figure>
+        <span class="module-list-articles__item__heading ">種子島の国道に捨てられていた猫→大阪で保護猫カフェ店長となり、甘えん坊の家猫に</span>
+      </a>
+      <div class="module-list-articles__item__credit">
+                <a href="https://maidonanews.jp/writer/11002828">
+          <span class="module-list-articles__item__credit__thumb">
+          <img src="./まいどなニュース_files/8e4e1ad96a3810cdb85bd1d292c8c92a_120px.jpg" alt="岡部 充代" class="ofi-cover">
+
+          </span>
+          <span class="module-list-articles__item__credit__name">岡部 充代</span>
+        </a>
+                <time class="module-list-articles__item__credit__datetime">2022.08.04</time>
+      </div>
+    </li>
+                                
+      
+                              <li class="module-list-articles__item">
+      <a href="https://maidonanews.jp/article/14686372">
+        <figure class="module-list-articles__item__photo">
+        <img class="ofi-cover js-lazy-image" data-src="//public.potaufeu.asahi.com/1010-p/picture/27002486/fe7c290c34e0d46527136e04757b7d69_200px.jpg" alt=""></figure>
+        <span class="module-list-articles__item__heading icon-play">マグロに目の色を変える子猫たちが可愛すぎ！…大声を出し、いつものフードには見向きもせず</span>
+      </a>
+      <div class="module-list-articles__item__credit">
+                <a href="https://maidonanews.jp/writer/11004353">
+          <span class="module-list-articles__item__credit__thumb">
+          <img src="./まいどなニュース_files/768c33a47fb715420404c223acda0fe1_120px.jpg" alt="中将 タカノリ" class="ofi-cover">
+
+          </span>
+          <span class="module-list-articles__item__credit__name">中将 タカノリ</span>
+        </a>
+                <time class="module-list-articles__item__credit__datetime">2022.08.04</time>
+      </div>
+    </li>
+                                
+      
+                <li class="module-list-articles__item">
+      <a href="https://maidonanews.jp/article/14683530">
+        <figure class="module-list-articles__item__photo">
+        <img class="ofi-cover js-lazy-image" data-src="//public.potaufeu.asahi.com/4c65-p/picture/26994768/8c6a20d65a1e7d009e6bc6dad30cb522_200px.jpg" alt=""></figure>
+        <span class="module-list-articles__item__heading ">先代猫の四十九日に現れた2匹の子猫を保護→保護猫活動を支えてくれる頼もしい猫に成長</span>
+      </a>
+      <div class="module-list-articles__item__credit">
+                <a href="https://maidonanews.jp/writer/11002823">
+          <span class="module-list-articles__item__credit__thumb">
+          <img src="./まいどなニュース_files/3d7fe08b951f2f7616d068f18bf2d833_120px.jpg" alt="渡辺 陽" class="ofi-cover">
+
+          </span>
+          <span class="module-list-articles__item__credit__name">渡辺 陽</span>
+        </a>
+                <time class="module-list-articles__item__credit__datetime">2022.08.04</time>
+      </div>
+    </li>
+                                
+      
+                <li class="module-list-articles__item">
+      <a href="https://maidonanews.jp/article/14686224">
+        <figure class="module-list-articles__item__photo">
+        <img class="ofi-cover js-lazy-image" data-src="//public.potaufeu.asahi.com/0cf1-p/picture/27002089/955264ec576eeda641d567e71905aa74_200px.jpg" alt=""></figure>
+        <span class="module-list-articles__item__heading ">「今日はニャンの日？」看板猫たちが毎日の記念日を紹介　貸本屋店主がSNSにほぼ毎日投稿する「４コマ写真」が人気</span>
+      </a>
+      <div class="module-list-articles__item__credit">
+                <a href="https://maidonanews.jp/writer/11002811">
+          <span class="module-list-articles__item__credit__thumb">
+          <img src="./まいどなニュース_files/e4440db21f8834ae5ee0a26b40abef27_120px.jpg" alt="西松 宏" class="ofi-cover">
+
+          </span>
+          <span class="module-list-articles__item__credit__name">西松 宏</span>
+        </a>
+                <time class="module-list-articles__item__credit__datetime">2022.08.04</time>
+      </div>
+    </li>
+            </ul>
+    <div class="module-sub-links">
+    <div class="module-sub-links__button"><a href="https://maidonanews.jp/tag/%E3%82%82%E3%81%B5%E3%82%82%E3%81%B5">もっと見る</a></div>
+  </div>
+</section>
+
+<div class="module-ad">
+<div class="module-ad__item">
+<!-- //メイン第3レクタングル左/B-3 -->
+<!-- /21662775423/mnpc/main_3rdrec_left -->
+<div id="mnpc/main_3rdrec_left" style="min-height:250px;">
+<script>
+googletag.cmd.push(function() {
+    googletag.defineSlot('/21662775423/mnpc/main_3rdrec_left', ['fluid', [300, 250]], 'mnpc/main_3rdrec_left').addService(googletag.pubads());
+    googletag.display('mnpc/main_3rdrec_left');
+    googletag.pubads().refresh('mnpc/main_3rdrec_left');
+});
+</script>
+<div id="google_ads_iframe_/21662775423/mnpc/main_3rdrec_left_0__container__" style="border: 0pt none; width: 300px; height: 0px;"></div></div>
+</div>
+<div class="module-ad__item">
+<!-- //メイン第3レクタングル右/B-3 -->
+<!-- /21662775423/mnpc/main_3rdrec_right -->
+<div id="mnpc/main_3rdrec_right" style="min-height:250px;">
+<script>
+googletag.cmd.push(function() {
+    googletag.defineSlot('/21662775423/mnpc/main_3rdrec_right', ['fluid', [300, 250]], 'mnpc/main_3rdrec_right').addService(googletag.pubads());
+    googletag.display('mnpc/main_3rdrec_right');
+    googletag.pubads().refresh('mnpc/main_3rdrec_right');
+});
+</script>
+<div id="google_ads_iframe_/21662775423/mnpc/main_3rdrec_right_0__container__" style="border: 0pt none; width: 300px; height: 0px;"></div></div>
+</div>
+</div>
+<section class="module-section">
+  <div class="module-section__title">
+    <h2><span>お天気</span></h2>
+  </div>
+  <ul class="module-list-articles" id="js-list-others">
+                        
+      
+                <li class="module-list-articles__item">
+      <a href="https://maidonanews.jp/article/14689113">
+        <figure class="module-list-articles__item__photo">
+        <img class="ofi-cover js-lazy-image" data-src="//public.potaufeu.asahi.com/c48d-p/picture/27009619/aeb3f8796b6c39e084835f06b70b890d_200px.jpg" alt=""></figure>
+        <span class="module-list-articles__item__heading ">6日　西日本は真夏らしい暑さ　関東以北は太平洋側ほど涼しい空気</span>
+      </a>
+      <div class="module-list-articles__item__credit">
+                <a href="https://maidonanews.jp/writer/11007145">
+          <span class="module-list-articles__item__credit__thumb">
+          <img src="./まいどなニュース_files/4e221533159f5c17771f6833457ff8ab_120px.jpg" alt="tenki.jp" class="ofi-cover">
+
+          </span>
+          <span class="module-list-articles__item__credit__name">tenki.jp</span>
+        </a>
+                <time class="module-list-articles__item__credit__datetime">2022.08.06</time>
+      </div>
+    </li>
+                                
+      
+                <li class="module-list-articles__item">
+      <a href="https://maidonanews.jp/article/14688981">
+        <figure class="module-list-articles__item__photo">
+        <img class="ofi-cover js-lazy-image" data-src="//public.potaufeu.asahi.com/16dd-p/picture/27009157/0bed11a4df317a45152669ca7fae6fc8_200px.jpg" alt=""></figure>
+        <span class="module-list-articles__item__heading ">6日 近畿の天気　変わりやすい空　晴れても油断禁物 試合中もゲリラ豪雨に要注意</span>
+      </a>
+      <div class="module-list-articles__item__credit">
+                <a href="https://maidonanews.jp/writer/11007145">
+          <span class="module-list-articles__item__credit__thumb">
+          <img src="./まいどなニュース_files/4e221533159f5c17771f6833457ff8ab_120px.jpg" alt="tenki.jp" class="ofi-cover">
+
+          </span>
+          <span class="module-list-articles__item__credit__name">tenki.jp</span>
+        </a>
+                <time class="module-list-articles__item__credit__datetime">2022.08.06</time>
+      </div>
+    </li>
+                                
+      
+                <li class="module-list-articles__item">
+      <a href="https://maidonanews.jp/article/14688929">
+        <figure class="module-list-articles__item__photo">
+        <img class="ofi-cover js-lazy-image" data-src="//public.potaufeu.asahi.com/7c34-p/picture/27009049/252060f2f3030d0152bea4a26726ef45_200px.jpg" alt=""></figure>
+        <span class="module-list-articles__item__heading ">きょう6日も所々に雨雲　晴れても急な激しい雨に注意　北陸や近畿～九州は厳しい暑さ</span>
+      </a>
+      <div class="module-list-articles__item__credit">
+                <a href="https://maidonanews.jp/writer/11007145">
+          <span class="module-list-articles__item__credit__thumb">
+          <img src="./まいどなニュース_files/4e221533159f5c17771f6833457ff8ab_120px.jpg" alt="tenki.jp" class="ofi-cover">
+
+          </span>
+          <span class="module-list-articles__item__credit__name">tenki.jp</span>
+        </a>
+                <time class="module-list-articles__item__credit__datetime">2022.08.06</time>
+      </div>
+    </li>
+                                
+      
+                <li class="module-list-articles__item">
+      <a href="https://maidonanews.jp/article/14688856">
+        <figure class="module-list-articles__item__photo">
+        <img class="ofi-cover js-lazy-image" data-src="//public.potaufeu.asahi.com/4cf7-p/picture/27008775/bec36e84c9e53bb565821a74430b4497_200px.jpg" alt=""></figure>
+        <span class="module-list-articles__item__heading ">2週間天気　北日本は再び大雨の恐れ　東・西日本は厳暑　お盆の頃もゲリラ雷雨注意</span>
+      </a>
+      <div class="module-list-articles__item__credit">
+                <a href="https://maidonanews.jp/writer/11007145">
+          <span class="module-list-articles__item__credit__thumb">
+          <img src="./まいどなニュース_files/4e221533159f5c17771f6833457ff8ab_120px.jpg" alt="tenki.jp" class="ofi-cover">
+
+          </span>
+          <span class="module-list-articles__item__credit__name">tenki.jp</span>
+        </a>
+                <time class="module-list-articles__item__credit__datetime">2022.08.06</time>
+      </div>
+    </li>
+                                
+      
+                <li class="module-list-articles__item">
+      <a href="https://maidonanews.jp/article/14688453">
+        <figure class="module-list-articles__item__photo">
+        <img class="ofi-cover js-lazy-image" data-src="//public.potaufeu.asahi.com/80ef-p/picture/27007760/e7de5bc1984bcf8507cf6957d3a59bd1_200px.jpg" alt=""></figure>
+        <span class="module-list-articles__item__heading ">あす6日にかけて　中国地方～北陸付近は局地的に大雨の恐れ　土砂災害に厳重警戒</span>
+      </a>
+      <div class="module-list-articles__item__credit">
+                <a href="https://maidonanews.jp/writer/11007145">
+          <span class="module-list-articles__item__credit__thumb">
+          <img src="./まいどなニュース_files/4e221533159f5c17771f6833457ff8ab_120px.jpg" alt="tenki.jp" class="ofi-cover">
+
+          </span>
+          <span class="module-list-articles__item__credit__name">tenki.jp</span>
+        </a>
+                <time class="module-list-articles__item__credit__datetime">2022.08.05</time>
+      </div>
+    </li>
+            </ul>
+    <div class="module-sub-links">
+    <div class="module-sub-links__button"><a href="https://maidonanews.jp/tag/%E6%97%A5%E7%9B%B4%E4%BA%88%E5%A0%B1%E5%A3%AB">もっと見る</a></div>
+  </div>
+</section>
+
+<div class="module-ad">
+<div class="module-ad__item">
+<!-- //メイン第4レクタングル左/B-4 -->
+<!-- /21662775423/mnpc/main_4threc_left -->
+<div id="mnpc/main_4threc_left" style="min-height:250px;">
+<script>
+googletag.cmd.push(function() {
+    googletag.defineSlot('/21662775423/mnpc/main_4threc_left', ['fluid', [300, 250]], 'mnpc/main_4threc_left').addService(googletag.pubads());
+    googletag.display('mnpc/main_4threc_left');
+});
+</script>
+<div id="google_ads_iframe_/21662775423/mnpc/main_4threc_left_0__container__" style="border: 0pt none; width: 300px; height: 0px;"></div></div>
+</div>
+<div class="module-ad__item">
+<!-- //メイン第4レクタングル右/B-4 -->
+<!-- /21662775423/mnpc/main_4threc_right -->
+<div id="mnpc/main_4threc_right" style="min-height:250px;">
+<script>
+googletag.cmd.push(function() {
+    googletag.defineSlot('/21662775423/mnpc/main_4threc_right', ['fluid', [300, 250]], 'mnpc/main_4threc_right').addService(googletag.pubads());
+    googletag.display('mnpc/main_4threc_right');
+});
+</script>
+<div id="google_ads_iframe_/21662775423/mnpc/main_4threc_right_0__container__" style="border: 0pt none; width: 300px; height: 0px;"></div></div>
+</div>
+</div>
+<section class="module-section">
+  <div class="module-section__title">
+    <h2><span>マンガ</span></h2>
+  </div>
+  <ul class="module-list-articles" id="js-list-others">
+                        
+      
+                <li class="module-list-articles__item">
+      <a href="https://maidonanews.jp/article/14686371">
+        <figure class="module-list-articles__item__photo">
+        <img class="ofi-cover js-lazy-image" data-src="//public.potaufeu.asahi.com/bbc9-p/picture/27002478/31160a67f0e70df7758d2b7a27fc4ccf_200px.jpg" alt=""></figure>
+        <span class="module-list-articles__item__heading ">【漫画】史上初の快挙だヨ！　まいどにゃ★家族　#352</span>
+      </a>
+      <div class="module-list-articles__item__credit">
+                <a href="https://maidonanews.jp/writer/11004776">
+          <span class="module-list-articles__item__credit__thumb">
+          <img src="./まいどなニュース_files/958b605712cfb712afd513382f432f9d_120px.jpg" alt="喜多桐 スズメ" class="ofi-cover">
+
+          </span>
+          <span class="module-list-articles__item__credit__name">喜多桐 スズメ</span>
+        </a>
+                <time class="module-list-articles__item__credit__datetime">2022.08.04</time>
+      </div>
+    </li>
+                                
+      
+                <li class="module-list-articles__item">
+      <a href="https://maidonanews.jp/article/14657422">
+        <figure class="module-list-articles__item__photo">
+        <img class="ofi-cover js-lazy-image" data-src="//public.potaufeu.asahi.com/bff7-p/picture/26929825/4367c7e214a0b1569c6db656fa760a29_200px.jpg" alt=""></figure>
+        <span class="module-list-articles__item__heading ">【漫画】改札どこ？→あっちじゃない？→なんでタメ語なんだお前　失礼な相手への返しが痛快！</span>
+      </a>
+      <div class="module-list-articles__item__credit">
+                <a href="https://maidonanews.jp/writer/11003303">
+          <span class="module-list-articles__item__credit__thumb">
+          <img src="./まいどなニュース_files/c130a80f5361e1bb82d6c471e5881cc4_120px.jpg" alt="吉本 ユータヌキ" class="ofi-cover">
+
+          </span>
+          <span class="module-list-articles__item__credit__name">吉本 ユータヌキ</span>
+        </a>
+                <time class="module-list-articles__item__credit__datetime">2022.08.03</time>
+      </div>
+    </li>
+                                
+      
+                <li class="module-list-articles__item">
+      <a href="https://maidonanews.jp/article/14684674">
+        <figure class="module-list-articles__item__photo">
+        <img class="ofi-cover js-lazy-image" data-src="//public.potaufeu.asahi.com/290b-p/picture/26998212/b7efe061df529602e09c28e66f4d8ffa_200px.jpg" alt=""></figure>
+        <span class="module-list-articles__item__heading ">【漫画】暑いとパンが売れないヨ！　まいどにゃ★家族　#351</span>
+      </a>
+      <div class="module-list-articles__item__credit">
+                <a href="https://maidonanews.jp/writer/11004776">
+          <span class="module-list-articles__item__credit__thumb">
+          <img src="./まいどなニュース_files/958b605712cfb712afd513382f432f9d_120px.jpg" alt="喜多桐 スズメ" class="ofi-cover">
+
+          </span>
+          <span class="module-list-articles__item__credit__name">喜多桐 スズメ</span>
+        </a>
+                <time class="module-list-articles__item__credit__datetime">2022.08.02</time>
+      </div>
+    </li>
+                                
+      
+                <li class="module-list-articles__item">
+      <a href="https://maidonanews.jp/article/14682536">
+        <figure class="module-list-articles__item__photo">
+        <img class="ofi-cover js-lazy-image" data-src="//public.potaufeu.asahi.com/5615-p/picture/26992344/7143c32c62fe08a29b10c9e7c7269282_200px.jpg" alt=""></figure>
+        <span class="module-list-articles__item__heading ">スーパーのレジで発見した「私の推し！」　スピード・客への配慮・指導力…プロすぎる技に「課金したい」「お客様の声に投函して！」</span>
+      </a>
+      <div class="module-list-articles__item__credit">
+                <a href="https://maidonanews.jp/writer/11009610">
+          <span class="module-list-articles__item__credit__thumb">
+          <img src="./まいどなニュース_files/a466d19c195bb5418aaf5085d1d61185_120px.jpg" alt="宮前 晶子" class="ofi-cover">
+
+          </span>
+          <span class="module-list-articles__item__credit__name">宮前 晶子</span>
+        </a>
+                <time class="module-list-articles__item__credit__datetime">2022.08.02</time>
+      </div>
+    </li>
+                                
+      
+                <li class="module-list-articles__item">
+      <a href="https://maidonanews.jp/article/14683524">
+        <figure class="module-list-articles__item__photo">
+        <img class="ofi-cover js-lazy-image" data-src="//public.potaufeu.asahi.com/0b47-p/picture/26994719/703f8882952f4c09a5fadea05f0d4f5d_200px.jpg" alt=""></figure>
+        <span class="module-list-articles__item__heading ">【漫画】どこまで愛が深いの⁈　まいどにゃ★家族　#350</span>
+      </a>
+      <div class="module-list-articles__item__credit">
+                <a href="https://maidonanews.jp/writer/11004776">
+          <span class="module-list-articles__item__credit__thumb">
+          <img src="./まいどなニュース_files/958b605712cfb712afd513382f432f9d_120px.jpg" alt="喜多桐 スズメ" class="ofi-cover">
+
+          </span>
+          <span class="module-list-articles__item__credit__name">喜多桐 スズメ</span>
+        </a>
+                <time class="module-list-articles__item__credit__datetime">2022.07.31</time>
+      </div>
+    </li>
+            </ul>
+    <div class="module-sub-links">
+    <div class="module-sub-links__button"><a href="https://maidonanews.jp/tag/%E3%83%9E%E3%83%B3%E3%82%AC">もっと見る</a></div>
+  </div>
+</section>
+
+<div class="module-ad">
+<div class="module-ad__item">
+<!-- //メイン第4レクタングル左/B-5 -->
+<!-- /21662775423/mnpc/main_5threc_left -->
+<div id="mnpc/main_5threc_left" style="min-height:250px;">
+<script>
+googletag.cmd.push(function() {
+    googletag.defineSlot('/21662775423/mnpc/main_5threc_left', ['fluid', [300, 250]], 'mnpc/main_5threc_left').addService(googletag.pubads());
+    googletag.display('mnpc/main_5threc_left');
+});
+</script>
+<div id="google_ads_iframe_/21662775423/mnpc/main_5threc_left_0__container__" style="border: 0pt none; width: 300px; height: 0px;"></div></div>
+</div>
+<div class="module-ad__item">
+<!-- //メイン第5レクタングル右/B-5 -->
+<!-- /21662775423/mnpc/main_5threc_right -->
+<div id="mnpc/main_5threc_right" style="min-height:250px;">
+<script>
+googletag.cmd.push(function() {
+    googletag.defineSlot('/21662775423/mnpc/main_5threc_right', ['fluid', [300, 250]], 'mnpc/main_5threc_right').addService(googletag.pubads());
+    googletag.display('mnpc/main_5threc_right');
+});
+</script>
+<div id="google_ads_iframe_/21662775423/mnpc/main_5threc_right_0__container__" style="border: 0pt none; width: 300px; height: 0px;"></div></div>
+</div>
+</div>
+<section class="module-section">
+  <div class="module-section__title">
+    <h2><span>クイズ</span></h2>
+  </div>
+  <ul class="module-list-articles" id="js-list-others">
+                        
+      
+                <li class="module-list-articles__item">
+      <a href="https://maidonanews.jp/article/14643337">
+        <figure class="module-list-articles__item__photo">
+        <img class="ofi-cover js-lazy-image" data-src="//public.potaufeu.asahi.com/515e-p/picture/26892930/e1c78fe2488e21bb4c5f994dc6bebe8e_200px.jpg" alt=""></figure>
+        <span class="module-list-articles__item__heading ">脳力検定　君は解けるか　＝157＝</span>
+      </a>
+      <div class="module-list-articles__item__credit">
+                <time class="module-list-articles__item__credit__datetime">2022.08.01</time>
+      </div>
+    </li>
+                                
+      
+                <li class="module-list-articles__item">
+      <a href="https://maidonanews.jp/article/14550701">
+        <figure class="module-list-articles__item__photo">
+        <img class="ofi-cover js-lazy-image" data-src="//public.potaufeu.asahi.com/4540-p/picture/26661766/35e7d53cd72f6287ed4ca5d2120bd428_200px.jpg" alt=""></figure>
+        <span class="module-list-articles__item__heading ">漢力検定　君は解けるか　＝144＝</span>
+      </a>
+      <div class="module-list-articles__item__credit">
+                <time class="module-list-articles__item__credit__datetime">2022.07.28</time>
+      </div>
+    </li>
+                                
+      
+                <li class="module-list-articles__item">
+      <a href="https://maidonanews.jp/article/14643335">
+        <figure class="module-list-articles__item__photo">
+        <img class="ofi-cover js-lazy-image" data-src="//public.potaufeu.asahi.com/67df-p/picture/26892929/ce5c6ece016c5ddb8034b879e71cd159_200px.jpg" alt=""></figure>
+        <span class="module-list-articles__item__heading ">脳力検定　君は解けるか　＝156＝</span>
+      </a>
+      <div class="module-list-articles__item__credit">
+                <time class="module-list-articles__item__credit__datetime">2022.07.25</time>
+      </div>
+    </li>
+                                
+      
+                <li class="module-list-articles__item">
+      <a href="https://maidonanews.jp/article/14550700">
+        <figure class="module-list-articles__item__photo">
+        <img class="ofi-cover js-lazy-image" data-src="//public.potaufeu.asahi.com/9e93-p/picture/26661765/e94f45fe2de8261ff7b45218b5a58125_200px.jpg" alt=""></figure>
+        <span class="module-list-articles__item__heading ">漢力検定　君は解けるか　＝143＝</span>
+      </a>
+      <div class="module-list-articles__item__credit">
+                <time class="module-list-articles__item__credit__datetime">2022.07.21</time>
+      </div>
+    </li>
+                                
+      
+                <li class="module-list-articles__item">
+      <a href="https://maidonanews.jp/article/14641423">
+        <figure class="module-list-articles__item__photo">
+        <img class="ofi-cover js-lazy-image" data-src="//public.potaufeu.asahi.com/8bbf-p/picture/26887968/88350ce36d128e52d97d04966ab574cd_200px.jpg" alt=""></figure>
+        <span class="module-list-articles__item__heading ">脳力検定　君は解けるか　＝155＝</span>
+      </a>
+      <div class="module-list-articles__item__credit">
+                <time class="module-list-articles__item__credit__datetime">2022.07.18</time>
+      </div>
+    </li>
+            </ul>
+    <div class="module-sub-links">
+    <div class="module-sub-links__button"><a href="https://maidonanews.jp/tag/%E3%82%AF%E3%82%A4%E3%82%BA">もっと見る</a></div>
+  </div>
+</section>
+
+<div class="module-ad">
+<div class="module-ad__item">
+<!-- //メイン第6レクタングル左/B-6 -->
+<!-- /21662775423/mnpc/main_6threc_left -->
+<div id="mnpc/main_6threc_left" style="min-height:250px;">
+<script>
+googletag.cmd.push(function() {
+    googletag.defineSlot('/21662775423/mnpc/main_6threc_left', ['fluid', [300, 250]], 'mnpc/main_6threc_left').addService(googletag.pubads());
+    googletag.display('mnpc/main_6threc_left');
+});
+</script>
+<div id="google_ads_iframe_/21662775423/mnpc/main_6threc_left_0__container__" style="border: 0pt none; width: 300px; height: 0px;"></div></div>
+</div>
+<div class="module-ad__item">
+<!-- //メイン第6レクタングル右/B-6 -->
+<!-- /21662775423/mnpc/main_6threc_right -->
+<div id="mnpc/main_6threc_right" style="min-height:250px;">
+<script>
+googletag.cmd.push(function() {
+    googletag.defineSlot('/21662775423/mnpc/main_6threc_right', ['fluid', [300, 250]], 'mnpc/main_6threc_right').addService(googletag.pubads());
+    googletag.display('mnpc/main_6threc_right');
+});
+</script>
+<div id="google_ads_iframe_/21662775423/mnpc/main_6threc_right_0__container__" style="border: 0pt none; width: 300px; height: 0px;"></div></div>
+
+</div>
+</div>
+<section class="module-section">
+  <div class="module-section__title">
+    <h2><span>まいどなファミリー</span><span class="sub">（新着記事順）</span></h2>
+  </div>
+  <ul class="module-list-author--col4" id="js-list-author">
+      <li class="module-list-author__item">
+      <a href="https://maidonanews.jp/contributor/11003490" id="family_list1">
+        <figure class="module-list-author__item__photo">
+                  <img src="./まいどなニュース_files/8fc1a02644a15cbf94dfb187c682645b_200px.jpg" alt="森岡 浩" class="ofi-cover">
+
+                </figure>
+        <span class="module-list-author__item__name">森岡 浩</span>
+        <span class="module-list-author__item__sub">姓氏研究家</span>
+      </a>
+    </li>
+      <li class="module-list-author__item">
+      <a href="https://maidonanews.jp/contributor/11002835" id="family_list2">
+        <figure class="module-list-author__item__photo">
+                  <img src="./まいどなニュース_files/6a6333ca4010907e3f6215eeffab7f01_200px.jpg" alt="小川 泰平" class="ofi-cover">
+
+                </figure>
+        <span class="module-list-author__item__name">小川 泰平</span>
+        <span class="module-list-author__item__sub">犯罪ジャーナリスト</span>
+      </a>
+    </li>
+      <li class="module-list-author__item">
+      <a href="https://maidonanews.jp/contributor/11002838" id="family_list3">
+        <figure class="module-list-author__item__photo">
+                  <img src="./まいどなニュース_files/b925f4db597c90e490ad5974936b4dd0_200px.jpg" alt="水谷 修" class="ofi-cover">
+
+                </figure>
+        <span class="module-list-author__item__name">水谷 修</span>
+        <span class="module-list-author__item__sub">教育家</span>
+      </a>
+    </li>
+      <li class="module-list-author__item">
+      <a href="https://maidonanews.jp/contributor/11004439" id="family_list4">
+        <figure class="module-list-author__item__photo">
+                  <img src="./まいどなニュース_files/d06cc4ff5257bf5a5f8fd3942b716c44_200px.jpg" alt="豊田 真由子" class="ofi-cover">
+
+                </figure>
+        <span class="module-list-author__item__name">豊田 真由子</span>
+        <span class="module-list-author__item__sub">元厚労省官僚、元衆議院議員</span>
+      </a>
+    </li>
+    </ul><!-- .module-list-articles -->
+  <aside class="module-aside">
+    <div class="module-sub-links">
+      <a href="https://maidonanews.jp/contributor" id="family_more">もっと見る</a>
+    </div><!-- .module-button -->
+  </aside><!-- .module-aside -->
+</section><!-- .module-section -->
+
+    </main><!-- /[ MAIN-AREA ] -->
+  
+    <aside class="layout-sidebar" id="sidebar" style="min-height: 1612.78px;">
+<div class="module-sidebar" id="js-module-sidebar">
+<div class="module-ad">
+  <div class="module-ad__item"><!-- //右カラム第1レクタングル/E-1 -->
+<!-- /21662775423/mnpc/right_1strec -->
+<div id="mnpc/right_1strec_top" style="min-height:250px;">
+<script>
+googletag.cmd.push(function() {
+	//トップ面判定
+	if('/' === location.pathname){
+		var divChange = document.getElementById("mnpc/right_1strec");
+		divChange.id = "mnpc/right_1strec_top";
+		googletag.display('mnpc/right_1strec_top');
+	}else{
+		googletag.display('mnpc/right_1strec');
+	}
+});
+</script>
+
+
+<script type="text/javascript" src="./まいどなニュース_files/publishertag.js.ダウンロード"></script>
+<div id="crt-1428743" style="width:300px; height:600px;"></div>
+<script type="text/javascript">
+   Criteo.DisplayAcceptableAdIfAdblocked(
+       {'zoneid' : 1428743,
+        'containerid' : 'crt-1428743'
+    });
+</script>
+
+<div id="google_ads_iframe_/21662775423/mnpc/right_1strec_0__container__" style="border: 0pt none; width: 300px; height: 0px;"></div></div></div>
+</div>
+<section class="module-section">
+  <ul class="module-list-information--important" id="js-list-information-important">
+        <li class="module-list-information__item">
+                      <a href="https://maidonanews.jp/info/14673598">高知の子育て応援ウェブメディア「ココハレ」記事の配信を開始しました</a>
+            </li>
+    </ul>
+</section><!-- .module-section -->
+
+<section class="module-section">
+  <div class="module-section__title">
+    <h2><span>アクセスランキング</span></h2>
+  </div>
+  <ul class="module-list-articles--ranking">
+                  
+    
+            <li class="module-list-articles__item rank-1">
+      <a href="https://maidonanews.jp/article/14680705" id="ranking_list1" data-gtm-vis-recent-on-screen-10629813_39="354" data-gtm-vis-first-on-screen-10629813_39="354" data-gtm-vis-total-visible-time-10629813_39="100" data-gtm-vis-has-fired-10629813_39="1">
+        <figure class="module-list-articles__item__photo"><img class="ofi-cover js-lazy-image" data-src="//public.potaufeu.asahi.com/55e8-p/picture/26987397/28e315d8dde1db1300243f7c3ee39273_200px.jpg" alt="" src="./まいどなニュース_files/28e315d8dde1db1300243f7c3ee39273_200px.jpg" data-loaded="true"></figure>
+        <span class="module-list-articles__item__heading ">ドライヤーの音にも震え上がっていた保護犬　新しい飼い主に愛情を注いでもらい、今ではヘソ天するまでに</span>
+      </a>
+            <div class="module-list-articles__item__credit">
+        <a href="https://maidonanews.jp/writer/11007376">
+          <span class="module-list-articles__item__credit__thumb">
+          <img src="./まいどなニュース_files/a4517672eb7a6448af76dffe424a6407_120px.jpg" alt="松田 義人" class="ofi-cover">
+
+          </span>
+          <span class="module-list-articles__item__credit__name">松田 義人</span>
+        </a>
+      </div>
+          </li>
+                  
+    
+            <li class="module-list-articles__item rank-2">
+      <a href="https://maidonanews.jp/article/14687460" id="ranking_list2">
+        <figure class="module-list-articles__item__photo"><img class="ofi-cover js-lazy-image" data-src="//public.potaufeu.asahi.com/928c-p/picture/27005223/88fbca6d198d0409a5da8f3b8ddb8d9a_200px.jpg" alt="" src="./まいどなニュース_files/88fbca6d198d0409a5da8f3b8ddb8d9a_200px.jpg" data-loaded="true"></figure>
+        <span class="module-list-articles__item__heading ">「こりゃひどい！」作業中にアパート敷地内で排便　引っ越し業者が謝罪→従業員本人が現場を清掃</span>
+      </a>
+            <div class="module-list-articles__item__credit">
+        <a href="https://maidonanews.jp/writer/11008666">
+          <span class="module-list-articles__item__credit__thumb">
+          <img src="./まいどなニュース_files/8d7d704b470dc653c785d0f75bd1c7a5_120px.jpg" alt="伊藤 大介" class="ofi-cover">
+
+          </span>
+          <span class="module-list-articles__item__credit__name">伊藤 大介</span>
+        </a>
+      </div>
+          </li>
+                  
+    
+            <li class="module-list-articles__item rank-3">
+      <a href="https://maidonanews.jp/article/14686199" id="ranking_list3">
+        <figure class="module-list-articles__item__photo"><img class="ofi-cover js-lazy-image" data-src="//public.potaufeu.asahi.com/6153-p/picture/27001773/09b1d61962ae769923545514a3df47ef_200px.jpg" alt="" src="./まいどなニュース_files/09b1d61962ae769923545514a3df47ef_200px.jpg" data-loaded="true"></figure>
+        <span class="module-list-articles__item__heading ">「中古車展示場に消防車が並んでいた！」「買えるの？」　〝おやじ”の車愛が町の話題に</span>
+      </a>
+            <div class="module-list-articles__item__credit">
+        <a href="https://maidonanews.jp/writer/11004816">
+          <span class="module-list-articles__item__credit__thumb">
+          <img src="./まいどなニュース_files/d02e8829c70982e6d88d1ba6ec88b98f_120px.jpg" alt="コノコト" class="ofi-cover">
+
+          </span>
+          <span class="module-list-articles__item__credit__name">コノコト</span>
+        </a>
+      </div>
+          </li>
+                  
+    
+            <li class="module-list-articles__item rank-4">
+      <a href="https://maidonanews.jp/article/14686361" id="ranking_list4">
+        <figure class="module-list-articles__item__photo"><img class="ofi-cover js-lazy-image" data-src="//public.potaufeu.asahi.com/5aed-p/picture/27002470/0f9dd455eff649134bbb7b810ca0812d_200px.jpg" alt=""></figure>
+        <span class="module-list-articles__item__heading ">路上にひっくりかえっていたセミを助けたら…口吻で指先をぶすっ！　「セミ成分を注入された」「セミ人間になるかも」漫画家の実体験が話題</span>
+      </a>
+            <div class="module-list-articles__item__credit">
+        <a href="https://maidonanews.jp/writer/11004353">
+          <span class="module-list-articles__item__credit__thumb">
+          <img src="./まいどなニュース_files/768c33a47fb715420404c223acda0fe1_120px.jpg" alt="中将 タカノリ" class="ofi-cover">
+
+          </span>
+          <span class="module-list-articles__item__credit__name">中将 タカノリ</span>
+        </a>
+      </div>
+          </li>
+                  
+    
+            <li class="module-list-articles__item rank-5">
+      <a href="https://maidonanews.jp/article/14679152" id="ranking_list5">
+        <figure class="module-list-articles__item__photo"><img class="ofi-cover js-lazy-image" data-src="//public.potaufeu.asahi.com/af8b-p/picture/26984041/d3c7b76cefd10be8b9d67ccc91611248_200px.jpg" alt=""></figure>
+        <span class="module-list-articles__item__heading ">先祖は源頼朝に使えた武士！リアル「鎌倉殿の13人」に“登場”していたかも…北条義時役「小栗旬」の名字のルーツ</span>
+      </a>
+            <div class="module-list-articles__item__credit">
+        <a href="https://maidonanews.jp/contributor/11003490">
+          <span class="module-list-articles__item__credit__thumb">
+          <img src="./まいどなニュース_files/8fc1a02644a15cbf94dfb187c682645b_120px.jpg" alt="森岡 浩" class="ofi-cover">
+
+          </span>
+          <span class="module-list-articles__item__credit__name">森岡 浩</span>
+        </a>
+      </div>
+          </li>
+            </ul><!-- .module-list-articles -->
+  <aside class="module-aside">
+    <div class="module-sub-links">
+      <a href="https://maidonanews.jp/ranking">６位以降を見る</a>
+    </div><!-- .module-button -->
+  </aside><!-- .module-aside -->
+</section><!-- .module-section -->
+
+<div class="module-ad">
+  <div class="module-ad__item"><!-- //右カラム第2レクタングル/E-2 -->
+<!-- /21662775423/mnpc/right_2ndrec -->
+<div id="mnpc/right_2ndrec" style="min-height:250px;">
+<script>
+googletag.cmd.push(function() {
+	googletag.display('mnpc/right_2ndrec');
+});
+</script>
+<div id="google_ads_iframe_/21662775423/mnpc/right_2ndrec_0__container__" style="border: 0pt none; width: 300px; height: 0px;"></div></div>
+
+
+<!-- 楽天ウィジェット -->
+<section class="module-section" style="padding: 10px 0px;">
+  <div class="module-section__title">
+    <div id="maidona_icon" style="background: #d72f12; position: relative; top: 0px; left: 0px; height: 50px; widthe: 50px;">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAVCAYAAACt4nWrAAACKklEQVQ4jWO8c4mXgVQgJjPD+9P7hRt+fD3OwsFl8YdfOE3m5eOkl+jGMJFqsLjcQuZP7+ZsZGGR+CEmM9Prz+/HLH/+vOjAppZkw//8frzo18/bzNx8PkavnqRvZ2GV/cPw/w8fVQz/+e2cLzefz9uXj5NvgwUYGXGqJclwcbmFbN+/HuJl59BbSYx6kgz/9/d98f9/PxmYWSVKqG7475/3Yjm4zX69fBT/nRj1JCVFNg7Nf9y8Xhffv+41hIlxcFv+/vfnPTMTi+BfsGuZuP+yc5qeZePQsGMh1mAB0fyrn98vZWTj0IxDFufm8132/99nBRj/37/vQl8+rLDk4vO4xfjkrttvdIP+/n7BDKKZWSX+Mvz/z/Dn9xOW//9/MQiKlbe+eVZcQ8ghIpKdU9+/6sxiAeUyQbGSs4yMrF9hkp/eLbYD0Vw8DsdANCMT310WFvH6l4+THhPjSyZmgeV//77LAgcLG7tG4svHKZdhkmwcOuDwe/ey3Z4Yw9ABIyPzRwZyMhEpYNTwYWY4zhz6+9ddJjYObXCSBLmBmUXoLyu76it2Dv2m109zZ+Ez9P//X1oMDIzgsuW/mMz0YEZGVkj5zMDA8OXj+hP///9g5uS234rQ8F3k5/dLJt8+7+Li4nX/xsljP4OJiW89LE3D1TH8E/3x9diyXz+uiIANx2Y7r2Ds68/vF4uhi4vJTI3+/vXopO9fDgj9+f0Mq8vZOLT/8wun5wMAUc3RrfU0Q18AAAAASUVORK5CYII=" style="left: 14px; top: 14px; position: absolute;">
+      <h2 style="position: absolute; left: 50px; top:0px; width:250px; display: table-cell; height: 50px; background: #ededed; text-decoration: none; vertical-align: middle; color: #d72f12; font-size: 1rem; padding: 1rem 0 0.5rem;">
+        <span style="position: absolute;left: 5px;">まいどなおすすめアイテム</span>
+      </h2>
+    </div>
+  </div>
+
+  <div>
+    <script type="text/javascript">
+      rakuten_design = "slide";
+      rakuten_affiliateId = "0fd6e670.fceab07b.0fd6e671.711c9a1b";
+      rakuten_items = "ctsmatch";
+      rakuten_genreId = "0";
+      rakuten_size = "300x250";
+      rakuten_target = "_blank";
+      rakuten_theme = "gray";
+      rakuten_border = "off";
+      rakuten_auto_mode = "on";
+      rakuten_genre_title = "off";
+      rakuten_recommend = "on";
+      rakuten_ts = "1658382274022";
+      rakuten_pointbackId = "_RTmtlk20014002";
+    </script>
+    <script type="text/javascript" src="./まいどなニュース_files/rakuten_widget.js.ダウンロード"></script><iframe width="300" height="250" frameborder="0" scrolling="no" allowtransparency="true" id="rakuten_mw_iframe98089471659762773622" src="./まいどなニュース_files/mw_dynamic_view.html"></iframe>
+  </div>
+</section></div>
+</div>
+<aside class="module-aside">
+  <div class="module-aside__banner">
+    <a href="https://maidonanews.jp/request"><img src="./まいどなニュース_files/bnr_request.png" alt="" width="300" height="96">
+</a>
+  </div>
+</aside><!-- .module-aside -->
+
+<aside class="module-aside">
+  <div class="module-aside__embed">
+    <iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="twitter-timeline twitter-timeline-rendered" style="position: static; visibility: visible; display: inline-block; width: 300px; height: 600px; padding: 0px; border: none; max-width: 100%; min-width: 180px; margin-top: 0px; margin-bottom: 0px; min-height: 200px;" data-widget-id="profile:maidonanews" title="Twitterタイムライン" src="./まいどなニュース_files/saved_resource.html"></iframe><script async="" src="./まいどなニュース_files/widgets.js.ダウンロード" charset="utf-8"></script>
+  </div>
+</aside><!-- .module-aside -->
+
+<aside class="module-aside">
+  <div class="module-aside__embed">
+    <iframe src="./まいどなニュース_files/page.html" width="300" height="130" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+  </div>
+</aside><!-- .module-aside -->
+
+<div class="module-ad">
+  <div class="module-ad__item"><!-- //右カラム第3レクタングル/E-3 -->
+<!-- /21662775423/mnpc/right_3rdrec -->
+<div id="mnpc/right_3rdrec" style="min-height:250px;">
+<script>
+googletag.cmd.push(function() {
+	googletag.display('mnpc/right_3rdrec');
+});
+
+demandManagerBids();
+</script>
+<div id="google_ads_iframe_/21662775423/mnpc/right_3rdrec_0__container__" style="border: 0pt none; width: 300px; height: 0px;"></div></div>
+
+
+<script type="text/javascript" src="./まいどなニュース_files/yads-async.js.ダウンロード"></script>
+<div id="ad1"></div>
+<script type="text/javascript">
+yadsRequestAsync({
+yads_ad_ds : '18091_553034',
+yads_parent_element : "ad1"
+});
+window.addEventListener('load', (event) => {
+	document.getElementById("ad1").children[1].children[1].children[0].children[0].target = "_blank";
+});
+</script>
+</div>
+</div>
+</div><!-- .module-sidebar -->
+    </aside><!-- .layout-sidebar -->
+  </div><!-- .layout-contents -->
+  
+  <footer class="layout-footer" id="footer">
+
+
+  <nav class="layout-footer__nav" id="js-footer-menu">
+    <dl class="module-footer-nav">
+      <dt class="module-footer-nav__title">ニュース一覧</dt>
+      <dd class="module-footer-nav__list">
+        <ul class="module-footer-nav-list">
+          <li class="module-footer-nav-list__item"><a href="https://maidonanews.jp/" id="footer_menu_new">トップ</a></li>
+                  <li class="module-footer-nav-list__item"><a href="https://maidonanews.jp/tag/%E3%81%8A%E3%82%82%E3%81%97%E3%82%8D" id="footer_menu_tag1">おもしろ</a></li>
+                  <li class="module-footer-nav-list__item"><a href="https://maidonanews.jp/tag/%E3%82%82%E3%81%B5%E3%82%82%E3%81%B5" id="footer_menu_tag2">もふもふ</a></li>
+                  <li class="module-footer-nav-list__item"><a href="https://maidonanews.jp/tag/%E6%97%A5%E7%9B%B4%E4%BA%88%E5%A0%B1%E5%A3%AB" id="footer_menu_tag3">お天気</a></li>
+                  <li class="module-footer-nav-list__item"><a href="https://maidonanews.jp/tag/%E3%83%9E%E3%83%B3%E3%82%AC" id="footer_menu_tag4">マンガ</a></li>
+                  <li class="module-footer-nav-list__item"><a href="https://maidonanews.jp/tag/%E3%82%AF%E3%82%A4%E3%82%BA" id="footer_menu_tag5">クイズ</a></li>
+                  <li class="module-footer-nav-list__item"><a href="https://maidonanews.jp/series" id="footer_menu_series">連載・特集</a></li>
+        </ul>
+      </dd>
+    </dl><!-- .module-footer-nav -->
+    <dl class="module-footer-nav">
+      <dt class="module-footer-nav__title">ライター一覧</dt>
+      <dd class="module-footer-nav__list">
+        <ul class="module-footer-nav-list">
+          <li class="module-footer-nav-list__item"><a href="https://maidonanews.jp/writer" id="footer_menu_writer">記者</a></li>
+          <li class="module-footer-nav-list__item"><a href="https://maidonanews.jp/contributor" id="footer_menu_contributor">まいどなファミリー</a></li>
+        </ul>
+      </dd>
+    </dl><!-- .module-footer-nav -->
+    <dl class="module-footer-nav">
+      <dt class="module-footer-nav__title">Information</dt>
+      <dd class="module-footer-nav__list">
+        <ul class="module-footer-nav-list">
+          <li class="module-footer-nav-list__item"><a href="https://maidonanews.jp/about" id="footer_menu_about">まいどなニュースとは</a></li>
+          <li class="module-footer-nav-list__item"><a href="https://maidonanews.jp/request" id="footer_menu_request">取材リクエスト</a></li>
+          <li class="module-footer-nav-list__item"><a href="https://maidonanews.jp/terms" id="footer_menu_agreement">利用規約・プライバシー</a></li>
+          <li class="module-footer-nav-list__item"><a href="https://maidonanews.jp/copyright" id="footer_menu_agreement">著作権</a></li>
+          <li class="module-footer-nav-list__item"><a href="https://maidonanews.jp/maidonanews/materials/AdvertisingGuide.pdf" id="footer_menu_ad">広告メニュー</a></li>
+          <li class="module-footer-nav-list__item"><a href="https://maidonanews.jp/contact" id="footer_menu_contact">お問い合わせ</a></li>
+        </ul>
+      </dd>
+    </dl><!-- .module-footer-nav -->
+  </nav><!-- .layout-footer__nav -->
+  <div class="layout-footer__copyright">
+    <p class="module-footer-copyright">Copyright © まいどなニュース All rights reserved.</p>
+  </div><!-- .layout-footer__copyright -->
+  <div class="module-footer-scrlTop">
+    <a id="js-footer-scrlTop" href="javascript:void(0)">ページトップへ戻る</a>
+  </div><!-- .module-footer-scrlTop -->
+
+  </footer>
+  
+</div>  <script type="text/javascript" id="">var _ul_comment_config=_ul_comment_config||{};_ul_comment_config.id="CM-zK4NRYQM";_ul_comment_config.article_id="";_ul_comment_config.author="";_ul_comment_config.published_at="";(function(a,b,c){if(void 0===a[b]){a.ULObject=b;a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)};a[b].l=1*new Date;var d=document.createElement("script");d.async=1;d.src=c+"/comment.js";c=document.getElementsByTagName("script")[0];c.parentNode.insertBefore(d,c)}})(window,"ul_comment_widget","https://cm-widget.nakanohito.jp/cm");
+ul_comment_widget("init",_ul_comment_config);</script><script type="text/javascript" id="">(function(a,e,b,f,g,c,d){a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)};c=e.createElement(f);c.async=1;c.src="https://www.clarity.ms/tag/"+g;d=e.getElementsByTagName(f)[0];d.parentNode.insertBefore(c,d)})(window,document,"clarity","script","3yvue534e4");</script> <!-- /.layout-wrapper -->
+
+<script src="./まいどなニュース_files/jquery-3.3.1.min.js.ダウンロード"></script>
+
+<script src="./まいどなニュース_files/jquery.inview.min.js.ダウンロード"></script>
+
+<script src="./まいどなニュース_files/default.js.ダウンロード"></script>
+
+<script src="./まいどなニュース_files/ofi.min.js.ダウンロード"></script>
+
+
+<script nomodule="" src="./まいどなニュース_files/intersection-observer.js.ダウンロード"></script>
+
+<script src="./まいどなニュース_files/lozad.min.js.ダウンロード"></script>
+
+
+<script src="./まいどなニュース_files/slick.min.js.ダウンロード"></script>
+
+<script src="./まいどなニュース_files/common.js.ダウンロード"></script><iframe src="./まいどなニュース_files/container.html" style="visibility: hidden; display: none;"></iframe>
+
+
+
+<iframe src="./まいどなニュース_files/syncframe.html" width="0" height="0" frameborder="0" title="Criteo GUM iframe" style="border-width: 0px; margin: 0px; display: none;"></iframe><iframe scrolling="no" frameborder="0" allowtransparency="true" src="./まいどなニュース_files/widget_iframe.2b1befbea3a1424bb94efd70105dfa52.html" title="Twitter settings iframe" style="display: none;"></iframe><iframe id="ob-user-test" style="display:none;width:0;height:0;" src="./まいどなニュース_files/test.html"></iframe><iframe id="rufous-sandbox" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: none;" title="Twitter analytics iframe" src="./まいどなニュース_files/saved_resource(3).html"></iframe><div id="ob-explore-more" style="position: fixed; inset: 200vh 0px 0px; width: 100vw; height: 100vh; background-color: rgb(255, 255, 255); z-index: 2147483647; display: block; box-sizing: border-box; overflow: hidden scroll;"><div class="OUTBRAIN" data-src="https://maidonanews.jp/" data-widget-id="CR_10" data-ob-lazy-render="true" data-ob-em-prefetch="true" data-ob-explore-more="" data-ob-mark="true" data-browser="chrome" data-os="win32" data-dynload="" data-idx="1" id="outbrain_widget_1"></div><div class="ob_sf_loader">
+                      <div class="bounce1"></div><div class="bounce2"></div><div class="bounce3"></div>
+                     </div></div></body></html>
