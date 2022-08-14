@@ -18,6 +18,7 @@
 !/tmp/pids/
 !/tmp/pids/.keep
 
+/coverage/*
 /spec/examples.txt
 
 /config/credentials/production.key
