@@ -14,4 +14,8 @@ class Crawler::Maidona < Crawler
                updated_at: Time.zone.parse(datetime))
     end
   end
+
+  def fetch_html
+    Nokogiri::HTML.parse(url.open, nil, url.read.charset)
+  end
 end
