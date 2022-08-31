@@ -7,6 +7,7 @@ export default function SupportersList () {
     'YuG1224',
     'ニシノ',
     'Masa Hokari',
+    'chitetopopps'
   ]
 
   return (
