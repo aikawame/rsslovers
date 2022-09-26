@@ -4,6 +4,7 @@ export default function SupportersList () {
   ]
 
   const NORMAL_SUPPORTERS = [
+    'aptorojp',
     'YuG1224',
     'ニシノ',
     'Masa Hokari',
