@@ -11,7 +11,7 @@
   "author": "Masahiro Aikawa",
   "license": "MIT",
   "dependencies": {
-    "@google/clasp": "^2.4.1",
+    "@google/clasp": "^2.4.2",
     "@types/google-apps-script": "^1.0.55",
     "@types/node": "^18.7.18"
   },
