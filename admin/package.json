@@ -13,7 +13,7 @@
   "dependencies": {
     "@google/clasp": "^2.4.1",
     "@types/google-apps-script": "^1.0.55",
-    "@types/node": "^18.7.18"
+    "@types/node": "^18.7.23"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.38.0",
