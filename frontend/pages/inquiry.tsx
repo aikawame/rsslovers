@@ -75,8 +75,8 @@ export default function Inquiry() {
           </div>
           <p className="is-size-7">
             このサイトはreCAPTCHAによって保護されており、
-            Googleの<Link href="https://policies.google.com/privacy"><a>プライバシーポリシー</a></Link>と
-            <Link href="https://policies.google.com/terms"><a>利用規約</a></Link>が適用されます。
+            Googleの<Link href="https://policies.google.com/privacy">プライバシーポリシー</Link>と
+            <Link href="https://policies.google.com/terms">利用規約</Link>が適用されます。
           </p>
         </form>
       </Section>

@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import Image from 'next/legacy/image'
 import Link from 'next/link'
 import Main from '../components/Main'
 import Section from '../components/Section'
@@ -71,7 +71,7 @@ export default function Support() {
               <div className="card-content">
                 <div className="title has-text-centered">
                   <Link href="https://github.com/sponsors/aikawame">
-                    <a><Image src={"/images/github.svg"} width="200" height="100" alt="GitHub" /></a>
+                    <Image src={"/images/github.svg"} width="200" height="100" alt="GitHub" />
                   </Link>
                 </div>
               </div>
@@ -82,8 +82,11 @@ export default function Support() {
               </footer>
               <footer className="card-footer">
                 <div className="card-footer-item">
-                  <Link href="https://github.com/sponsors/aikawame">
-                    <a className="button is-rounded is-info" target="blank">1ドル～/月</a>
+                  <Link
+                    href="https://github.com/sponsors/aikawame"
+                    className="button is-rounded is-info"
+                    target="blank">
+                    1ドル～/月
                   </Link>
                 </div>
               </footer>
@@ -93,8 +96,10 @@ export default function Support() {
             <div className="card card-amazon">
               <div className="card-content">
                 <p className="title has-text-centered">
-                  <Link href="https://www.amazon.jp/hz/wishlist/ls/142WH8V4Z1BSI?ref_=wl_share">
-                    <a target="blank"><Image src={"/images/amazon.svg"} width="200" height="100" alt="Amazon" /></a>
+                  <Link
+                    href="https://www.amazon.jp/hz/wishlist/ls/142WH8V4Z1BSI?ref_=wl_share"
+                    target="blank">
+                    <Image src={"/images/amazon.svg"} width="200" height="100" alt="Amazon" />
                   </Link>
                 </p>
               </div>
@@ -105,8 +110,11 @@ export default function Support() {
               </footer>
               <footer className="card-footer">
                 <div className="card-footer-item">
-                  <Link href="https://www.amazon.jp/hz/wishlist/ls/142WH8V4Z1BSI?ref_=wl_share">
-                    <a className="button is-rounded is-info" target="blank">500円～/都度</a>
+                  <Link
+                    href="https://www.amazon.jp/hz/wishlist/ls/142WH8V4Z1BSI?ref_=wl_share"
+                    className="button is-rounded is-info"
+                    target="blank">
+                    500円～/都度
                   </Link>
                 </div>
               </footer>
@@ -130,5 +138,5 @@ export default function Support() {
       </Section>
       <SupportersList />
     </Main>
-  )
+  );
 }
