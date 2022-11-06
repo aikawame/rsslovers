@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Image from 'next/image'
+import Image from 'next/legacy/image'
 import Link from 'next/link'
 import Analytics from './Analytics'
 import styles from '../styles/Layout.module.scss'
@@ -30,31 +30,27 @@ export default function Layout({ children }) {
         <nav className="navbar">
           <div className="navbar-brand">
             <div className="navbar-item is-size-3">
-              <Link href="/"><a><Image src={"/images/logo.svg"} width="175" height="28" alt="RSS愛好会" /></a></Link>
+              <Link href="/"><Image src={"/images/logo.svg"} width="175" height="28" alt="RSS愛好会" /></Link>
             </div>
             <div className="navbar-burger">
-              <Link href={"/support"}>
-                <a className="button is-rounded is-primary">
-                  <i className="icon-donate" aria-hidden="true" />&nbsp;支援
-                </a>
+              <Link href={"/support"} className="button is-rounded is-primary">
+                <i className="icon-donate" aria-hidden="true" />&nbsp;支援
               </Link>
             </div>
           </div>
           <div className="navbar-menu">
             <div className="navbar-start">
               <div className="navbar-item">
-                <Link href={"/about"}><a>サービス案内</a></Link>
+                <Link href={"/about"}>サービス案内</Link>
               </div>
               <div className="navbar-item">
-                <Link href={"/inquiry"}><a>お問い合わせ</a></Link>
+                <Link href={"/inquiry"}>お問い合わせ</Link>
               </div>
             </div>
             <div className="navbar-end">
               <div className="navbar-item">
-                <Link href={"/support"}>
-                  <a className="button is-rounded is-primary">
-                    <i className="icon-donate" aria-hidden="true" />&nbsp;支援
-                  </a>
+                <Link href={"/support"} className="button is-rounded is-primary">
+                  <i className="icon-donate" aria-hidden="true" />&nbsp;支援
                 </Link>
               </div>
             </div>
@@ -68,26 +64,31 @@ export default function Layout({ children }) {
         <div className="container">
           <ul className={styles.buttons}>
             <li>
-              <Link href={"https://twitter.com/intent/follow?screen_name=aikawame"}>
-                <a className={styles.twitter} target="blank" aria-label="フォロー"><i className="icon-twitter" /></a>
+              <Link
+                href={"https://twitter.com/intent/follow?screen_name=aikawame"}
+                className={styles.twitter}
+                target="blank"
+                aria-label="フォロー"
+              >
+                <i className="icon-twitter" />
               </Link>
             </li>
             <li>
-              <Link href={"/support"}><a className={styles.support} aria-label="支援"><i className="icon-donate" /></a></Link>
+              <Link href={"/support"} className={styles.support} aria-label="支援"><i className="icon-donate" /></Link>
             </li>
           </ul>
           <div>
-            <Link href="/"><a><Image src={"/images/logo.svg"} width="175" height="28" alt="RSS愛好会" /></a></Link>
+            <Link href="/"><Image src={"/images/logo.svg"} width="175" height="28" alt="RSS愛好会" /></Link>
           </div>
           <address className={styles.address}>
-            &copy; 2014 <Link href="https://worklover.wor.jp/"><a>Worklover</a></Link>
+            &copy; 2014 <Link href="https://worklover.wor.jp/">Worklover</Link>
           </address>
           <ul className={styles.menu}>
             <li>
-              <Link href={"/about"}><a>サービス案内</a></Link>
+              <Link href={"/about"}>サービス案内</Link>
             </li>
             <li>
-              <Link href={"/inquiry"}><a>お問い合わせ</a></Link>
+              <Link href={"/inquiry"}>お問い合わせ</Link>
             </li>
           </ul>
         </div>

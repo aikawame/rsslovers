@@ -17,14 +17,13 @@ export default function About() {
         <p>
           本サービスの運用には、クローラーの稼働やRSSフィードへの大量アクセス等のため、維持費用が掛かっております。
           フィードを日頃より購読されている場合は、サブスクリプションやスポットでの
-          <Link href={"/support"}><a>ご支援</a></Link>
+          <Link href={"/support"}>ご支援</Link>
           をいただけますと幸いです。
         </p>
         <p>
-          <Link href={"/support"}>
-            <a className="button is-rounded is-primary">
-              <i className="icon-donate" aria-hidden="true" />&nbsp;RSS愛好会を支援する
-            </a>
+          <Link href={"/support"} className="button is-rounded is-primary">
+
+            <i className="icon-donate" aria-hidden="true" />&nbsp;RSS愛好会を支援する
           </Link>
         </p>
       </Section>
