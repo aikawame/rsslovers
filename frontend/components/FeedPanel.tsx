@@ -31,11 +31,14 @@ export default function FeedPanel ({ category, site }: Props) {
       <section className="panel">
         <h3 className="panel-heading is-size-5">{siteName}</h3>
         { site.feeds.map((feed: Feed, index: number) => { return (
-          <Link href={`${process.env.NEXT_PUBLIC_ASSETS_URL}/rdf/${site.label}/${feed.label}.rdf`} key={feed.label}>
-            <a className="panel-block" style={getPanelStyle(index)}>
-              <span className="panel-icon"><i className="icon-rss-square" aria-hidden="true" /></span>
-              {feed.name}
-            </a>
+          <Link
+            href={`${process.env.NEXT_PUBLIC_ASSETS_URL}/rdf/${site.label}/${feed.label}.rdf`}
+            key={feed.label}
+            className="panel-block"
+            style={getPanelStyle(index)}
+          >
+            <span className="panel-icon"><i className="icon-rss-square" aria-hidden="true" /></span>
+            {feed.name}
           </Link>
         )})}
         {morePanel}
