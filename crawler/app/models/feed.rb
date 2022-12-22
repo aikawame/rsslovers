@@ -71,13 +71,12 @@ class Feed
   def crawl_and_generate_items(retry_count = 0)
     @site.crawler.url = @link_url
     @items = @site.crawler.fetch_items
+    Sentry.capture_message("#{@site.name}の#{@name}の記事が取得されませんでした。") if @items.size.zero?
     @crawled = true
     self
   rescue StandardError => e
     if retry_count >= 3
       Sentry.capture_exception(e)
-      Rails.logger.error(e.message)
-      Rails.logger.error(e.backtrace&.first)
     else
       sleep(10)
       crawl_and_generate_items(retry_count + 1)
