@@ -77,8 +77,6 @@ class Feed
   rescue StandardError => e
     if retry_count >= 3
       Sentry.capture_exception(e)
-      Rails.logger.error(e.message)
-      Rails.logger.error(e.backtrace&.first)
     else
       sleep(10)
       crawl_and_generate_items(retry_count + 1)
