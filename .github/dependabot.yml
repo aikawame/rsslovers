@@ -3,12 +3,12 @@ updates:
   - package-ecosystem: npm
     directory: /admin
     schedule:
-      interval: monthly
+      interval: daily
   - package-ecosystem: bundler
     directory: /crawler
     schedule:
-      interval: monthly
+      interval: daily
   - package-ecosystem: npm
     directory: /frontend
     schedule:
-      interval: monthly
+      interval: daily
