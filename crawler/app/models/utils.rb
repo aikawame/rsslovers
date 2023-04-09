@@ -33,7 +33,7 @@ class Utils
                                  endpoint: CREDENTIALS.s3.endpoint)
     client.put_object(bucket: CREDENTIALS.s3.bucket_name,
                       key: path,
-                      body:,
-                      content_type:)
+                      body: body,
+                      content_type: content_type)
   end
 end

@@ -1,7 +1,7 @@
 #
 # Builder
 #
-FROM public.ecr.aws/lambda/ruby:3.2.2023.04.04.12 as builder
+FROM public.ecr.aws/lambda/ruby:2.7 as builder
 
 RUN yum install -y \
         libX11 \
@@ -14,7 +14,7 @@ RUN yum install -y \
 #
 # Main
 #
-FROM public.ecr.aws/lambda/ruby:3.2.2023.04.04.12
+FROM public.ecr.aws/lambda/ruby:2.7
 
 COPY Gemfile Gemfile.lock ./
 
