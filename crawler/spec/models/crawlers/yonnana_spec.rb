@@ -2,7 +2,7 @@
 
 require 'rails_helper'
 
-RSpec.describe Crawler::Yonnana, type: :model, focus: true do
+RSpec.describe Crawler::Yonnana, type: :model do
   describe 'fetch_items' do
     let(:crawler) { test_crawler(described_class) }
     let(:attributes) do
