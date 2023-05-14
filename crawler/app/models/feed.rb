@@ -23,7 +23,7 @@ class Feed
                     label: feed_hash[:site][:label],
                     name: feed_hash[:site][:name],
                     url: URI.parse(feed_hash[:site][:url]))
-    new(site: site,
+    new(site:,
         label: feed_hash[:label],
         name: feed_hash[:name],
         link_url: URI.parse(feed_hash[:link_url]))
