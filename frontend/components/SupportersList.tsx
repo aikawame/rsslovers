@@ -9,7 +9,8 @@ export default function SupportersList () {
     'ニシノ',
     'Masa Hokari',
     'chitetopopps',
-    'holypanel'
+    'holypanel',
+    'CrazyHIKO'
   ]
 
   return (
