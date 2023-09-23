@@ -2,25 +2,15 @@
 
 # ロイターのクローラー
 class Crawler::Reuters < Crawler
+  prepend DynamicCrawler
+
   def fetch_items
-    fetch_html.css('.news-headline-list article').map do |block|
-      Item.new(title: block.css('h3.story-title').text.strip,
-               link_url: URI.join(root_url, block.css('a').attr('href')),
-               updated_at: parse_time(block.css('time').text))
-    end
-  end
-
-  private
-
-  def parse_time(value)
-    year, month, day = value.strip.split(/[年月日]/)
-    year = year.to_i
-    month = month.to_i
-    day = day.to_i
-    if day.positive?
-      Time.zone.parse("#{year}/#{month}/#{day}")
-    else
-      Time.zone.parse(value.strip)
+    fetch_html.css("div[data-testid='MediaStoryCard'], div[data-testid='TextStoryCard']").map do |block|
+      heading = block.css("*[data-testid='Heading']")
+      anchor = heading.attr('href') || heading.css('a').attr('href')
+      Item.new(title: heading.text.strip,
+               link_url: URI.join(root_url, anchor.text),
+               updated_at: Time.zone.parse(block.css('time').attr('datetime')))
     end
   end
 end
