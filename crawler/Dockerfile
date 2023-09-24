@@ -28,6 +28,7 @@ RUN yum install -y \
         fontconfig \
         gcc \
         ipa-gothic-fonts \
+        libyaml-devel \
         make \
     && bundle install \
     && fc-cache -fv \
