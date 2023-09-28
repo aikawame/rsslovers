@@ -19,7 +19,7 @@
     "react-hook-form": "^7.46.2",
     "sass": "^1.68.0",
     "stripe": "^12.18.0",
-    "swr": "^2.2.2"
+    "swr": "^2.2.4"
   },
   "devDependencies": {
     "@types/node": "^20.7.1",
