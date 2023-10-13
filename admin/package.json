@@ -12,7 +12,7 @@
   "license": "MIT",
   "dependencies": {
     "@google/clasp": "^2.4.2",
-    "@types/google-apps-script": "^1.0.71",
+    "@types/google-apps-script": "^1.0.75",
     "@types/node": "^20.7.1"
   },
   "devDependencies": {
