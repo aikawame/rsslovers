@@ -6,12 +6,11 @@ RSpec.describe Crawler::Nikkei, type: :model do
   describe 'fetch_items' do
     let(:crawler) { test_crawler(described_class) }
     let(:attributes) do
-      today = Time.zone.now
       {
-        title: '世界陸上女子マラソン、新谷仁美が欠場　コロナで',
+        title: '100年で30億円節約の計　町のインフラ、捨てて守る',
         description: nil,
-        link_url: URI.parse('https://www.nikkei.com/article/DGXZQOKC180N80Y2A710C2000000/'),
-        updated_at: Time.zone.local(today.year, today.month, today.day, 10, 49)
+        link_url: URI.parse('https://www.nikkei.com/article/DGXZQOUE193FP0Z10C24A1000000/'),
+        updated_at: Time.zone.parse('2024-01-19T20:00:00.000Z')
       }
     end
 
