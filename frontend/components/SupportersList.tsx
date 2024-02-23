@@ -7,6 +7,7 @@ export default function SupportersList () {
     'YuG1224',
     'Matyahiko',
     'ニシノ',
+    'zucchini',
     'Masa Hokari',
     'chitetopopps',
     'holypanel',
