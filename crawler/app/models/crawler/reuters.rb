@@ -5,7 +5,8 @@ class Crawler::Reuters < Crawler
   prepend DynamicCrawler
 
   def fetch_items
-    fetch_html.css("div[data-testid='MediaStoryCard'], div[data-testid='TextStoryCard']").map do |block|
+    selector = "div[data-testid='HeroCard'], div[data-testid='BasicCard'], div[data-testid='HubCard']"
+    fetch_html.css(selector).map do |block|
       heading = block.css("*[data-testid='Heading']")
       anchor = heading.attr('href') || heading.css('a').attr('href')
       Item.new(title: heading.text.strip,
