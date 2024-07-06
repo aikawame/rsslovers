@@ -7,9 +7,6 @@ on:
     paths:
       - 'crawler/**'
 
-env:
-  SERVERLESS_ACCESS_KEY: ${{secrets.SERVERLESS_ACCESS_KEY}}
-
 permissions:
   contents: read
   id-token: write
@@ -41,4 +38,5 @@ jobs:
       - name: Deploy to AWS Lambda
         env:
           DOCKER_BUILDKIT: 1
+          SERVERLESS_ACCESS_KEY: ${{ secrets.SERVERLESS_ACCESS_KEY }}
         run: sls deploy
