@@ -7,7 +7,7 @@ class Crawler::Yomiuri < Crawler
       anchor = block.css('h3 a')
       datetime = block.css('time').attr('datetime')
       Item.new(title: anchor.text,
-               link_url: URI.parse(anchor.attr('href')),
+               link_url: URI.join(root_url, anchor.attr('href')),
                updated_at: Time.zone.parse(datetime))
     end
   end
