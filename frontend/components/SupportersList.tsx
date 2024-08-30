@@ -1,13 +1,12 @@
 export default function SupportersList () {
   const GOLD_SUPPORTERS = [
     'SHIN',
+    'fratoko'
   ]
 
   const NORMAL_SUPPORTERS = [
     'YuG1224',
-    'fratoko',
     'Matyahiko',
-    'UmedaTakefumi',
     'ニシノ',
     'zucchini',
     'Masa Hokari',
