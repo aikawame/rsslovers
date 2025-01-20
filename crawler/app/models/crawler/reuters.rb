@@ -7,7 +7,7 @@ class Crawler::Reuters < Crawler
   def fetch_items
     selector_str = "div[data-testid='HeroCard'], div[data-testid='BasicCard'], div[data-testid='HubCard']"
     fetch_html.css(selector_str).map do |block|
-      title = block.css("*[data-testid='Title']")
+      title = block.css("*[data-testid='Heading']")
       anchor = title.attr('href')
       Item.new(title: title.text.strip,
                link_url: URI.join(root_url, anchor.text),
