@@ -10,6 +10,7 @@ class Crawler::Yomiuri < Crawler
                link_url: URI.join(root_url, anchor.attr('href')),
                updated_at: Time.zone.parse(datetime))
     rescue StandardError
+      Rails.logger.error(e.message)
     end
   end
 end
