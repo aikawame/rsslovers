@@ -19,6 +19,7 @@ def selector
   [
     '.news-top-latest article',
     '.fn-category-organization article',
-    '.fn-category-time-series article'
+    '.fn-category-time-series article',
+    '.p-category-time-series .item'
   ].join(', ')
 end
