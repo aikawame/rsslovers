@@ -37,6 +37,7 @@ services:
     build:
       context: crawler
       dockerfile: Dockerfile
+    platform: linux/amd64
     environment:
       RAILS_ENV: development
     ports:
