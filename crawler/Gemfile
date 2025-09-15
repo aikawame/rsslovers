@@ -8,6 +8,7 @@ gem 'rails', '~> 8.0.2.1'
 
 gem 'aws-sdk-s3'
 gem 'capybara', require: false
+gem 'nkf', require: false
 gem 'selenium-webdriver', require: false
 gem 'sentry-rails'
 gem 'sentry-ruby'
