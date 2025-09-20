@@ -9,8 +9,9 @@ ENV RAILS_LOG_TO_STDOUT=1
 ENV TZ=Asia/Tokyo
 
 RUN dnf install -y \
-        fontconfig \
         gcc \
+    && dnf install -y \
+        fontconfig \
         ipa-gothic-fonts \
         libyaml-devel \
         make \
@@ -18,7 +19,7 @@ RUN dnf install -y \
     && wget https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm \
     && dnf install -y `rpm -qR google-chrome-stable_current_x86_64.rpm | grep -v rpmlib | tr '\n' ' ' ` \
     && rpm -i ./google-chrome-stable_current_x86_64.rpm \
-    && bundle install --clean \
+    && bundle install \
     && fc-cache -fv \
     && rm -rf /var/cache/dnf/* \
     && dnf clean all \
