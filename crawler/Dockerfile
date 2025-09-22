@@ -3,7 +3,8 @@ FROM public.ecr.aws/lambda/ruby:3.4.2025.09.19.23
 COPY Gemfile Gemfile.lock ./
 
 ENV PATH=$PATH:${LAMBDA_TASK_ROOT}/bin
-ENV GEM_HOME=${LAMBDA_TASK_ROOT}
+ENV GEM_HOME=vendor/bundle
+ENV BUNDLE_PATH=${GEM_HOME}
 ENV RAILS_ENV=production
 ENV RAILS_LOG_TO_STDOUT=1
 ENV TZ=Asia/Tokyo
