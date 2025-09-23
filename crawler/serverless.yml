@@ -6,7 +6,6 @@ provider:
   lambdaHashingVersion: 20201221
   stage: prod
   region: ap-northeast-1
-  memorySize: 2048
   timeout: 900
   environment:
     RAILS_MASTER_KEY: ${ssm:/rsslovers/rails_master_key}
