@@ -43,7 +43,10 @@ services:
       - '8080:8080'
     volumes:
       - ./crawler:/var/task:cached
-      - bundle:/var/task/vendor/bundle
+      - bundler_cache:/var/task/cache
+      - bundler_extensions:/var/task/extensions
+      - bundler_gems:/var/task/gems
+      - bundler_specifications:/var/task/specifications
     depends_on:
       - s3
     networks:
@@ -58,6 +61,9 @@ services:
       - '3000:3000'
 volumes:
   bin:
-  bundle:
+  bundler_cache:
+  bundler_extensions:
+  bundler_gems:
+  bundler_specifications:
 networks:
   s3:
