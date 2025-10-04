@@ -76,8 +76,8 @@ GEM
       public_suffix (>= 2.0.2, < 7.0)
     ast (2.4.3)
     aws-eventstream (1.4.0)
-    aws-partitions (1.1166.0)
-    aws-sdk-core (3.233.0)
+    aws-partitions (1.1159.0)
+    aws-sdk-core (3.232.0)
       aws-eventstream (~> 1, >= 1.3.0)
       aws-partitions (~> 1, >= 1.992.0)
       aws-sigv4 (~> 1.9)
@@ -85,10 +85,10 @@ GEM
       bigdecimal
       jmespath (~> 1, >= 1.6.1)
       logger
-    aws-sdk-kms (1.113.0)
+    aws-sdk-kms (1.112.0)
       aws-sdk-core (~> 3, >= 3.231.0)
       aws-sigv4 (~> 1.5)
-    aws-sdk-s3 (1.199.1)
+    aws-sdk-s3 (1.199.0)
       aws-sdk-core (~> 3, >= 3.231.0)
       aws-sdk-kms (~> 1)
       aws-sigv4 (~> 1.5)
@@ -116,7 +116,7 @@ GEM
     drb (2.2.3)
     erb (5.0.2)
     erubi (1.13.1)
-    globalid (1.3.0)
+    globalid (1.2.1)
       activesupport (>= 6.1)
     i18n (1.14.7)
       concurrent-ruby (~> 1.0)
@@ -126,7 +126,7 @@ GEM
       rdoc (>= 4.0.0)
       reline (>= 0.4.2)
     jmespath (1.6.2)
-    json (2.15.0)
+    json (2.13.2)
     language_server-protocol (3.17.0.5)
     lint_roller (1.1.0)
     logger (1.7.0)
@@ -138,10 +138,9 @@ GEM
       net-imap
       net-pop
       net-smtp
-    marcel (1.1.0)
+    marcel (1.0.4)
     matrix (0.4.3)
     mini_mime (1.1.5)
-    mini_portile2 (2.8.9)
     minitest (5.25.5)
     net-imap (0.5.10)
       date
@@ -154,8 +153,7 @@ GEM
       net-protocol
     nio4r (2.7.4)
     nkf (0.2.0)
-    nokogiri (1.18.10)
-      mini_portile2 (~> 2.8.2)
+    nokogiri (1.18.9-x86_64-linux-gnu)
       racc (~> 1.4)
     parallel (1.27.0)
     parser (3.3.9.0)
@@ -212,7 +210,7 @@ GEM
     rdoc (6.14.2)
       erb
       psych (>= 4.0.0)
-    regexp_parser (2.11.3)
+    regexp_parser (2.11.2)
     reline (0.6.2)
       io-console (~> 0.5)
     rexml (3.4.4)
@@ -232,8 +230,8 @@ GEM
       rspec-expectations (~> 3.13)
       rspec-mocks (~> 3.13)
       rspec-support (~> 3.13)
-    rspec-support (3.13.6)
-    rubocop (1.81.1)
+    rspec-support (3.13.5)
+    rubocop (1.80.2)
       json (~> 2.3)
       language_server-protocol (~> 3.17.0.2)
       lint_roller (~> 1.1.0)
@@ -241,24 +239,24 @@ GEM
       parser (>= 3.3.0.2)
       rainbow (>= 2.2.2, < 4.0)
       regexp_parser (>= 2.9.3, < 3.0)
-      rubocop-ast (>= 1.47.1, < 2.0)
+      rubocop-ast (>= 1.46.0, < 2.0)
       ruby-progressbar (~> 1.7)
       unicode-display_width (>= 2.4.0, < 4.0)
-    rubocop-ast (1.47.1)
+    rubocop-ast (1.46.0)
       parser (>= 3.3.7.2)
       prism (~> 1.4)
     rubocop-performance (1.26.0)
       lint_roller (~> 1.1)
       rubocop (>= 1.75.0, < 2.0)
       rubocop-ast (>= 1.44.0, < 2.0)
-    rubocop-rails (2.33.4)
+    rubocop-rails (2.33.3)
       activesupport (>= 4.2.0)
       lint_roller (~> 1.1)
       rack (>= 1.1)
       rubocop (>= 1.75.0, < 2.0)
       rubocop-ast (>= 1.44.0, < 2.0)
     ruby-progressbar (1.13.0)
-    rubyzip (3.1.1)
+    rubyzip (3.1.0)
     securerandom (0.4.1)
     selenium-webdriver (4.35.0)
       base64 (~> 0.2)
@@ -266,10 +264,10 @@ GEM
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2, < 4.0)
       websocket (~> 1.0)
-    sentry-rails (5.28.0)
+    sentry-rails (5.27.0)
       railties (>= 5.0)
-      sentry-ruby (~> 5.28.0)
-    sentry-ruby (5.28.0)
+      sentry-ruby (~> 5.27.0)
+    sentry-ruby (5.27.0)
       bigdecimal
       concurrent-ruby (~> 1.0, >= 1.0.2)
     simplecov (0.22.0)
@@ -298,7 +296,7 @@ GEM
     zeitwerk (2.7.3)
 
 PLATFORMS
-  ruby
+  x86_64-linux
 
 DEPENDENCIES
   aws-sdk-s3
@@ -315,7 +313,7 @@ DEPENDENCIES
   simplecov
 
 RUBY VERSION
-   ruby 3.4.6p54
+   ruby 3.4.5p51
 
 BUNDLED WITH
-   2.7.2
+   2.7.1
