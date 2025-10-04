@@ -19,5 +19,6 @@ functions:
   main:
     image:
       name: latest
+    ephemeralStorageSize: 1024
     events:
       - schedule: cron(10 * * * ? *)
