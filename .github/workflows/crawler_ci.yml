@@ -17,11 +17,11 @@ jobs:
         working-directory: ./crawler
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v5
 
       - uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 2.7.7
+          ruby-version: '3.4.6'
           bundler-cache: true
 
       - name: Install packages
