@@ -3,10 +3,6 @@ services:
     image: minio/minio
     environment:
       MINIO_DOMAIN: s3
-    deploy:
-      resources:
-        limits:
-          memory: 1024M
     ports:
       - '9000:9000'
       - '9001:9001'
@@ -19,10 +15,6 @@ services:
     command: minio server /data --console-address :9001
   createbuckets:
     image: minio/mc
-    deploy:
-      resources:
-        limits:
-          memory: 1024M
     depends_on:
       - s3
     networks:
@@ -38,10 +30,6 @@ services:
     build:
       context: admin
       dockerfile: Dockerfile
-    deploy:
-      resources:
-        limits:
-          memory: 1024M
     volumes:
       - ./admin:/opt/project:cached
   crawler:
@@ -51,10 +39,6 @@ services:
     platform: linux/amd64
     environment:
       RAILS_ENV: development
-    deploy:
-      resources:
-        limits:
-          memory: 2048M
     ports:
       - '8080:8080'
     volumes:
@@ -68,14 +52,10 @@ services:
     build:
       context: frontend
       dockerfile: Dockerfile
-    deploy:
-      resources:
-        limits:
-          memory: 1024M
-    ports:
-      - '3000:3000'
     volumes:
       - ./frontend:/opt/project:cached
+    ports:
+      - '3000:3000'
 volumes:
   bin:
   bundle:
