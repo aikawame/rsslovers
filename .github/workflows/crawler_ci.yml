@@ -21,7 +21,7 @@ jobs:
 
       - uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.4.6'
+          ruby-version: '3.4.5'
           bundler-cache: true
 
       - name: Install packages

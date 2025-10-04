@@ -1,4 +1,4 @@
-FROM public.ecr.aws/lambda/ruby:3.4.2025.09.27.12-x86_64
+FROM public.ecr.aws/lambda/ruby:3.4.2025.09.19.23
 
 COPY Gemfile Gemfile.lock ./
 
@@ -16,19 +16,12 @@ RUN dnf install -y \
         ipa-gothic-fonts \
         libyaml-devel \
         make \
-        patch \
-        tar \
         wget \
-        xz \
     && wget https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm \
     && dnf install -y `rpm -qR google-chrome-stable_current_x86_64.rpm | grep -v rpmlib | tr '\n' ' ' ` \
     && rpm -i ./google-chrome-stable_current_x86_64.rpm \
     && bundle install \
     && fc-cache -fv \
-    && dnf remove -y \
-        patch \
-        tar \
-        xz \
     && rm -rf /var/cache/dnf/* \
     && dnf clean all \
     && rm -f ./google-chrome-stable_current_x86_64.rpm
