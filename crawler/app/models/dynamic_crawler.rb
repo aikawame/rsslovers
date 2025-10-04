@@ -2,7 +2,7 @@
 
 # 動的HTMLを扱うクローラー
 module DynamicCrawler
-  SESSION = Capybara::Session.new(:scraper)
+  SESSION = Capybara::Session.new(:crawler)
 
   def fetch_html
     SESSION.visit(@url)
