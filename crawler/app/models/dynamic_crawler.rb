@@ -2,11 +2,10 @@
 
 # 動的HTMLを扱うクローラー
 module DynamicCrawler
+  SESSION = Capybara::Session.new(:scraper)
+
   def fetch_html
-    session = Capybara::Session.new(:crawler)
-    session.visit(@url)
-    result = Nokogiri::HTML.parse(session.html)
-    session.quit
-    result
+    SESSION.visit(@url)
+    Nokogiri::HTML.parse(SESSION.html)
   end
 end
