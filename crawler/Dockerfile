@@ -11,6 +11,7 @@ ENV RAILS_LOG_TO_STDOUT=1
 ENV TZ=Asia/Tokyo
 
 RUN dnf install -y \
+        firefox \
         fontconfig \
         gcc \
         ipa-gothic-fonts \
@@ -18,11 +19,7 @@ RUN dnf install -y \
         make \
         patch \
         tar \
-        wget \
         xz \
-    && wget https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm \
-    && dnf install -y `rpm -qR google-chrome-stable_current_x86_64.rpm | grep -v rpmlib | tr '\n' ' ' ` \
-    && rpm -i ./google-chrome-stable_current_x86_64.rpm \
     && bundle install \
     && fc-cache -fv \
     && dnf remove -y \
@@ -30,8 +27,7 @@ RUN dnf install -y \
         tar \
         xz \
     && rm -rf /var/cache/dnf/* \
-    && dnf clean all \
-    && rm -f ./google-chrome-stable_current_x86_64.rpm
+    && dnf clean all
 
 COPY . .
 
