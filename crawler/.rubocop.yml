@@ -1,10 +1,10 @@
-require:
+plugins:
   - rubocop-rails
   - rubocop-performance
 
 AllCops:
-  TargetRubyVersion: 2.7
-  TargetRailsVersion: 7.0
+  TargetRubyVersion: 3.4
+  TargetRailsVersion: 8.0
   NewCops: enable
   Exclude:
     - '.git/**/*'
