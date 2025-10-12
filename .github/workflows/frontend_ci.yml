@@ -17,11 +17,11 @@ jobs:
         working-directory: ./frontend
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v5
 
-      - uses: actions/setup-node@v2
+      - uses: actions/setup-node@v5
         with:
-          node-version: '22.x'
+          node-version: '24.x'
 
       - name: Install packages
         run: npm install
