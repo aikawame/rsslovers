@@ -2,7 +2,7 @@ service: rsslovers-crawler
 
 provider:
   name: aws
-  runtime: nodejs24.x
+  runtime: nodejs22.x
   stage: prod
   region: ap-northeast-1
   memorySize: 2048
