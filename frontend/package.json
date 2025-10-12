@@ -11,23 +11,23 @@
   },
   "dependencies": {
     "bulma": "^0.9.4",
-    "next": "^13.5.2",
-    "nodemailer": "^6.9.5",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-google-recaptcha-v3": "^1.10.1",
-    "react-hook-form": "^7.46.2",
-    "sass": "^1.68.0",
-    "stripe": "^12.18.0",
-    "swr": "^2.2.2"
+    "next": "^15.5.4",
+    "nodemailer": "^7.0.9",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "react-google-recaptcha-v3": "^1.11.0",
+    "react-hook-form": "^7.65.0",
+    "sass": "^1.93.2",
+    "stripe": "^19.1.0",
+    "swr": "^2.3.6"
   },
   "devDependencies": {
-    "@types/node": "^20.7.1",
-    "@types/nodemailer": "^6.4.11",
-    "@types/react": "^18.2.22",
-    "eslint": "^8.50.0",
-    "eslint-config-next": "^13.5.2",
-    "next-sitemap": "^3.1.55",
-    "typescript": "^5.2.2"
+    "@types/node": "^24.7.2",
+    "@types/nodemailer": "^7.0.2",
+    "@types/react": "^19.2.2",
+    "eslint": "^8.57.1",
+    "eslint-config-next": "^15.5.4",
+    "next-sitemap": "^4.2.3",
+    "typescript": "^5.9.3"
   }
 }
