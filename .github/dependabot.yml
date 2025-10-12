@@ -3,12 +3,29 @@ updates:
   - package-ecosystem: npm
     directory: /admin
     schedule:
-      interval: daily
+      interval: weekly
+      day: saturday
+      time: 10:00
+      timezone: Asia/Tokyo
+    ignore:
+      - dependency-name: "eslint"
+        versions: [ ">=9.0.0" ]
   - package-ecosystem: bundler
     directory: /crawler
     schedule:
-      interval: daily
+      interval: weekly
+      day: saturday
+      time: 10:00
+      timezone: Asia/Tokyo
   - package-ecosystem: npm
     directory: /frontend
     schedule:
-      interval: daily
+      interval: weekly
+      day: saturday
+      time: 10:00
+      timezone: Asia/Tokyo
+    ignore:
+      - dependency-name: "bulma"
+        versions: [ ">=1.0.0" ]
+      - dependency-name: "eslint"
+        versions: [ ">=9.0.0" ]
