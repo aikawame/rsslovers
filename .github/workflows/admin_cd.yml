@@ -17,11 +17,11 @@ jobs:
         working-directory: ./admin
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v5
 
-      - uses: actions/setup-node@v2
+      - uses: actions/setup-node@v5
         with:
-          node-version: '16.x'
+          node-version: '24.x'
 
       - name: Install Clasp
         run: npm install -g clasp
