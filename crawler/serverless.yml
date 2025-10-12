@@ -2,8 +2,7 @@ service: rsslovers-crawler
 
 provider:
   name: aws
-  runtime: nodejs18.x
-  lambdaHashingVersion: 20201221
+  runtime: nodejs24.x
   stage: prod
   region: ap-northeast-1
   memorySize: 2048
