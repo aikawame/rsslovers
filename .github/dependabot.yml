@@ -5,7 +5,7 @@ updates:
     schedule:
       interval: weekly
       day: saturday
-      time: 10:00
+      time: "10:00"
       timezone: Asia/Tokyo
     ignore:
       - dependency-name: "eslint"
@@ -15,14 +15,14 @@ updates:
     schedule:
       interval: weekly
       day: saturday
-      time: 10:00
+      time: "10:00"
       timezone: Asia/Tokyo
   - package-ecosystem: npm
     directory: /frontend
     schedule:
       interval: weekly
       day: saturday
-      time: 10:00
+      time: "10:00"
       timezone: Asia/Tokyo
     ignore:
       - dependency-name: "bulma"
