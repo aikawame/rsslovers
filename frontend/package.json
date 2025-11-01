@@ -18,7 +18,7 @@
     "react-google-recaptcha-v3": "^1.11.0",
     "react-hook-form": "^7.65.0",
     "sass": "^1.93.2",
-    "stripe": "^19.1.0",
+    "stripe": "^19.2.0",
     "swr": "^2.3.6"
   },
   "devDependencies": {
