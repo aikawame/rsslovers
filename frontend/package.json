@@ -16,13 +16,13 @@
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
     "react-google-recaptcha-v3": "^1.11.0",
-    "react-hook-form": "^7.65.0",
-    "sass": "^1.93.2",
-    "stripe": "^19.1.0",
+    "react-hook-form": "^7.66.0",
+    "sass": "^1.93.3",
+    "stripe": "^19.2.0",
     "swr": "^2.3.6"
   },
   "devDependencies": {
-    "@types/node": "^24.9.1",
+    "@types/node": "^24.9.2",
     "@types/nodemailer": "^7.0.3",
     "@types/react": "^19.2.2",
     "eslint": "^8.57.1",
