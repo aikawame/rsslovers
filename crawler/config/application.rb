@@ -43,6 +43,5 @@ module RssloversCrawler
 
     config.require_master_key = false
     config.time_zone = 'Tokyo'
-    config.active_support.to_time_preserves_timezone = :zone
   end
 end
