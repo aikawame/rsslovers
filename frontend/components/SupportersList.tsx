@@ -5,6 +5,7 @@ export default function SupportersList () {
   ]
 
   const NORMAL_SUPPORTERS = [
+    'ぽむ',
     'YuG1224',
     'ニシノ',
     'zucchini',
