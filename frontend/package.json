@@ -24,7 +24,7 @@
   "devDependencies": {
     "@types/node": "^25.0.10",
     "@types/nodemailer": "^7.0.5",
-    "@types/react": "^19.2.8",
+    "@types/react": "^19.2.9",
     "eslint": "^8.57.1",
     "eslint-config-next": "^15.5.9",
     "next-sitemap": "^4.2.3",
