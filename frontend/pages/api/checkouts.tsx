@@ -7,7 +7,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   try {
     const { price } = req.query
     const stripe = new Stripe(process.env.STRIPE_SECRET_KEY, {
-      apiVersion: '2026-01-28.clover'
+      apiVersion: '2026-04-22.dahlia'
     })
     const session = await stripe.checkout.sessions.create({
       line_items: [
