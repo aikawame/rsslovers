@@ -134,7 +134,7 @@ GEM
     marcel (1.1.0)
     mini_mime (1.1.5)
     mini_portile2 (2.8.9)
-    minitest (6.0.2)
+    minitest (6.0.6)
       drb (~> 2.0)
       prism (~> 1.5)
     net-imap (0.6.3)
@@ -163,7 +163,7 @@ GEM
       date
       stringio
     racc (1.8.1)
-    rack (3.2.5)
+    rack (3.2.6)
     rack-session (2.1.1)
       base64 (>= 0.1.0)
       rack (>= 3.0.0)
@@ -246,7 +246,7 @@ GEM
       lint_roller (~> 1.1)
       rubocop (>= 1.75.0, < 2.0)
       rubocop-ast (>= 1.47.1, < 2.0)
-    rubocop-rails (2.34.3)
+    rubocop-rails (2.35.0)
       activesupport (>= 4.2.0)
       lint_roller (~> 1.1)
       rack (>= 1.1)
