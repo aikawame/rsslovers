@@ -10,6 +10,8 @@ updates:
     ignore:
       - dependency-name: "eslint"
         versions: [ ">=9.0.0" ]
+      - dependency-name: "*"
+        update-types: [ "version-update:semver-patch" ]
   - package-ecosystem: bundler
     directory: /crawler
     schedule:
@@ -17,6 +19,9 @@ updates:
       day: saturday
       time: "10:00"
       timezone: Asia/Tokyo
+    ignore:
+      - dependency-name: "*"
+        update-types: [ "version-update:semver-patch" ]
   - package-ecosystem: npm
     directory: /frontend
     schedule:
@@ -29,3 +34,5 @@ updates:
         versions: [ ">=1.0.0" ]
       - dependency-name: "eslint"
         versions: [ ">=9.0.0" ]
+      - dependency-name: "*"
+        update-types: [ "version-update:semver-patch" ]
