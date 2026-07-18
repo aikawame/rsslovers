@@ -11,8 +11,8 @@ export default function Layout({ children }) {
       <Head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width,initial-scale=1" />
-        <meta name="description" content="日経・ロイター・ブルームバーグなどのRSSフィードを配信しています。" />
-        <meta name="keywords" content="RSS,新聞,ニュース,日経,NIKKEI,ロイター,Reuters,ブルームバーグ,Bloomberg" />
+        <meta name="description" content="日経・読売・産経・ブルームバーグなどのRSSフィードを配信しています。" />
+        <meta name="keywords" content="RSS,新聞,ニュース,日経,NIKKEI,ブルームバーグ,Bloomberg" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="RSS愛好会" />
         <meta property="og:title" content="RSS愛好会" />
@@ -20,7 +20,7 @@ export default function Layout({ children }) {
         <meta property="og:image" content="https://rss.wor.jp/img/ogp.png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
-        <meta property="og:description" content="日経・ロイター・ブルームバーグなどのRSSフィードを配信しています。" />
+        <meta property="og:description" content="日経・読売・産経・ブルームバーグなどのRSSフィードを配信しています。" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@aikawame" />
         <link rel="icon" type="image/x-icon" href={"/favicon.ico"} />

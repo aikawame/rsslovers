@@ -38,12 +38,6 @@ export default function Home() {
 
   return (
     <Main title="">
-      <Section heading="ロイターのフィード配信終了のお知らせ">
-        <p>
-          ロイターのボット対策が強化され、クローラーによる記事取得が困難な状況となりました。
-          つきましては、フィード配信を終了させていただきます。どうぞあしからずご了承ください。
-        </p>
-      </Section>
       { data.map(category => { return (
         <Section heading={category.name} key={category.label}>
           <div className="panels">
