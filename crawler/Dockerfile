@@ -1,4 +1,4 @@
-FROM public.ecr.aws/lambda/ruby:4.0.2026.10.29.11-arm64
+FROM public.ecr.aws/lambda/ruby:4.0.2026.10.29.11-x86_64
 
 COPY Gemfile Gemfile.lock ./
 
