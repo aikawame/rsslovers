@@ -7,6 +7,7 @@ updates:
       day: saturday
       time: "10:00"
       timezone: Asia/Tokyo
+    open-pull-requests-limit: 10
     ignore:
       - dependency-name: "eslint"
         versions: [ ">=9.0.0" ]
@@ -19,6 +20,7 @@ updates:
       day: saturday
       time: "10:00"
       timezone: Asia/Tokyo
+    open-pull-requests-limit: 10
     ignore:
       - dependency-name: "*"
         update-types: [ "version-update:semver-patch" ]
@@ -29,6 +31,7 @@ updates:
       day: saturday
       time: "10:00"
       timezone: Asia/Tokyo
+    open-pull-requests-limit: 10
     ignore:
       - dependency-name: "bulma"
         versions: [ ">=1.0.0" ]
