@@ -14,7 +14,7 @@
     "next": "16.2.6",
     "nodemailer": "^10.0.10",
     "react": "^19.2.5",
-    "react-dom": "^19.2.5",
+    "react-dom": "^19.3.1",
     "react-google-recaptcha-v3": "^1.11.0",
     "react-hook-form": "^7.87.0",
     "sass": "^1.104.0",
