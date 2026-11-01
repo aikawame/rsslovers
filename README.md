@@ -34,8 +34,8 @@ RSS愛好会のウェブサイト本体です。
 
 RSS愛好会で配信するためのフィードを各外部サイトから収集するためのクローラーです。
 
-- 言語: Ruby 3.4
-- フレームワーク: Ruby on Rails 8.0
+- 言語: Ruby 4.0
+- フレームワーク: Ruby on Rails 8.1
 - テスト: RSpec
 - Linter: RuboCop
 - CI/CD: GitHub Actions
