@@ -2,7 +2,6 @@ service: rsslovers-crawler
 
 provider:
   name: aws
-  architecture: arm64
   runtime: nodejs26.x
   stage: prod
   region: ap-northeast-1
