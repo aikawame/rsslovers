@@ -37,6 +37,7 @@ jobs:
 
       - name: Deploy to AWS Lambda
         env:
+          BUILDX_NO_DEFAULT_ATTESTATIONS: 1
           DOCKER_BUILDKIT: 1
           SERVERLESS_ACCESS_KEY: ${{ secrets.SERVERLESS_ACCESS_KEY }}
         run: sls deploy
