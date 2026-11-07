@@ -16,7 +16,7 @@
     "react": "^19.2.5",
     "react-dom": "^19.3.1",
     "react-google-recaptcha-v3": "^1.11.0",
-    "react-hook-form": "^7.87.0",
+    "react-hook-form": "^7.91.0",
     "sass": "^1.104.0",
     "stripe": "^23.0.1",
     "swr": "^2.5.0"
