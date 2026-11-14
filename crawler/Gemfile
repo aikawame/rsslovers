@@ -6,6 +6,7 @@ ruby '4.0.9'
 
 gem 'rails', '~> 8.1.4'
 
+gem 'active_hash'
 gem 'aws-sdk-s3'
 gem 'nkf', require: false
 gem 'selenium-webdriver', require: false

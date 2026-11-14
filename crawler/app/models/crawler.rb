@@ -4,16 +4,18 @@ require 'kconv'
 
 # クローラー
 class Crawler
-  attr_accessor :url
+  def self.create(type, url)
+    Object.const_get("Crawler::#{type.capitalize}").new(url)
+  end
 
-  def self.create(label)
-    Object.const_get("Crawler::#{label.capitalize}").new
+  def initialize(url)
+    @url = URI.parse(url)
   end
 
   def fetch_html
     return Nokogiri::HTML::Document.new if @url.instance_of?(URI)
 
-    Nokogiri::HTML.parse(url.open)
+    Nokogiri::HTML.parse(@url.open)
   end
 
   private

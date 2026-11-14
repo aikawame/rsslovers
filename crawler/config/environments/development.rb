@@ -45,4 +45,6 @@ Rails.application.configure do
   # config.generators.apply_rubocop_autocorrect_after_generate!
 
   config.logger = Logger.new(STDOUT)
+
+  Aws.config.update(stub_responses: true)
 end
