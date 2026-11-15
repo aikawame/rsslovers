@@ -34,32 +34,16 @@ services:
       /usr/bin/mc policy set public minio/assets.wor.jp;
       exit 0;
       "
-  admin:
-    build:
-      context: admin
-      dockerfile: Dockerfile
-    deploy:
-      resources:
-        limits:
-          memory: 1024M
-    volumes:
-      - ./admin:/opt/project:cached
   crawler:
     build:
       context: crawler
-      dockerfile: Dockerfile
-    platform: linux/amd64
+      dockerfile: Dockerfile.dev
     environment:
       RAILS_ENV: development
-    deploy:
-      resources:
-        limits:
-          memory: 2048M
-    ports:
-      - '8080:8080'
     volumes:
-      - ./crawler:/var/task:cached
-      - bundle:/var/task/vendor/bundle
+      - ./crawler:/rails:cached
+      - ./shared:/rails/shared
+      - bundle:/usr/local/bundle
     depends_on:
       - s3
     networks:

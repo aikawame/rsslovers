@@ -6,6 +6,7 @@ on:
       - main
     paths:
       - 'crawler/**'
+      - 'shared/**'
 
 jobs:
   test:
@@ -16,19 +17,22 @@ jobs:
       run:
         working-directory: ./crawler
 
+    env:
+      TZ: Asia/Tokyo
+
     steps:
       - uses: actions/checkout@v5
 
       - uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '4.0.9'
+          working-directory: ./crawler
           bundler-cache: true
 
       - name: Install packages
         run: bundle install
 
       - name: Run Rubocop
-        run: rubocop
+        run: bundle exec rubocop
 
       - name: Run RSpec
-        run: rspec
+        run: bundle exec rspec

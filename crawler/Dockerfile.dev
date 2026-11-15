@@ -1,0 +1,26 @@
+FROM ruby:4.0.9-slim
+
+WORKDIR /rails
+
+RUN apt-get update -qq && \
+    apt-get install --no-install-recommends -y \
+    build-essential \
+    chromium \
+    chromium-driver \
+    curl \
+    git \
+    libyaml-dev \
+    pkg-config && \
+    rm -rf /var/lib/apt/lists /var/cache/apt/archives
+
+ENV TZ=Asia/Tokyo \
+    BUNDLE_JOBS=4 \
+    BUNDLE_RETRY=3
+
+COPY Gemfile Gemfile.lock ./
+
+RUN bundle install
+
+COPY . .
+
+CMD ["sleep", "infinity"]

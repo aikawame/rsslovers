@@ -1,0 +1,40 @@
+name: Crawler Schedule
+
+on:
+  schedule:
+    - cron: '10 * * * *'
+      timezone: Asia/Tokyo
+  workflow_dispatch:
+
+concurrency:
+  group: crawler-schedule
+  cancel-in-progress: false
+
+jobs:
+  crawl:
+
+    runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        working-directory: ./crawler
+
+    env:
+      TZ: Asia/Tokyo
+      RAILS_ENV: ${{ (github.actor == 'nektos/act') && 'development' || 'production' }}
+      RAILS_MASTER_KEY: ${{ secrets.RAILS_MASTER_KEY }}
+      SHARED_PATH: ../shared
+
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: ruby/setup-ruby@v1
+        with:
+          working-directory: ./crawler
+          bundler-cache: true
+
+      - name: Install packages
+        run: bundle install
+
+      - name: Run Crawler
+        run: bundle exec rails crawl
