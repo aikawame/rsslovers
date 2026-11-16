@@ -1,9 +1,6 @@
 name: Crawler Schedule
 
 on:
-  schedule:
-    - cron: '10 * * * *'
-      timezone: Asia/Tokyo
   workflow_dispatch:
 
 concurrency:
