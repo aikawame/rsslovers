@@ -16,6 +16,6 @@ class Crawler::Maidona < Crawler
   end
 
   def fetch_html
-    Nokogiri::HTML.parse(url.open, nil, url.read.charset)
+    Nokogiri::HTML.parse(@url.open, nil, url.read.charset)
   end
 end
