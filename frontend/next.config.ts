@@ -11,7 +11,7 @@ const nextConfig: NextConfig = {
     rules: {
       '*.yml': {
         loaders: ['yaml-loader'],
-        as: '*.js',
+        as: '*.js'
       }
     }
   }

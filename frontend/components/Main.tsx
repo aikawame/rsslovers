@@ -1,31 +1,28 @@
-import { ReactNode } from 'react'
 import Head from 'next/head'
+import type { ReactNode } from 'react'
 
 type Props = {
   title: string
   children: ReactNode
 }
 
-export default function Main({title, children}: Props) {
-  if (title) return (
-    <>
-      <Head>
-        <title>{title} - RSS愛好会</title>
-      </Head>
-      <main>
-        <div className="hero is-primary">
-          <div className="hero-body has-text-centered">
-            <h1 className="title has-text-weight-normal">
-              {title}
-            </h1>
+export default function Main({ title, children }: Props) {
+  if (title)
+    return (
+      <>
+        <Head>
+          <title>{title} - RSS愛好会</title>
+        </Head>
+        <main>
+          <div className="hero is-primary">
+            <div className="hero-body has-text-centered">
+              <h1 className="title has-text-weight-normal">{title}</h1>
+            </div>
           </div>
-        </div>
-        <section className="container content">
-          {children}
-        </section>
-      </main>
-    </>
-  )
+          <section className="container content">{children}</section>
+        </main>
+      </>
+    )
 
   return (
     <>
@@ -34,9 +31,7 @@ export default function Main({title, children}: Props) {
       </Head>
       <main>
         <hr />
-        <section className="container content">
-          {children}
-        </section>
+        <section className="container content">{children}</section>
       </main>
     </>
   )

@@ -1,5 +1,5 @@
 import yaml from '@/shared/data/feeds.yml'
-import { ApplicationRecord, BaseAttributes } from './ApplicationRecord'
+import { ApplicationRecord, type BaseAttributes } from './ApplicationRecord'
 import { Site } from './Site'
 
 export interface FeedAttributes extends BaseAttributes {

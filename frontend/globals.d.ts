@@ -1,6 +1,6 @@
 declare namespace NodeJS {
   interface ProcessEnv {
-    readonly NODE_ENV: 'development' | 'production' | 'test';
+    readonly NODE_ENV: 'development' | 'production' | 'test'
     readonly EMAIL_FROM: string
     readonly EMAIL_TO: string
     readonly SMTP_HOST: string

@@ -1,5 +1,5 @@
 import yaml from '@/shared/data/sites.yml'
-import { ApplicationRecord, BaseAttributes } from './ApplicationRecord'
+import { ApplicationRecord, type BaseAttributes } from './ApplicationRecord'
 import { Category } from './Category'
 import { Feed } from './Feed'
 
