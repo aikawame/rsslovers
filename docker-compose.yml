@@ -60,7 +60,7 @@ services:
       - '3000:3000'
     volumes:
       - ./frontend:/opt/project:cached
-      - ./shared:/opt/project/shared
+      - ./shared:/opt/shared
 volumes:
   bin:
   bundle:
