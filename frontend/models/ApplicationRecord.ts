@@ -21,14 +21,17 @@ export abstract class ApplicationRecord<T extends BaseAttributes> {
   }
 
   static all<M>(this: ModelClass<M>): M[] {
-    return (this._cache ??= this.data.map(
-      (item) =>
-        new this(
-          Object.fromEntries(
-            Object.entries(item).map(([key, value]) => [camelize(key), value])
+    if (!this._cache) {
+      this._cache = this.data.map(
+        (item) =>
+          new this(
+            Object.fromEntries(
+              Object.entries(item).map(([key, value]) => [camelize(key), value])
+            )
           )
-        )
-    ))
+      )
+    }
+    return this._cache
   }
 
   static findBy<M extends ApplicationRecord<any>>(

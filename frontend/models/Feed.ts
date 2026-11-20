@@ -10,6 +10,7 @@ export interface FeedAttributes extends BaseAttributes {
 
 export interface Feed extends FeedAttributes {}
 
+// biome-ignore lint/suspicious/noUnsafeDeclarationMerging: ActiveRecord
 export class Feed extends ApplicationRecord<FeedAttributes> {
   static data = yaml
 

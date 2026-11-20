@@ -1,10 +1,15 @@
 import Head from 'next/head'
 import Image from 'next/legacy/image'
 import Link from 'next/link'
+import type { ReactNode } from 'react'
 import styles from '../styles/Layout.module.scss'
 import Analytics from './Analytics'
 
-export default function Layout({ children }) {
+type Props = {
+  children: ReactNode
+}
+
+export default function Layout({ children }: Props) {
   return (
     <>
       <Head>

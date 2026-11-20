@@ -19,7 +19,7 @@ export default function Inquiry() {
     formState: { isSubmitting, errors }
   } = useForm<FormValues>()
 
-  const onSubmit = async (data) => {
+  const onSubmit = async (data: FormValues) => {
     if (!executeRecaptcha) {
       alert(
         'お問い合わせの送信に失敗しました。暫く時間を置いてからもう一度お試しください。'

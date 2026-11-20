@@ -5,7 +5,7 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse
 ) {
-  if (req.method !== 'POST') res.status(404).send('')
+  if (req.method !== 'POST') return res.status(404).send('')
 
   try {
     const recaptchaRes = await fetch(
@@ -18,9 +18,7 @@ export default async function handler(
     )
     const recaptchaResJson = await recaptchaRes.json()
 
-    if (!recaptchaResJson.success) {
-      res.status(400).send('')
-    }
+    if (!recaptchaResJson.success) return res.status(400).send('')
 
     const transporter = createTransport({
       host: process.env.SMTP_HOST,

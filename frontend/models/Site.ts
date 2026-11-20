@@ -12,6 +12,7 @@ export interface SiteAttributes extends BaseAttributes {
 
 export interface Site extends SiteAttributes {}
 
+// biome-ignore lint/suspicious/noUnsafeDeclarationMerging: ActiveRecord
 export class Site extends ApplicationRecord<SiteAttributes> {
   static data = yaml
 

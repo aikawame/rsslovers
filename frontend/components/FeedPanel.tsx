@@ -16,12 +16,16 @@ export default function FeedPanel({ site }: Props) {
     showPanel || feeds.length <= DEFAULT_LENGTH ? (
       ''
     ) : (
+      // biome-ignore-start lint/a11y/useValidAnchor: ボタンにできないため
+      // biome-ignore lint/a11y/noStaticElementInteractions: ボタンにできないため
       <a
         className="panel-block more is-justify-content-center"
         onClick={() => togglePanel()}
+        onKeyDown={() => togglePanel()}
       >
         &#9660;
       </a>
+      // biome-ignore-end lint/a11y/useValidAnchor: ボタンにできないため
     )
 
   const getPanelStyle = (index: number) => {

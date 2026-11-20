@@ -5,7 +5,7 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse
 ) {
-  if (req.method !== 'POST') res.status(404).send('')
+  if (req.method !== 'POST') return res.status(404).send('')
 
   try {
     const { price } = req.query
@@ -15,7 +15,7 @@ export default async function handler(
     const session = await stripe.checkout.sessions.create({
       line_items: [
         {
-          price: eval(`process.env.STRIPE_PRICE_${price}`),
+          price: process.env[`STRIPE_PRICE_${price}`],
           quantity: 1
         }
       ],
@@ -23,7 +23,7 @@ export default async function handler(
       success_url: `${req.headers.origin}/thanks`,
       cancel_url: `${req.headers.origin}/support`
     })
-    res.redirect(303, session.url)
+    res.redirect(303, session.url!)
   } catch (err: any) {
     res.status(500).json(err.message)
   }

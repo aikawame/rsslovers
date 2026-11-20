@@ -29,6 +29,14 @@
   "linter": {
     "enabled": true,
     "rules": {
+      "correctness": {
+        "noUnknownFunction": {
+          "level": "error",
+          "options": {
+            "ignore": ["findColorInvert", "findLightColor"]
+          }
+        }
+      },
       "preset": "recommended"
     },
     "domains": {
