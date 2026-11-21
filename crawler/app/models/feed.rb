@@ -54,6 +54,9 @@ class Feed < ApplicationRecord
   end
 
   def save
+    Utils.save_to_r2(path: "rss/rdf/#{site.label}/#{label}.rdf",
+                     body: to_rdf,
+                     content_type: 'application/xml')
     Utils.save_to_s3(path: "rss/rdf/#{site.label}/#{label}.rdf",
                      body: to_rdf,
                      content_type: 'application/xml')
