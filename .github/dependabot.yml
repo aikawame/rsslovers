@@ -1,18 +1,5 @@
 version: 2
 updates:
-  - package-ecosystem: npm
-    directory: /admin
-    schedule:
-      interval: weekly
-      day: saturday
-      time: "10:00"
-      timezone: Asia/Tokyo
-    open-pull-requests-limit: 10
-    ignore:
-      - dependency-name: "eslint"
-        versions: [ ">=9.0.0" ]
-      - dependency-name: "*"
-        update-types: [ "version-update:semver-patch" ]
   - package-ecosystem: bundler
     directory: /crawler
     schedule:
