@@ -36,31 +36,63 @@ export default function Support() {
           <div className="column is-one-third-desktop is-half-tablet">
             <div className="card">
               <div className="card-content">
-                <form id="stripe100" action="/api/checkouts?price=100" method="POST">
+                <form
+                  id="stripe100"
+                  action="/api/checkouts?price=100"
+                  method="POST"
+                >
                   <p className="title has-text-centered">
-                    <input type="image" src="/images/stripe.svg" width="200" height="100" alt="Stripe" />
+                    <input
+                      type="image"
+                      src="/images/stripe.svg"
+                      width="200"
+                      height="100"
+                      alt="Stripe"
+                    />
                   </p>
                 </form>
               </div>
               <footer className="card-footer">
+                <div className="card-footer-item">アカウント不要</div>
                 <div className="card-footer-item">
-                  アカウント不要
-                </div>
-                <div className="card-footer-item">
-                  <form id="stripe100" action="/api/checkouts?price=100" method="POST">
-                    <input className="button is-rounded is-info" type="submit" value="100円/月" />
+                  <form
+                    id="stripe100"
+                    action="/api/checkouts?price=100"
+                    method="POST"
+                  >
+                    <input
+                      className="button is-rounded is-info"
+                      type="submit"
+                      value="100円/月"
+                    />
                   </form>
                 </div>
               </footer>
               <footer className="card-footer">
                 <div className="card-footer-item">
-                  <form id="stripe300" action="/api/checkouts?price=300" method="POST">
-                    <input className="button is-rounded is-info" type="submit" value="300円/月" />
+                  <form
+                    id="stripe300"
+                    action="/api/checkouts?price=300"
+                    method="POST"
+                  >
+                    <input
+                      className="button is-rounded is-info"
+                      type="submit"
+                      value="300円/月"
+                    />
                   </form>
                 </div>
                 <div className="card-footer-item">
-                  <form id="stripe1000" action="/api/checkouts?price=1000" method="POST">
-                    <input className="button is-rounded is-info" type="submit" value="1,000円/月" />
+                  <form
+                    id="stripe1000"
+                    action="/api/checkouts?price=1000"
+                    method="POST"
+                  >
+                    <input
+                      className="button is-rounded is-info"
+                      type="submit"
+                      value="1,000円/月"
+                    />
                   </form>
                 </div>
               </footer>
@@ -71,21 +103,25 @@ export default function Support() {
               <div className="card-content">
                 <div className="title has-text-centered">
                   <Link href="https://github.com/sponsors/aikawame">
-                    <Image src={"/images/github.svg"} width="200" height="100" alt="GitHub" />
+                    <Image
+                      src={'/images/github.svg'}
+                      width="200"
+                      height="100"
+                      alt="GitHub"
+                    />
                   </Link>
                 </div>
               </div>
               <footer className="card-footer">
-                <p className="card-footer-item">
-                  開発者の方におすすめ
-                </p>
+                <p className="card-footer-item">開発者の方におすすめ</p>
               </footer>
               <footer className="card-footer">
                 <div className="card-footer-item">
                   <Link
                     href="https://github.com/sponsors/aikawame"
                     className="button is-rounded is-info"
-                    target="blank">
+                    target="blank"
+                  >
                     1ドル～/月
                   </Link>
                 </div>
@@ -98,22 +134,27 @@ export default function Support() {
                 <p className="title has-text-centered">
                   <Link
                     href="https://www.amazon.jp/hz/wishlist/ls/142WH8V4Z1BSI?ref_=wl_share"
-                    target="blank">
-                    <Image src={"/images/amazon.svg"} width="200" height="100" alt="Amazon" />
+                    target="blank"
+                  >
+                    <Image
+                      src={'/images/amazon.svg'}
+                      width="200"
+                      height="100"
+                      alt="Amazon"
+                    />
                   </Link>
                 </p>
               </div>
               <footer className="card-footer">
-                <div className="card-footer-item">
-                  スポットでお気軽に
-                </div>
+                <div className="card-footer-item">スポットでお気軽に</div>
               </footer>
               <footer className="card-footer">
                 <div className="card-footer-item">
                   <Link
                     href="https://www.amazon.jp/hz/wishlist/ls/142WH8V4Z1BSI?ref_=wl_share"
                     className="button is-rounded is-info"
-                    target="blank">
+                    target="blank"
+                  >
                     500円～/都度
                   </Link>
                 </div>
@@ -123,20 +164,19 @@ export default function Support() {
         </div>
       </Section>
       <Section heading="ご支援者様への御礼">
-        <p>
-          ご支援者各位
-        </p>
+        <p>ご支援者各位</p>
         <p>
           日頃よりRSS愛好会の活動にご協力いただきまして、誠にありがとうございます。
           いただきましたご支援に深く感謝し、有効活用させていただきます。
         </p>
         <p>
           ご支援者様のお名前をサイト内で掲示させていただきますので、
-          メールアドレスとお名前を添えて<Link href={"/inquiry"}>お問い合わせ</Link>いただけますと幸いです。
+          メールアドレスとお名前を添えて
+          <Link href={'/inquiry'}>お問い合わせ</Link>いただけますと幸いです。
           過去にご支援いただきました方も含めてお名前掲載させていただきます。
         </p>
       </Section>
       <SupportersList />
     </Main>
-  );
+  )
 }

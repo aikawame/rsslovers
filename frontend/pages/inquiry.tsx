@@ -1,6 +1,6 @@
-import { useForm } from 'react-hook-form'
-import { useGoogleReCaptcha } from 'react-google-recaptcha-v3'
 import Link from 'next/link'
+import { useGoogleReCaptcha } from 'react-google-recaptcha-v3'
+import { useForm } from 'react-hook-form'
 import Main from '../components/Main'
 import Section from '../components/Section'
 
@@ -12,11 +12,18 @@ type FormValues = {
 
 export default function Inquiry() {
   const { executeRecaptcha } = useGoogleReCaptcha()
-  const { register, handleSubmit, reset, formState: { isSubmitting, errors } } = useForm<FormValues>()
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { isSubmitting, errors }
+  } = useForm<FormValues>()
 
-  const onSubmit = async data => {
+  const onSubmit = async (data: FormValues) => {
     if (!executeRecaptcha) {
-      alert('お問い合わせの送信に失敗しました。暫く時間を置いてからもう一度お試しください。')
+      alert(
+        'お問い合わせの送信に失敗しました。暫く時間を置いてからもう一度お試しください。'
+      )
 
       return
     }
@@ -31,7 +38,9 @@ export default function Inquiry() {
       alert('お問い合わせを受け付けました。')
       reset()
     } else {
-      alert('お問い合わせの送信に失敗しました。暫く時間を置いてからもう一度お試しください。')
+      alert(
+        'お問い合わせの送信に失敗しました。暫く時間を置いてからもう一度お試しください。'
+      )
     }
   }
 
@@ -39,9 +48,7 @@ export default function Inquiry() {
     <Main title="お問い合わせ">
       <Section heading="お問い合わせフォーム">
         <form onSubmit={handleSubmit(onSubmit)}>
-          <p>
-            RSS愛好会へのご意見・ご質問等はこちらへどうぞ。
-          </p>
+          <p>RSS愛好会へのご意見・ご質問等はこちらへどうぞ。</p>
           <div className="columns">
             <div className="column">
               <textarea
@@ -74,9 +81,12 @@ export default function Inquiry() {
             </div>
           </div>
           <p className="is-size-7">
-            このサイトはreCAPTCHAによって保護されており、
-            Googleの<Link href="https://policies.google.com/privacy">プライバシーポリシー</Link>と
-            <Link href="https://policies.google.com/terms">利用規約</Link>が適用されます。
+            このサイトはreCAPTCHAによって保護されており、 Googleの
+            <Link href="https://policies.google.com/privacy">
+              プライバシーポリシー
+            </Link>
+            と<Link href="https://policies.google.com/terms">利用規約</Link>
+            が適用されます。
           </p>
         </form>
       </Section>

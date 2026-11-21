@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-# 既定アクティブレコード
+# 基底アクティブレコード
 class ApplicationRecord < ActiveYaml::Base
   set_root_path "#{ENV.fetch('SHARED_PATH', 'shared')}/data"
 

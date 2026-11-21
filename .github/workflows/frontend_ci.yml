@@ -6,6 +6,7 @@ on:
       - main
     paths:
       - 'frontend/**'
+      - 'shared/**'
 
 jobs:
   test:
@@ -26,5 +27,11 @@ jobs:
       - name: Install packages
         run: npm install
 
-      - name: Run ESLint
-        run: npm run lint
+      - name: Run Biome CI
+        run: npm run check:ci
+
+      - name: Run TypeScript typecheck
+        run: npm run typecheck
+
+      - name: Build Next.js
+        run: npm run build

@@ -51,7 +51,7 @@ services:
   frontend:
     build:
       context: frontend
-      dockerfile: Dockerfile
+      dockerfile: Dockerfile.dev
     deploy:
       resources:
         limits:
@@ -60,6 +60,7 @@ services:
       - '3000:3000'
     volumes:
       - ./frontend:/opt/project:cached
+      - ./shared:/opt/shared
 volumes:
   bin:
   bundle:
