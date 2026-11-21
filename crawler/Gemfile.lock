@@ -307,7 +307,7 @@ DEPENDENCIES
   simplecov
 
 RUBY VERSION
-   ruby 4.0.9p0
+   ruby 4.0.10p0
 
 BUNDLED WITH
    2.7.2
