@@ -5,24 +5,47 @@ updates:
     schedule:
       interval: weekly
       day: saturday
-      time: "10:00"
+      time: "06:00"
       timezone: Asia/Tokyo
-    open-pull-requests-limit: 10
-    ignore:
-      - dependency-name: "*"
-        update-types: [ "version-update:semver-patch" ]
+    groups:
+      version-updates:
+        applies-to: version-updates
+        patterns:
+          - "*"
+        update-types:
+          - minor
+          - patch
+        exclude-patterns:
+          - rails
+      security-updates:
+        applies-to: security-updates
+        patterns:
+          - "*"
+        update-types:
+          - minor
+          - patch
   - package-ecosystem: npm
     directory: /frontend
     schedule:
       interval: weekly
       day: saturday
-      time: "10:00"
+      time: "06:00"
       timezone: Asia/Tokyo
-    open-pull-requests-limit: 10
+    groups:
+      version-updates:
+        applies-to: version-updates
+        patterns:
+          - "*"
+        update-types:
+          - minor
+          - patch
+      security-updates:
+        applies-to: security-updates
+        patterns:
+          - "*"
+        update-types:
+          - minor
+          - patch
     ignore:
-      - dependency-name: "bulma"
+      - dependency-name: bulma
         versions: [ ">=1.0.0" ]
-      - dependency-name: "eslint"
-        versions: [ ">=9.0.0" ]
-      - dependency-name: "*"
-        update-types: [ "version-update:semver-patch" ]
