@@ -21,7 +21,7 @@ class Utils
       'X-Auth-Key' => CREDENTIALS.cloudflare.api_key
     }
     params = {
-      files: [target_url]
+      files: [target_url.to_s]
     }
     http.post(api_url.path, params.to_json, headers)
   end
