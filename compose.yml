@@ -9,25 +9,14 @@ services:
       - ./crawler:/rails:cached
       - ./shared:/rails/shared
       - bundle:/usr/local/bundle
-    depends_on:
-      - s3
-    networks:
-      - s3
   frontend:
     build:
       context: frontend
       dockerfile: Dockerfile.dev
-    deploy:
-      resources:
-        limits:
-          memory: 1024M
     ports:
       - '3000:3000'
     volumes:
       - ./frontend:/opt/project:cached
       - ./shared:/opt/shared
 volumes:
-  bin:
   bundle:
-networks:
-  s3:
