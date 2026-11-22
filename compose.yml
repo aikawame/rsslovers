@@ -16,7 +16,7 @@ services:
     ports:
       - '3000:3000'
     volumes:
-      - ./frontend:/opt/project:cached
-      - ./shared:/opt/shared
+      - ./frontend:/app:cached
+      - ./shared:/shared
 volumes:
   bundle:
