@@ -36,15 +36,4 @@ class Utils
                       body: body,
                       content_type: content_type)
   end
-
-  def self.save_to_s3(path:, body:, content_type:)
-    client = Aws::S3::Client.new(access_key_id: CREDENTIALS.s3.access_key_id,
-                                 secret_access_key: CREDENTIALS.s3.secret_access_key,
-                                 region: CREDENTIALS.s3.region,
-                                 endpoint: CREDENTIALS.s3.endpoint)
-    client.put_object(bucket: CREDENTIALS.s3.bucket_name,
-                      key: path,
-                      body: body,
-                      content_type: content_type)
-  end
 end
