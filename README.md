@@ -26,7 +26,7 @@ RSS愛好会のウェブサイト本体です。
 - Linter: RuboCop
 - CI: GitHub Actions
 - 実行基盤: GitHub Actions
-- ストレージ: Amazon S3
+- ストレージ: Cloudflare R2
 
 ### マスターデータ
 
