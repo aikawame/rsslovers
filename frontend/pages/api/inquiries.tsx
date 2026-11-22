@@ -8,17 +8,20 @@ export default async function handler(
   if (req.method !== 'POST') return res.status(404).send('')
 
   try {
-    const recaptchaRes = await fetch(
-      'https://www.google.com/recaptcha/api/siteverify',
+    const turnstileRes = await fetch(
+      'https://challenges.cloudflare.com/turnstile/v0/siteverify',
       {
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: `secret=${process.env.NEXT_PUBLIC_RECAPTCHA_SECRET_KEY}&response=${req.body.token}`
+        body: new URLSearchParams({
+          secret: process.env.TURNSTILE_SECRET_KEY ?? '',
+          response: req.body.token ?? ''
+        })
       }
     )
-    const recaptchaResJson = await recaptchaRes.json()
+    const turnstileResJson = await turnstileRes.json()
 
-    if (!recaptchaResJson.success) return res.status(400).send('')
+    if (!turnstileResJson.success) return res.status(400).send('')
 
     const transporter = createTransport({
       host: process.env.SMTP_HOST,
