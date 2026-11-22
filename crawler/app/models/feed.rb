@@ -22,7 +22,7 @@ class Feed < ApplicationRecord
   end
 
   def self_url
-    URI.parse("#{CREDENTIALS.s3.root_url}/rss/rdf/#{site.label}/#{label}.rdf")
+    URI.parse("#{CREDENTIALS.r2.root_url}/rss/rdf/#{site.label}/#{label}.rdf")
   end
 
   def encoded_url
