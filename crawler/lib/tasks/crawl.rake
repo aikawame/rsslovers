@@ -12,6 +12,7 @@ task :crawl, %w[site_id label] => :environment do |_, args|
     feed.items += notification_items if notification_items.present?
     feed.save
     Utils.purge_cdn_cache(feed.self_url)
+    sleep(5)
   end
   Rails.logger.info('クロールを完了しました。')
 end
