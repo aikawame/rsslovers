@@ -9,15 +9,15 @@
 
   li {
     display: inline;
-    font-size: 1.2rem;
     margin: 0.5rem;
+    font-size: 1.2rem;
 
     a {
-      background: #c0c0c0;
-      border-radius: 50%;
-      color: #fff;
       display: inline-block;
       padding: 0.3rem 0.6rem;
+      color: #fff;
+      background: #c0c0c0;
+      border-radius: 50%;
 
       &.support:hover {
         background: #fa9d39;
@@ -25,9 +25,6 @@
 
       &.twitter:hover {
         background: #1da1f2;
-      }
-
-      i::before {
       }
     }
   }
@@ -41,14 +38,14 @@
     font-size: 0.8rem;
 
     ::before {
-      content: "|";
       padding: 0 0.5rem;
+      content: "|";
     }
   }
 }
 
 .notification {
   position: absolute;
-  width: 100%;
   z-index: 9999;
+  width: 100%;
 }
