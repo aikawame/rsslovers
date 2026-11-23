@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "@marsidev/react-turnstile": "^1.6.3",
-    "bulma": "^0.9.4",
+    "bulma": "^1.0.4",
     "next": "16.4.6",
     "nodemailer": "^10.6.0",
     "react": "^19.3.1",
