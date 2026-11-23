@@ -15,7 +15,6 @@ declare namespace NodeJS {
     readonly EMAIL_FROM: string
     readonly EMAIL_TO: string
     readonly SMTP_HOST: string
-    readonly SMTP_USER: string
     readonly SMTP_PASS: string
   }
 }

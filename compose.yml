@@ -17,6 +17,18 @@ services:
       - ./frontend:/app:cached
       - ./shared:/shared
       - node_modules:/app/node_modules
+  mailpit:
+    image: axllent/mailpit
+    environment:
+      TZ: Asia/Tokyo
+      MP_DATABASE: /mail_data/mailpit.db
+      MP_SMTP_BIND_ADDR: '0.0.0.0:465'
+    ports:
+      - '465:465'
+      - '8025:8025'
+    volumes:
+      - mail_data:/mail_data
 volumes:
   bundle:
   node_modules:
+  mail_data:

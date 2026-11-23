@@ -20,19 +20,19 @@ export default async function handler(
       }
     )
     const turnstileResJson = await turnstileRes.json()
-
     if (!turnstileResJson.success) return res.status(400).send('')
 
     const transporter = createTransport({
       host: process.env.SMTP_HOST,
+      secure: process.env.NODE_ENV === 'production',
+      port: 465,
       auth: {
-        user: process.env.SMTP_USER,
+        user: 'resend',
         pass: process.env.SMTP_PASS
       }
     })
-
     await transporter.sendMail({
-      from: process.env.EMAIL_FROM,
+      from: `RSS愛好会 <${process.env.EMAIL_FROM}>`,
       to: process.env.EMAIL_TO,
       replyTo: req.body.email,
       subject: '【RSS愛好会】お問い合わせ',
