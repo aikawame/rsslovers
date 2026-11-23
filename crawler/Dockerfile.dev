@@ -10,7 +10,8 @@ RUN apt-get update -qq && \
     curl \
     git \
     libyaml-dev \
-    pkg-config && \
+    pkg-config \
+    vim && \
     rm -rf /var/lib/apt/lists /var/cache/apt/archives
 
 ENV TZ=Asia/Tokyo \

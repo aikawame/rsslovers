@@ -29,7 +29,8 @@ class Utils
     client = Aws::S3::Client.new(access_key_id: CREDENTIALS.r2.access_key_id,
                                  secret_access_key: CREDENTIALS.r2.secret_access_key,
                                  region: CREDENTIALS.r2.region,
-                                 endpoint: CREDENTIALS.r2.endpoint)
+                                 endpoint: CREDENTIALS.r2.endpoint,
+                                 force_path_style: true)
     client.put_object(bucket: CREDENTIALS.r2.bucket_name,
                       key: path,
                       body: body,
