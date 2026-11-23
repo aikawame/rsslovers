@@ -43,7 +43,7 @@ export default function FeedPanel({ site }: Props) {
         {feeds.map((feed: Feed, index: number) => {
           return (
             <Link
-              href={`${process.env.NEXT_PUBLIC_ASSETS_URL}/rdf/${site.label}/${feed.label}.rdf`}
+              href={`${process.env.NEXT_PUBLIC_ASSETS_URL}/rss/rdf/${site.label}/${feed.label}.rdf`}
               key={feed.label}
               className="panel-block"
               style={getPanelStyle(index)}
