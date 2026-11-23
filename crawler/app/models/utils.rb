@@ -16,9 +16,8 @@ class Utils
     http = Net::HTTP.new(api_url.host, api_url.port)
     http.use_ssl = true
     headers = {
-      'Content-Type' => 'application/json',
-      'X-Auth-Email' => CREDENTIALS.cloudflare.email,
-      'X-Auth-Key' => CREDENTIALS.cloudflare.api_key
+      'Authorization' => "Bearer #{CREDENTIALS.cloudflare.api_token}",
+      'Content-Type' => 'application/json'
     }
     params = {
       files: [target_url.to_s]
