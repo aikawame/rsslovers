@@ -7,6 +7,9 @@ services:
       - ./crawler:/rails:cached
       - ./shared:/rails/shared
       - bundle:/usr/local/bundle
+    depends_on:
+      storage:
+        condition: service_healthy
   frontend:
     build:
       context: frontend
@@ -18,7 +21,36 @@ services:
       - ./shared:/shared
       - node_modules:/app/node_modules
     depends_on:
+      storage:
+        condition: service_healthy
       mail:
+        condition: service_healthy
+  storage:
+    image: rustfs/rustfs:latest
+    environment:
+      TZ: Asia/Tokyo
+      RUSTFS_ACCESS_KEY: rustfsadmin
+      RUSTFS_SECRET_KEY: rustfsadmin
+    ports:
+      - '9000:9000'
+      - '9001:9001'
+    volumes:
+      - storage_data:/data
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://127.0.0.1:9000/health/ready"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+  storage-init:
+    image: rustfs/rc:latest
+    entrypoint: >
+      /bin/sh -c "
+      rc alias set local http://storage:9000 rustfsadmin rustfsadmin;
+      rc mb local/assets --ignore-existing;
+      rc anonymous set download local/assets;
+      "
+    depends_on:
+      storage:
         condition: service_healthy
   mail:
     image: axllent/mailpit:latest
@@ -40,3 +72,4 @@ volumes:
   bundle:
   node_modules:
   mail_data:
+  storage_data:
