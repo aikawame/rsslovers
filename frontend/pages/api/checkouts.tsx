@@ -9,9 +9,7 @@ export default async function handler(
 
   try {
     const { price } = req.query
-    const stripe = new Stripe(process.env.STRIPE_SECRET_KEY, {
-      apiVersion: '2026-10-28.endive'
-    })
+    const stripe = new Stripe(process.env.STRIPE_SECRET_KEY)
     const session = await stripe.checkout.sessions.create({
       line_items: [
         {
