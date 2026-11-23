@@ -17,17 +17,25 @@ services:
       - ./frontend:/app:cached
       - ./shared:/shared
       - node_modules:/app/node_modules
-  mailpit:
-    image: axllent/mailpit
+    depends_on:
+      mail:
+        condition: service_healthy
+  mail:
+    image: axllent/mailpit:latest
     environment:
       TZ: Asia/Tokyo
-      MP_DATABASE: /mail_data/mailpit.db
+      MP_DATABASE: /data/mailpit.db
       MP_SMTP_BIND_ADDR: '0.0.0.0:465'
     ports:
       - '465:465'
       - '8025:8025'
     volumes:
-      - mail_data:/mail_data
+      - mail_data:/data
+    healthcheck:
+      test: ["CMD", "/mailpit", "readyz"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
 volumes:
   bundle:
   node_modules:
