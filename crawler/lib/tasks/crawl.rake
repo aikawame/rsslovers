@@ -4,7 +4,7 @@ desc 'Crawl specified sites and feeds immediately'
 task :crawl, %w[site_id label] => :environment do |_, args|
   Rails.logger.info('クロールを開始します...')
   notification_items = Item.all_notification_items
-  Feed.where(args).to_a.shuffle.each do |feed|
+  Feed.shuffled(args).to_a.shuffle.each do |feed|
     Rails.logger.info("#{feed.site.name} - #{feed.name}")
     feed.crawl_and_generate_items
     next unless feed.crawled?
@@ -12,7 +12,8 @@ task :crawl, %w[site_id label] => :environment do |_, args|
     feed.items += notification_items if notification_items.present?
     feed.save
     Utils.purge_cdn_cache(feed.self_url)
-    sleep(5)
+  ensure
+    sleep(rand(4.0..8.0))
   end
   Rails.logger.info('クロールを完了しました。')
 end
