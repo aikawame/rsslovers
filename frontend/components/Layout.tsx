@@ -88,12 +88,12 @@ export default function Layout({ children }: Props) {
           <ul className={styles.buttons}>
             <li>
               <Link
-                href={'https://twitter.com/intent/follow?screen_name=aikawame'}
-                className={styles.twitter}
+                href={'https://x.com/intent/follow?screen_name=aikawame'}
+                className={styles.x}
                 target="blank"
                 aria-label="フォロー"
               >
-                <i className="icon-twitter" />
+                <i className="icon-x" />
               </Link>
             </li>
             <li>
