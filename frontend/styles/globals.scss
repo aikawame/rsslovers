@@ -1,10 +1,4 @@
 $brand-orange: #fa9d39;
-$amazon: #ff9900;
-$facebook: #1877f2;
-$feedly: #2db24c;
-$hateb: #00a4de;
-$inoreader: #03a9f4;
-$twitter: #1da1f2;
 
 @use "bulma/sass" as * with (
   $orange: $brand-orange,
@@ -13,14 +7,6 @@ $twitter: #1da1f2;
   $footer-padding: 3rem 1rem,
   $section-padding: 1.5rem 1rem,
   $section-padding-desktop: 2rem 0,
-  $custom-colors: (
-    "amazon": ($amazon),
-    "facebook": ($facebook),
-    "feedly": ($feedly),
-    "hateb": ($hateb),
-    "inoreader": ($inoreader),
-    "twitter": ($twitter),
-  )
 );
 
 :root {
