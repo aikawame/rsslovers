@@ -31,9 +31,7 @@ export default function Inquiry() {
 
   const onSubmit = async (data: FormValues) => {
     if (!data.token) {
-      alert(
-        '認証が完了していません。暫く時間を置いてからもう一度お試しください。'
-      )
+      alert('認証が完了していません。暫く時間を置いてからもう一度お試しください。')
 
       return
     }
@@ -49,9 +47,7 @@ export default function Inquiry() {
       reset()
       turnstileRef.current?.reset()
     } else {
-      alert(
-        'お問い合わせの送信に失敗しました。暫く時間を置いてからもう一度お試しください。'
-      )
+      alert('お問い合わせの送信に失敗しました。暫く時間を置いてからもう一度お試しください。')
       turnstileRef.current?.reset()
       setValue('token', '')
     }
