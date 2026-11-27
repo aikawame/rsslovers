@@ -1,24 +1,18 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
 import { createTransport } from 'nodemailer'
 
-export default async function handler(
-  req: NextApiRequest,
-  res: NextApiResponse
-) {
+export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   if (req.method !== 'POST') return res.status(404).send('')
 
   try {
-    const turnstileRes = await fetch(
-      'https://challenges.cloudflare.com/turnstile/v0/siteverify',
-      {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: new URLSearchParams({
-          secret: process.env.TURNSTILE_SECRET_KEY ?? '',
-          response: req.body.token ?? ''
-        })
-      }
-    )
+    const turnstileRes = await fetch('https://challenges.cloudflare.com/turnstile/v0/siteverify', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: new URLSearchParams({
+        secret: process.env.TURNSTILE_SECRET_KEY ?? '',
+        response: req.body.token ?? ''
+      })
+    })
     const turnstileResJson = await turnstileRes.json()
     if (!turnstileResJson.success) return res.status(400).send('')
 

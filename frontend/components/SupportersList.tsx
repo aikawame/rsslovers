@@ -23,10 +23,7 @@ export default function SupportersList() {
         <ul className="columns is-multiline is-centered">
           {GOLD_SUPPORTERS.map((supporter: string) => {
             return (
-              <li
-                className="column is-half-mobile is-one-third-tablet is-one-fifth-desktop"
-                key={supporter}
-              >
+              <li className="column is-half-mobile is-one-third-tablet is-one-fifth-desktop" key={supporter}>
                 {supporter}
               </li>
             )
@@ -38,10 +35,7 @@ export default function SupportersList() {
         <ul className="columns is-multiline is-centered">
           {NORMAL_SUPPORTERS.map((supporter: string) => {
             return (
-              <li
-                className="column is-half-mobile is-one-third-tablet is-one-fifth-desktop"
-                key={supporter}
-              >
+              <li className="column is-half-mobile is-one-third-tablet is-one-fifth-desktop" key={supporter}>
                 {supporter}
               </li>
             )
